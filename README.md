@@ -9,12 +9,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-<pre><code>ruby
+<pre><code>
  let device = Deviice.currentDevice()
 </code></pre>
 device is a Deviice struct and has 3 properties:
  
-<pre><code>ruby
+<pre><code>
  Deviice.currentDevice().identifier
  Deviice.currentDevice().type
  Deviice.currentDevice().humanReadableName
