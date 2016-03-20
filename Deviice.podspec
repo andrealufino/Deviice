@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "Deviice"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of Deviice."
+  s.version          = "0.10.00"
+  s.summary          = "This library helps you to identify the current device on which your app is running"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                        This library helps you to identify the current device on which your app is running
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/Deviice"
+  s.homepage         = "https://github.com/andrealufino/Deviice"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Andrea Mario Lufino" => "andrea.lufino@21ilab.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/Deviice.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/andrealufino/Deviice.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'

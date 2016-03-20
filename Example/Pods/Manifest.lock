@@ -1,0 +1,14 @@
+PODS:
+  - Deviice (0.10.00)
+
+DEPENDENCIES:
+  - Deviice (from `../`)
+
+EXTERNAL SOURCES:
+  Deviice:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Deviice: 895fb159810095c79842c841db037d4b10630348
+
+COCOAPODS: 0.39.0
