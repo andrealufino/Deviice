@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/Deviice.svg?style=flat)](http://cocoapods.org/pods/Deviice)
 [![Platform](https://img.shields.io/cocoapods/p/Deviice.svg?style=flat)](http://cocoapods.org/pods/Deviice)
 
+![Logo](./Example/Deviice/Deviice.png)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,7 +24,7 @@ pod "Deviice"
 
 ## Author
 
-Andrea Mario Lufino, andrea.lufino@21ilab.com
+Andrea Mario Lufino, andrea.lufino@me.com
 
 ## License
 
