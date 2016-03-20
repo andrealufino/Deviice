@@ -9,15 +9,13 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-<pre><code>
- let device = Deviice.currentDevice()
+<pre><code>let device = Deviice.currentDevice()
 </code></pre>
 device is a Deviice struct and has 3 properties:
  
-<pre><code>
- Deviice.currentDevice().identifier
- Deviice.currentDevice().type
- Deviice.currentDevice().humanReadableName
+<pre><code>device.identifier
+ device.type
+ device.humanReadableName
 </code></pre>
 
 ## Requirements
