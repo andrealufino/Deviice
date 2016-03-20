@@ -14,8 +14,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 device is a Deviice struct and has 3 properties:
  
 <pre><code>device.identifier
- device.type
- device.humanReadableName
+device.type
+device.humanReadableName
 </code></pre>
 
 ## Requirements

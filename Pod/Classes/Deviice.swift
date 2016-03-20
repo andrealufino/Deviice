@@ -8,6 +8,7 @@
 
 import Foundation
 
+// This enum explains itself
 public enum DeviiceType {
     case Unknown
     case iPodTouch5
@@ -35,12 +36,27 @@ public enum DeviiceType {
     case Simulator
 }
 
+/**
+ *  This struct represents a device
+ */
 public struct Deviice {
     
+    /// The identifier of the device (for example: "iPod5,1")
     public let identifier: String
+    /// The device type (DeviiceType enum)
     public let type: DeviiceType
+    /// The name of the device in human language (for example: "iPod Touch 5")
     public let humanReadableName: String
     
+    /**
+     Internal initializer
+     
+     - parameter identifier:        Identifier of the device
+     - parameter type:              Type of the device (DeviiceType enum)
+     - parameter humanReadableName: Name of the device for normal humans
+     
+     - returns: Deviice
+     */
     private init(identifier: String, type: DeviiceType, humanReadableName: String) {
         
         self.identifier = identifier
@@ -48,6 +64,11 @@ public struct Deviice {
         self.humanReadableName = humanReadableName
     }
     
+    /**
+     The current device as Deviice struct
+     
+     - returns: Deviice struct with informations about current device
+     */
     public static func currentDevice() -> Deviice {
         
         var systemInfo = utsname()
