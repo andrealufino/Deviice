@@ -1,5 +1,3 @@
-# Deviice
-
 [![CI Status](http://img.shields.io/travis/Andrea Mario Lufino/Deviice.svg?style=flat)](https://travis-ci.org/Andrea Mario Lufino/Deviice)
 [![Version](https://img.shields.io/cocoapods/v/Deviice.svg?style=flat)](http://cocoapods.org/pods/Deviice)
 [![License](https://img.shields.io/cocoapods/l/Deviice.svg?style=flat)](http://cocoapods.org/pods/Deviice)
@@ -11,7 +9,20 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+<pre><code>ruby
+ let device = Deviice.currentDevice()
+</code></pre>
+device is a Deviice struct and has 3 properties:
+ 
+<pre><code>ruby
+ Deviice.currentDevice().identifier
+ Deviice.currentDevice().type
+ Deviice.currentDevice().humanReadableName
+</code></pre>
+
 ## Requirements
+ 
+ This lib works on iOS 8 or higher.
 
 ## Installation
 
