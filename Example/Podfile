@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'Deviice_Example', :exclusive => true do
+  pod 'Deviice', :path => '../'
+end
+
+target 'Deviice_Tests', :exclusive => true do
+  pod 'Deviice', :path => '../'
+
+  
+end
