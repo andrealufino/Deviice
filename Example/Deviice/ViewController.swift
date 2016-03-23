@@ -23,13 +23,14 @@ class ViewController: UIViewController {
         
         lblIdentifier.text = device.identifier
         lblType.text = "\(device.type)"
-        lblHumanRedableName.text = device.humanReadableName
+        lblHumanRedableName.text = device.modelName
+        
+        print(device.completeDeviceName)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 

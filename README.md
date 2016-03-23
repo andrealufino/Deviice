@@ -11,11 +11,14 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 <pre><code>let device = Deviice.currentDevice()
 </code></pre>
-device is a Deviice struct and has 3 properties:
+device is a Deviice struct and has some properties:
  
 <pre><code>device.identifier
 device.type
-device.humanReadableName
+device.modelName
+device.size
+device.connectivity
+device.completeDeviceName
 </code></pre>
 
 ## Requirements
