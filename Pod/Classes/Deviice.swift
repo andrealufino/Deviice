@@ -8,47 +8,311 @@
 
 import Foundation
 
-enum DeviiceType {
-    case Unknown
-    case iPodTouch5
-    case iPodTouch6
-    case iPhone4
-    case iPhone4s
-    case iPhone5
-    case iPhone5c
-    case iPhone5s
-    case iPhone6
-    case iPhone6Plus
-    case iPhone6s
-    case iPhone6sPlus
-    case iPad2
-    case iPad3
-    case iPad4
-    case iPadAir
-    case iPadAir2
-    case iPadMini
-    case iPadMini2
-    case iPadMini3
-    case iPadMini4
-    case iPadPro
-    case AppleTV
-    case Simulator
+// This enum explains itself
+public enum DeviiceType: String {
+    case Unknown            = "Unknown"
+    case iPodTouch5         = "iPod Touch 5"
+    case iPodTouch6         = "iPod Touch 6"
+    case iPhone4            = "iPhone 4"
+    case iPhone4s           = "iPhone 4s"
+    case iPhone5            = "iPhone 5"
+    case iPhone5c           = "iPhone 5c"
+    case iPhone5s           = "iPhone 5s"
+    case iPhone6            = "iPhone 6"
+    case iPhone6Plus        = "iPhone 6 Plus"
+    case iPhone6s           = "iPhone 6s"
+    case iPhone6sPlus       = "iPhone 6s Plus"
+    case iPhoneSE           = "iPhone SE"
+    case iPad2              = "iPad 2"
+    case iPad3              = "iPad 3"
+    case iPad4              = "iPad 4"
+    case iPadAir            = "iPad Air"
+    case iPadAir2           = "iPad Air 2"
+    case iPadMini           = "iPad Mini"
+    case iPadMini2          = "iPad Mini 2"
+    case iPadMini3          = "iPad Mini 3"
+    case iPadMini4          = "iPad Mini 4"
+    case iPadPro            = "iPad Pro"
+    case Simulator          = "Simulator"
 }
 
-struct Deviice {
+// The device screen size
+public enum DeviiceSize: String {
+    case ScreenUnknown          = "Unknown"
+    case Screen4Inches          = "4 inches"
+    case Screen4Dot7Inches      = "4,7 inches"
+    case Screen5Dot5Inches      = "5,5 inches"
+    case Screen7Dot9Inches      = "7,9 inches"
+    case Screen9Dot7Inches      = "9,7 inches"
+    case Screen12Dot9Inches     = "12,9 inches"
+}
+
+// The connectivity of the device
+public enum DeviiceConnectivity: String {
+    case Unknown        = "Unknown"
+    case WiFi           = "WiFi"
+    case WiFi3G         = "WiFi + 3G"
+    case WiFi4G         = "WiFi + 4G"
+}
+
+/**
+ *  This struct represents a device
+ */
+public struct Deviice {
     
-    let identifier: String
-    let type: DeviiceType
-    let humanReadableName: String
+        /// The identifier of the device (for example: "iPod5,1")
+    public private (set) var identifier: String
+        /// The device type (DeviiceType enum)
+    public private (set) var type: DeviiceType
+        /// The name of the device in human language (ex.: "iPod Touch 5")
+    public private (set) var modelName: String
+        /// The size of the screen (DeviiceSize)
+    public private (set) var size: DeviiceSize
+        /// The connectivity of the device (DeviiceConnectivity)
+    public private (set) var connectivity: DeviiceConnectivity
+        /// The complete device name (ex.: "iPhone 6 Plus - WiFi + 4G - 5,5 inches")
+    public private (set) var completeDeviceName: String
     
-    private init(identifier: String, type: DeviiceType, humanReadableName: String) {
+    /**
+     Private init
+     
+     - parameter identifier: The identifier of the device
+     
+     - returns: A Deviice struct
+     */
+    private init(identifier: String) {
         
         self.identifier = identifier
-        self.type = type
-        self.humanReadableName = humanReadableName
+        
+        switch identifier {
+        
+        case "iPod5,1":
+            self.type = .iPodTouch5
+            self.size = .Screen4Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPod7,1":
+            self.type = .iPodTouch6
+            self.size = .Screen4Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPhone3,1", "iPhone3,2", "iPhone3,3":
+            self.type = .iPhone4
+            self.size = .Screen4Inches
+            self.connectivity = .WiFi3G
+            break
+            
+        case "iPhone4,1":
+            self.type = .iPhone4s
+            self.size = .Screen4Inches
+            self.connectivity = .WiFi3G
+            break
+            
+        case "iPhone5,1", "iPhone5,2":
+            self.type = .iPhone5
+            self.size = .Screen4Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPhone5,3", "iPhone5,4":
+            self.type = .iPhone5c
+            self.size = .Screen4Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPhone6,1", "iPhone6,2":
+            self.type = .iPhone5s
+            self.size = .Screen4Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPhone7,2":
+            self.type = .iPhone6
+            self.size = .Screen4Dot7Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPhone7,1":
+            self.type = .iPhone6Plus
+            self.size = .Screen5Dot5Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPhone8,1":
+            self.type = .iPhone6s
+            self.size = .Screen4Dot7Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPhone8,2":
+            self.type = .iPhone6sPlus
+            self.size = .Screen5Dot5Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPhone8,4":
+            self.type = .iPhoneSE
+            self.size = .Screen4Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPad2,1":
+            self.type = .iPad2
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad2,2", "iPad2,3", "iPad2,4":
+            self.type = .iPad2
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi3G
+            break
+            
+        case "iPad3,1":
+            self.type = .iPad3
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad3,2", "iPad3,3":
+            self.type = .iPad3
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPad3,4":
+            self.type = .iPad4
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad3,5", "iPad3,6":
+            self.type = .iPad4
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPad4,1":
+            self.type = .iPadAir
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad4,2", "iPad4,3":
+            self.type = .iPadAir
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPad5,3":
+            self.type = .iPadAir2
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad5,4":
+            self.type = .iPadAir2
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPad2,5":
+            self.type = .iPadMini
+            self.size = .Screen7Dot9Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad2,6", "iPad2,7":
+            self.type = .iPadMini
+            self.size = .Screen7Dot9Inches
+            self.connectivity = .WiFi3G
+            break
+            
+        case "iPad4,4":
+            self.type = .iPadMini2
+            self.size = .Screen7Dot9Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad4,5", "iPad4,6":
+            self.type = .iPadMini2
+            self.size = .Screen7Dot9Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPad4,7":
+            self.type = .iPadMini3
+            self.size = .Screen7Dot9Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad4,8", "iPad4,9":
+            self.type = .iPadMini3
+            self.size = .Screen7Dot9Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPad5,1":
+            self.type = .iPadMini4
+            self.size = .Screen7Dot9Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad5,2":
+            self.type = .iPadMini4
+            self.size = .Screen7Dot9Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPad6,7":
+            self.type = .iPadPro
+            self.size = .Screen12Dot9Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad6,8":
+            self.type = .iPadPro
+            self.size = .Screen12Dot9Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPad6,3":
+            self.type = .iPadPro
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi
+            break
+            
+        case "iPad6,4":
+            self.type = .iPadPro
+            self.size = .Screen9Dot7Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "i386", "x86_64":
+            self.type = .Simulator
+            self.size = .ScreenUnknown
+            self.connectivity = .WiFi
+            break
+            
+        default:
+            self.type = .Unknown
+            self.size = .ScreenUnknown
+            self.connectivity = .Unknown
+            break
+        }
+        
+        self.modelName = self.type.rawValue
+        self.completeDeviceName = self.modelName + " - " + self.connectivity.rawValue + " - " + self.size.rawValue
     }
     
-    static func currentDevice() -> Deviice {
+    /**
+     The current device as Deviice struct
+     
+     - returns: Deviice struct with informations about current device
+     */
+    public static func currentDevice() -> Deviice {
         
         var systemInfo = utsname()
         uname(&systemInfo)
@@ -58,33 +322,16 @@ struct Deviice {
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
         
-        switch identifier {
-            
-        case "iPod5,1":                                 return Deviice(identifier: identifier, type: .iPodTouch5, humanReadableName: "iPod Touch 5")
-        case "iPod7,1":                                 return Deviice(identifier: identifier, type: .iPodTouch5, humanReadableName: "iPod Touch 6")
-        case "iPhone3,1", "iPhone3,2", "iPhone3,3":     return Deviice(identifier: identifier, type: .iPhone4, humanReadableName: "iPhone 4")
-        case "iPhone4,1":                               return Deviice(identifier: identifier, type: .iPhone4s, humanReadableName: "iPhone 4s")
-        case "iPhone5,1", "iPhone5,2":                  return Deviice(identifier: identifier, type: .iPhone5, humanReadableName: "iPhone 5")
-        case "iPhone5,3", "iPhone5,4":                  return Deviice(identifier: identifier, type: .iPhone5c, humanReadableName: "iPhone 5c")
-        case "iPhone6,1", "iPhone6,2":                  return Deviice(identifier: identifier, type: .iPhone5s, humanReadableName: "iPhone 5s")
-        case "iPhone7,2":                               return Deviice(identifier: identifier, type: .iPhone6, humanReadableName: "iPhone 6")
-        case "iPhone7,1":                               return Deviice(identifier: identifier, type: .iPhone6Plus, humanReadableName: "iPhone 6 Plus")
-        case "iPhone8,1":                               return Deviice(identifier: identifier, type: .iPhone6s, humanReadableName: "iPhone 6s")
-        case "iPhone8,2":                               return Deviice(identifier: identifier, type: .iPhone6sPlus, humanReadableName: "iPhone 6s Plus")
-        case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":return Deviice(identifier: identifier, type: .iPad2, humanReadableName: "iPad 2")
-        case "iPad3,1", "iPad3,2", "iPad3,3":           return Deviice(identifier: identifier, type: .iPad3, humanReadableName: "iPad 3")
-        case "iPad3,4", "iPad3,5", "iPad3,6":           return Deviice(identifier: identifier, type: .iPad4, humanReadableName: "iPad 4")
-        case "iPad4,1", "iPad4,2", "iPad4,3":           return Deviice(identifier: identifier, type: .iPadAir, humanReadableName: "iPad Air")
-        case "iPad5,3", "iPad5,4":                      return Deviice(identifier: identifier, type: .iPadAir2, humanReadableName: "iPad Air 2")
-        case "iPad2,5", "iPad2,6", "iPad2,7":           return Deviice(identifier: identifier, type: .iPadMini, humanReadableName: "iPad Mini")
-        case "iPad4,4", "iPad4,5", "iPad4,6":           return Deviice(identifier: identifier, type: .iPadMini2, humanReadableName: "iPad Mini 2")
-        case "iPad4,7", "iPad4,8", "iPad4,9":           return Deviice(identifier: identifier, type: .iPadMini3, humanReadableName: "iPad Mini 3")
-        case "iPad5,1", "iPad5,2":                      return Deviice(identifier: identifier, type: .iPadMini4, humanReadableName: "iPad Mini 4")
-        case "iPad6,7", "iPad6,8":                      return Deviice(identifier: identifier, type: .iPadPro, humanReadableName: "iPad Pro")
-        case "AppleTV5,3":                              return Deviice(identifier: identifier, type: .AppleTV, humanReadableName: "Apple TV")
-        case "i386", "x86_64":                          return Deviice(identifier: identifier, type: .Simulator, humanReadableName: "Simulator")
-        default:                                        return Deviice(identifier: identifier, type: .Unknown, humanReadableName: "Unknown")
-        }
+        return Deviice(identifier: identifier)
+    }
+}
+
+// MARK: Description
+extension Deviice: CustomStringConvertible {
+    
+    public var description: String {
+        
+        return "Deviice\nIdentifier: \(identifier)\nType: \(type)\nModel name: \(modelName)\nConnectivity: \(connectivity)\nScreen size: \(size)"
     }
 }
 

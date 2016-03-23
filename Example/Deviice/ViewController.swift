@@ -10,18 +10,27 @@ import UIKit
 import Deviice
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var lblIdentifier: UILabel!
+    @IBOutlet weak var lblType: UILabel!
+    @IBOutlet weak var lblHumanRedableName: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let device = Deviice.currentDevice()
         
+        lblIdentifier.text = device.identifier
+        lblType.text = "\(device.type)"
+        lblHumanRedableName.text = device.modelName
+        
+        print(device.completeDeviceName)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 

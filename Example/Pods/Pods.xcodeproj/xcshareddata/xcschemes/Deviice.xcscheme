@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '99D6C24ADC9037979DE2B0D1'
+               BlueprintIdentifier = 'CB0698B7348B474F76741DC9'
                BlueprintName = 'Deviice'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Deviice.framework'>
