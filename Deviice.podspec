@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                        This library helps you to identify the current device on which your app is running
+                        This library helps you to identify the current device on which your app is running. You can get also the connectivity and screen size info.
                        DESC
 
   s.homepage         = "https://github.com/andrealufino/Deviice"
