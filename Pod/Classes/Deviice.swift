@@ -316,6 +316,7 @@ public struct Deviice {
         
         // Credits to Dennis Weissmann for this snippet
         // https://github.com/dennisweissmann
+        // Here his snippet : https://github.com/dennisweissmann/DeviceKit/blob/master/Source/Device.swift#L177-L185
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
