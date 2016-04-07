@@ -314,6 +314,8 @@ public struct Deviice {
      */
     public static func currentDevice() -> Deviice {
         
+        // Credits to Dennis Weissmann for this snippet
+        // https://github.com/dennisweissmann
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
