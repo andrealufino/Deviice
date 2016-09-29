@@ -61,17 +61,17 @@ public enum DeviiceConnectivity: String {
 public struct Deviice {
     
         /// The identifier of the device (for example: "iPod5,1")
-    public private (set) var identifier: String
+    public fileprivate (set) var identifier: String
         /// The device type (DeviiceType enum)
-    public private (set) var type: DeviiceType
+    public fileprivate (set) var type: DeviiceType
         /// The name of the device in human language (ex.: "iPod Touch 5")
-    public private (set) var modelName: String
+    public fileprivate (set) var modelName: String
         /// The size of the screen (DeviiceSize)
-    public private (set) var size: DeviiceSize
+    public fileprivate (set) var size: DeviiceSize
         /// The connectivity of the device (DeviiceConnectivity)
-    public private (set) var connectivity: DeviiceConnectivity
+    public fileprivate (set) var connectivity: DeviiceConnectivity
         /// The complete device name (ex.: "iPhone 6 Plus - WiFi + 4G - 5,5 inches")
-    public private (set) var completeDeviceName: String
+    public fileprivate (set) var completeDeviceName: String
     
     /**
      Private init
@@ -80,7 +80,7 @@ public struct Deviice {
      
      - returns: A Deviice struct
      */
-    private init(identifier: String) {
+    fileprivate init(identifier: String) {
         
         self.identifier = identifier
         
@@ -314,11 +314,14 @@ public struct Deviice {
      */
     public static func currentDevice() -> Deviice {
         
+        // Credits to Dennis Weissmann for this snippet
+        // https://github.com/dennisweissmann
+        // Here his snippet : https://github.com/dennisweissmann/DeviceKit/blob/master/Source/Device.swift#L177-L185
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
         let identifier = machineMirror.children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8 where value != 0 else { return identifier }
+            guard let value = element.value as? Int8 , value != 0 else { return identifier }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
         
