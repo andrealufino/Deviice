@@ -160,13 +160,13 @@ public struct Deviice {
             self.connectivity = .WiFi4G
             break
             
-        case "iPhone9,1":
+        case "iPhone9,1", "iPhone9,3":
             self.type = .iPhone7
             self.size = .Screen4Dot7Inches
             self.connectivity = .WiFi4G
             break
             
-        case "iPhone9,3":
+        case "iPhone9,2", "iPhone9,4":
             self.type = .iPhone7Plus
             self.size = .Screen5Dot5Inches
             self.connectivity = .WiFi4G
