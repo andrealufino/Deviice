@@ -23,6 +23,8 @@ public enum DeviiceType: String {
     case iPhone6s           = "iPhone 6s"
     case iPhone6sPlus       = "iPhone 6s Plus"
     case iPhoneSE           = "iPhone SE"
+    case iPhone7            = "iPhone 7"
+    case iPhone7Plus        = "iPhone 7 Plus"
     case iPad2              = "iPad 2"
     case iPad3              = "iPad 3"
     case iPad4              = "iPad 4"
@@ -60,17 +62,17 @@ public enum DeviiceConnectivity: String {
  */
 public struct Deviice {
     
-        /// The identifier of the device (for example: "iPod5,1")
+    /// The identifier of the device (for example: "iPod5,1")
     public fileprivate (set) var identifier: String
-        /// The device type (DeviiceType enum)
+    /// The device type (DeviiceType enum)
     public fileprivate (set) var type: DeviiceType
-        /// The name of the device in human language (ex.: "iPod Touch 5")
+    /// The name of the device in human language (ex.: "iPod Touch 5")
     public fileprivate (set) var modelName: String
-        /// The size of the screen (DeviiceSize)
+    /// The size of the screen (DeviiceSize)
     public fileprivate (set) var size: DeviiceSize
-        /// The connectivity of the device (DeviiceConnectivity)
+    /// The connectivity of the device (DeviiceConnectivity)
     public fileprivate (set) var connectivity: DeviiceConnectivity
-        /// The complete device name (ex.: "iPhone 6 Plus - WiFi + 4G - 5,5 inches")
+    /// The complete device name (ex.: "iPhone 6 Plus - WiFi + 4G - 5,5 inches")
     public fileprivate (set) var completeDeviceName: String
     
     /**
@@ -155,6 +157,18 @@ public struct Deviice {
         case "iPhone8,4":
             self.type = .iPhoneSE
             self.size = .Screen4Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPhone9,1":
+            self.type = .iPhone7
+            self.size = .Screen4Dot7Inches
+            self.connectivity = .WiFi4G
+            break
+            
+        case "iPhone9,3":
+            self.type = .iPhone7Plus
+            self.size = .Screen5Dot5Inches
             self.connectivity = .WiFi4G
             break
             
