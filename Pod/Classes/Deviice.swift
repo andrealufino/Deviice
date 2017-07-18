@@ -75,13 +75,13 @@ public struct Deviice {
     /// The device type (DeviiceType enum)
     public fileprivate (set) var type: DeviiceType
     /// The name of the device in human language (ex.: "iPod Touch 5")
-    public fileprivate (set) var modelName: String
+    public fileprivate (set) var model: String
     /// The size of the screen (DeviiceSize)
     public fileprivate (set) var size: DeviiceSize
     /// The connectivity of the device (DeviiceConnectivity)
     public fileprivate (set) var connectivity: DeviiceConnectivity
     /// The complete device name (ex.: "iPhone 6 Plus - WiFi + 4G - 5,5 inches")
-    public fileprivate (set) var completeDeviceName: String
+    public fileprivate (set) var completeName: String
     
     
     // MARK: Essentials
@@ -347,8 +347,8 @@ public struct Deviice {
             break
         }
         
-        self.modelName = self.type.rawValue
-        self.completeDeviceName = self.modelName + " - " + self.connectivity.rawValue + " - " + self.size.rawValue
+        self.model = self.type.rawValue
+        self.completeName = self.model + " - " + self.connectivity.rawValue + " - " + self.size.rawValue
     }
     
     
@@ -381,7 +381,7 @@ extension Deviice: CustomStringConvertible {
     
     public var description: String {
         
-        return "Deviice\nIdentifier: \(identifier)\nType: \(type)\nModel name: \(modelName)\nConnectivity: \(connectivity)\nScreen size: \(size)"
+        return "Deviice\nIdentifier: \(identifier)\nType: \(type)\nModel name: \(model)\nConnectivity: \(connectivity)\nScreen size: \(size)"
     }
 }
 
