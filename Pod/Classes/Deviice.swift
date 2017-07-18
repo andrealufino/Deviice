@@ -8,9 +8,12 @@
 
 import Foundation
 
+
+// MARK: - Types
+
 // This enum explains itself
 public enum DeviiceType: String {
-    case Unknown            = "Unknown"
+    case unknown            = "Unknown"
     case iPodTouch5         = "iPod Touch 5"
     case iPodTouch6         = "iPod Touch 6"
     case iPhone4            = "iPhone 4"
@@ -30,6 +33,7 @@ public enum DeviiceType: String {
     case iPad4              = "iPad 4"
     case iPadAir            = "iPad Air"
     case iPadAir2           = "iPad Air 2"
+    case iPad5              = "iPad 5th generation"
     case iPadMini           = "iPad Mini"
     case iPadMini2          = "iPad Mini 2"
     case iPadMini3          = "iPad Mini 3"
@@ -47,6 +51,7 @@ public enum DeviiceSize: String {
     case screen7Dot9Inches      = "7,9 inches"
     case screen9Dot7Inches      = "9,7 inches"
     case screen12Dot9Inches     = "12,9 inches"
+    case screen10Dot5Inches     = "10,5 inches"
 }
 
 // The connectivity of the device
@@ -57,31 +62,33 @@ public enum DeviiceConnectivity: String {
     case wiFi4G         = "WiFi + 4G"
 }
 
-/**
- *  This struct represents a device
- */
+
+// MARK: - Deviice
+
+/// A Deviice struct
 public struct Deviice {
+    
+    // MARK: Vars
     
     /// The identifier of the device (for example: "iPod5,1")
     public fileprivate (set) var identifier: String
     /// The device type (DeviiceType enum)
     public fileprivate (set) var type: DeviiceType
     /// The name of the device in human language (ex.: "iPod Touch 5")
-    public fileprivate (set) var modelName: String
+    public fileprivate (set) var model: String
     /// The size of the screen (DeviiceSize)
     public fileprivate (set) var size: DeviiceSize
     /// The connectivity of the device (DeviiceConnectivity)
     public fileprivate (set) var connectivity: DeviiceConnectivity
     /// The complete device name (ex.: "iPhone 6 Plus - WiFi + 4G - 5,5 inches")
-    public fileprivate (set) var completeDeviceName: String
+    public fileprivate (set) var completeName: String
     
-    /**
-     Private init
-     
-     - parameter identifier: The identifier of the device
-     
-     - returns: A Deviice struct
-     */
+    
+    // MARK: Essentials
+    
+    /// Private init
+    ///
+    /// - Parameter identifier: The identifier of the device
     fileprivate init(identifier: String) {
         
         self.identifier = identifier
@@ -232,6 +239,18 @@ public struct Deviice {
             self.connectivity = .wiFi4G
             break
             
+        case "iPad6,11":
+            self.type = .iPad5
+            self.size = .screen9Dot7Inches
+            self.connectivity = .wiFi
+            break
+            
+        case "iPad6,12":
+            self.type = .iPad5
+            self.size = .screen9Dot7Inches
+            self.connectivity = .wiFi4G
+            break
+            
         case "iPad2,5":
             self.type = .iPadMini
             self.size = .screen7Dot9Inches
@@ -304,6 +323,17 @@ public struct Deviice {
             self.connectivity = .wiFi4G
             break
             
+        case "iPad7,3":
+            self.type = .iPadPro
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi
+            break
+            
+        case "iPad7,4":
+            self.type = .iPadPro
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi4G
+            
         case "i386", "x86_64":
             self.type = .simulator
             self.size = .screenUnknown
@@ -311,22 +341,23 @@ public struct Deviice {
             break
             
         default:
-            self.type = .Unknown
+            self.type = .unknown
             self.size = .screenUnknown
             self.connectivity = .unknown
             break
         }
         
-        self.modelName = self.type.rawValue
-        self.completeDeviceName = self.modelName + " - " + self.connectivity.rawValue + " - " + self.size.rawValue
+        self.model = self.type.rawValue
+        self.completeName = self.model + " - " + self.connectivity.rawValue + " - " + self.size.rawValue
     }
     
-    /**
-     The current device as Deviice struct
-     
-     - returns: Deviice struct with informations about current device
-     */
-    public static func currentDevice() -> Deviice {
+    
+    // MARK: Current device
+    
+    /// The current device as Deviice struct
+    ///
+    /// - Returns: Deviice struct with informations about current device
+    public static var current: Deviice {
         
         // Credits to Dennis Weissmann for this snippet
         // https://github.com/dennisweissmann
@@ -343,12 +374,14 @@ public struct Deviice {
     }
 }
 
+
 // MARK: Description
+
 extension Deviice: CustomStringConvertible {
     
     public var description: String {
         
-        return "Deviice\nIdentifier: \(identifier)\nType: \(type)\nModel name: \(modelName)\nConnectivity: \(connectivity)\nScreen size: \(size)"
+        return "Deviice\nIdentifier: \(identifier)\nType: \(type)\nModel name: \(model)\nConnectivity: \(connectivity)\nScreen size: \(size)"
     }
 }
 
