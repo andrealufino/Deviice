@@ -371,7 +371,12 @@ public struct Deviice {
         }
         
         self.model = self.type.rawValue
-        self.completeName = self.model + " - " + self.connectivity.rawValue + " - " + self.size.rawValue
+        
+        if self.type == .unknown {
+            self.completeName = identifier + " - " + self.connectivity.rawValue + " - " + self.size.rawValue
+        } else {
+            self.completeName = self.model + " - " + self.connectivity.rawValue + " - " + self.size.rawValue
+        }
     }
     
     
