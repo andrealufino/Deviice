@@ -518,8 +518,3 @@ extension Deviice: CustomStringConvertible {
         return "Deviice\nIdentifier: \(identifier)\nType: \(type)\nModel name: \(model)\nConnectivity: \(connectivity)\nScreen size: \(size)"
     }
 }
-
-
-
-
-
