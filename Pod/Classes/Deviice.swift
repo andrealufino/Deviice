@@ -43,12 +43,14 @@ public enum DeviiceType: String {
     case iPad4              = "iPad 4"
     case iPadAir            = "iPad Air"
     case iPadAir2           = "iPad Air 2"
+    case iPadAir3           = "iPad Air 3"
     case iPad5              = "iPad 5"
     case iPad6              = "iPad 6"
     case iPadMini           = "iPad Mini"
     case iPadMini2          = "iPad Mini 2"
     case iPadMini3          = "iPad Mini 3"
     case iPadMini4          = "iPad Mini 4"
+    case iPadMini5          = "iPad Mini 5"
     case iPadPro            = "iPad Pro"
     case iPadPro2           = "iPad Pro (2nd generation)"
     case iPadPro3           = "iPad Pro (3rd generation)"
@@ -395,6 +397,16 @@ public struct Deviice {
             self.size = .screen12Dot9Inches
             self.connectivity = .wiFi4G
 
+        case "iPad11,3":
+            self.type = .iPadAir3
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi
+
+        case "iPad11,4":
+            self.type = .iPadAir3
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi4G
+
         //
         // MARK: iPad mini
         //
@@ -436,6 +448,16 @@ public struct Deviice {
             
         case "iPad5,2":
             self.type = .iPadMini4
+            self.size = .screen7Dot9Inches
+            self.connectivity = .wiFi4G
+
+        case "iPad11,1":
+            self.type = .iPadMini5
+            self.size = .screen7Dot9Inches
+            self.connectivity = .wiFi
+
+        case "iPad11,2":
+            self.type = .iPadMini5
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi4G
 
