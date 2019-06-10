@@ -20,6 +20,7 @@ public enum DeviiceType: String {
     case iPodTouch4         = "iPod Touch 4"
     case iPodTouch5         = "iPod Touch 5"
     case iPodTouch6         = "iPod Touch 6"
+    case iPodTouch7         = "iPod Touch 7"
     case iPhone4            = "iPhone 4"
     case iPhone4s           = "iPhone 4s"
     case iPhone5            = "iPhone 5"
@@ -146,6 +147,11 @@ public struct Deviice {
             
         case "iPod7,1":
             self.type = .iPodTouch6
+            self.size = .screen4Inches
+            self.connectivity = .wiFi
+            
+        case "iPod9,1":
+            self.type = .iPodTouch7
             self.size = .screen4Inches
             self.connectivity = .wiFi
 
