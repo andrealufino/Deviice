@@ -243,7 +243,7 @@ public struct Deviice {
             
         case "iPhone11,4", "iPhone11,6":
             self.type = .iPhoneXsMax
-            self.size = .screen5Dot5Inches
+            self.size = .screen6Dot5Inches
             self.connectivity = .wiFi4G
             
         case "iPhone11,8":
