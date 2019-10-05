@@ -47,6 +47,7 @@ public enum DeviiceType: String {
     case iPadAir3           = "iPad Air 3"
     case iPad5              = "iPad 5"
     case iPad6              = "iPad 6"
+    case iPad7              = "iPad 7"
     case iPadMini           = "iPad mini"
     case iPadMini2          = "iPad mini 2"
     case iPadMini3          = "iPad mini 3"
@@ -69,6 +70,7 @@ public enum DeviiceSize: String {
     case screen6Dot5Inches      = "6,5 inches"
     case screen7Dot9Inches      = "7,9 inches"
     case screen9Dot7Inches      = "9,7 inches"
+    case screen10Dot2Inches     = "10,2 inches"
     case screen10Dot5Inches     = "10,5 inches"
     case screen11Inches         = "11 inches"
     case screen12Dot9Inches     = "12,9 inches"
@@ -361,6 +363,16 @@ public struct Deviice {
         case "iPad7,6":
             self.type = .iPad6
             self.size = .screen9Dot7Inches
+            self.connectivity = .wiFi4G
+
+        case "iPad7,11":
+            self.type = .iPad7
+            self.size = .screen10Dot2Inches
+            self.connectivity = .wiFi
+
+        case "iPad7,12":
+            self.type = .iPad7
+            self.size = .screen10Dot2Inches
             self.connectivity = .wiFi4G
 
         case "iPad8,1":
