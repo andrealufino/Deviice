@@ -39,6 +39,9 @@ public enum DeviiceType: String {
     case iPhoneXs           = "iPhone XS"
     case iPhoneXsMax        = "iPhone XS Max"
     case iPhoneXr           = "iPhone XR"
+    case iPhone11           = "iPhone 11"
+    case iPhone11Pro        = "iPhone 11 Pro"
+    case iPhone11ProMax     = "iPhone 11 Pro Max"
     case iPad2              = "iPad 2"
     case iPad3              = "iPad 3"
     case iPad4              = "iPad 4"
@@ -249,6 +252,21 @@ public struct Deviice {
         case "iPhone11,8":
             self.type = .iPhoneXr
             self.size = .screen6Dot1Inches
+            self.connectivity = .wiFi4G
+
+        case "iPhone12,1":
+            self.type = .iPhone11
+            self.size = .screen6Dot1Inches
+            self.connectivity = .wiFi4G
+
+        case "iPhone12,3":
+            self.type = .iPhone11Pro
+            self.size = .screen5Dot8Inches
+            self.connectivity = .wiFi4G
+
+        case "iPhone12,5":
+            self.type = .iPhone11ProMax
+            self.size = .screen6Dot5Inches
             self.connectivity = .wiFi4G
 
         //
