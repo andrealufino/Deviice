@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04DDE0FBC6332C04247C952C /* Pods_Deviice_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08433C8E6A76811C5F0EA5B3 /* Pods_Deviice_Tests.framework */; };
-		279E3CD4AB6094744A26429B /* Pods_Deviice_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 405299B2D39C7529BAD82DA8 /* Pods_Deviice_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -16,6 +14,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		65A6C9821C9F4F0B00CD7A89 /* Deviice.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A6C9811C9F4F0B00CD7A89 /* Deviice.png */; };
+		7043162FD64C0929BD77CBE0 /* Pods_Deviice_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01948E77D75E1626111CAC49 /* Pods_Deviice_Example.framework */; };
+		8ACFA9841F15FA287BD0C12C /* Pods_Deviice_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744F459CB8E30541E204C4B0 /* Pods_Deviice_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,9 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08433C8E6A76811C5F0EA5B3 /* Pods_Deviice_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deviice_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39ED9B23F4B9CBE1DAD23BF8 /* Pods-Deviice_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deviice_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Deviice_Example/Pods-Deviice_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		405299B2D39C7529BAD82DA8 /* Pods_Deviice_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deviice_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01948E77D75E1626111CAC49 /* Pods_Deviice_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deviice_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BFB4A09AC1893F25DF79D25 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Deviice_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deviice_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,11 +42,13 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		65A6C9811C9F4F0B00CD7A89 /* Deviice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deviice.png; sourceTree = "<group>"; };
-		73CC08196297BF8E113B04F1 /* Pods-Deviice_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deviice_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Deviice_Example/Pods-Deviice_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A250B0A77699CFD35CE219C6 /* Pods-Deviice_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deviice_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Deviice_Tests/Pods-Deviice_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		744F459CB8E30541E204C4B0 /* Pods_Deviice_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Deviice_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD471A4957CB1898B1F5987C /* Pods-Deviice_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deviice_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Deviice_Tests/Pods-Deviice_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC6ECDF3FD78EF74C28E186C /* Pods-Deviice_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deviice_Tests.release.xcconfig"; path = "Target Support Files/Pods-Deviice_Tests/Pods-Deviice_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BDAFF4D54BB6B10C9C8D9DC0 /* Pods-Deviice_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deviice_Example.debug.xcconfig"; path = "Target Support Files/Pods-Deviice_Example/Pods-Deviice_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D61E952D4B4F2C7A10982DE3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DF0783E817A7A7815ED4887B /* Pods-Deviice_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deviice_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Deviice_Tests/Pods-Deviice_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FFE8174D38E8380FA487D190 /* Deviice.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Deviice.podspec; path = ../Deviice.podspec; sourceTree = "<group>"; };
+		FBEBA1CEC69ECF46D5F16469 /* Pods-Deviice_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Deviice_Example.release.xcconfig"; path = "Target Support Files/Pods-Deviice_Example/Pods-Deviice_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FFE8174D38E8380FA487D190 /* Deviice.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Deviice.podspec; path = ../Deviice.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279E3CD4AB6094744A26429B /* Pods_Deviice_Example.framework in Frameworks */,
+				7043162FD64C0929BD77CBE0 /* Pods_Deviice_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,22 +64,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04DDE0FBC6332C04247C952C /* Pods_Deviice_Tests.framework in Frameworks */,
+				8ACFA9841F15FA287BD0C12C /* Pods_Deviice_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42EC15854E1241A70485D893 /* Pods */ = {
+		3AD2920AA612580BBA3701C1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				39ED9B23F4B9CBE1DAD23BF8 /* Pods-Deviice_Example.debug.xcconfig */,
-				73CC08196297BF8E113B04F1 /* Pods-Deviice_Example.release.xcconfig */,
-				A250B0A77699CFD35CE219C6 /* Pods-Deviice_Tests.debug.xcconfig */,
-				DF0783E817A7A7815ED4887B /* Pods-Deviice_Tests.release.xcconfig */,
+				BDAFF4D54BB6B10C9C8D9DC0 /* Pods-Deviice_Example.debug.xcconfig */,
+				FBEBA1CEC69ECF46D5F16469 /* Pods-Deviice_Example.release.xcconfig */,
+				AD471A4957CB1898B1F5987C /* Pods-Deviice_Tests.debug.xcconfig */,
+				BC6ECDF3FD78EF74C28E186C /* Pods-Deviice_Tests.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -89,8 +89,8 @@
 				607FACD21AFB9204008FA782 /* Example for Deviice */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				42EC15854E1241A70485D893 /* Pods */,
-				B7364C412B60D518AFCC1C3C /* Frameworks */,
+				3AD2920AA612580BBA3701C1 /* Pods */,
+				D6DE46E189D760B943CF9335 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,11 +153,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		B7364C412B60D518AFCC1C3C /* Frameworks */ = {
+		D6DE46E189D760B943CF9335 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				405299B2D39C7529BAD82DA8 /* Pods_Deviice_Example.framework */,
-				08433C8E6A76811C5F0EA5B3 /* Pods_Deviice_Tests.framework */,
+				01948E77D75E1626111CAC49 /* Pods_Deviice_Example.framework */,
+				744F459CB8E30541E204C4B0 /* Pods_Deviice_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,12 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Deviice_Example" */;
 			buildPhases = (
-				7C529B8016178B0525136709 /* Check Pods Manifest.lock */,
+				DFDF19583F1DD8558E2F18B8 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				CD1E740726040CF1786A8A51 /* Embed Pods Frameworks */,
-				6215B926F7AE333D76BE00F7 /* Copy Pods Resources */,
+				7A3987342A16527A4C9BD2E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,12 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Deviice_Tests" */;
 			buildPhases = (
-				9752D9EAD3F5B99CE9EB4B6B /* Check Pods Manifest.lock */,
+				6F92CA37BBEB038037F5AA28 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				23DFDC01F424D7A0CE15DF80 /* Embed Pods Frameworks */,
-				24C5D3E1BCAE61A9882B7E91 /* Copy Pods Resources */,
+				B4BF31B7100B8F72B0803F55 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,94 +269,84 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		23DFDC01F424D7A0CE15DF80 /* Embed Pods Frameworks */ = {
+		6F92CA37BBEB038037F5AA28 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deviice_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deviice_Tests/Pods-Deviice_Tests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		24C5D3E1BCAE61A9882B7E91 /* Copy Pods Resources */ = {
+		7A3987342A16527A4C9BD2E5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deviice_Example/Pods-Deviice_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Deviice/Deviice.framework",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Deviice.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deviice_Tests/Pods-Deviice_Tests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deviice_Example/Pods-Deviice_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6215B926F7AE333D76BE00F7 /* Copy Pods Resources */ = {
+		B4BF31B7100B8F72B0803F55 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Deviice_Tests/Pods-Deviice_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Deviice/Deviice.framework",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Deviice.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deviice_Example/Pods-Deviice_Example-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Deviice_Tests/Pods-Deviice_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7C529B8016178B0525136709 /* Check Pods Manifest.lock */ = {
+		DFDF19583F1DD8558E2F18B8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Deviice_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		9752D9EAD3F5B99CE9EB4B6B /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		CD1E740726040CF1786A8A51 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Deviice_Example/Pods-Deviice_Example-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -516,14 +504,14 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39ED9B23F4B9CBE1DAD23BF8 /* Pods-Deviice_Example.debug.xcconfig */;
+			baseConfigurationReference = BDAFF4D54BB6B10C9C8D9DC0 /* Pods-Deviice_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EZ9L78NW47;
 				INFOPLIST_FILE = Deviice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.12;
+				MARKETING_VERSION = 1.13;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,14 +521,14 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73CC08196297BF8E113B04F1 /* Pods-Deviice_Example.release.xcconfig */;
+			baseConfigurationReference = FBEBA1CEC69ECF46D5F16469 /* Pods-Deviice_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EZ9L78NW47;
 				INFOPLIST_FILE = Deviice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.12;
+				MARKETING_VERSION = 1.13;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,7 +538,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A250B0A77699CFD35CE219C6 /* Pods-Deviice_Tests.debug.xcconfig */;
+			baseConfigurationReference = AD471A4957CB1898B1F5987C /* Pods-Deviice_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -567,14 +555,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deviice_Example.app/Deviice_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF0783E817A7A7815ED4887B /* Pods-Deviice_Tests.release.xcconfig */;
+			baseConfigurationReference = BC6ECDF3FD78EF74C28E186C /* Pods-Deviice_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -587,7 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deviice_Example.app/Deviice_Example";
 			};
 			name = Release;

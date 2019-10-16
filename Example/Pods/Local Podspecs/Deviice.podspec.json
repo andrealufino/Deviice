@@ -1,25 +1,20 @@
 {
   "name": "Deviice",
-  "version": "0.10.00",
+  "version": "1.12",
   "summary": "This library helps you to identify the current device on which your app is running",
-  "description": "This library helps you to identify the current device on which your app is running",
+  "description": "This library helps you to identify the current device on which your app is running. You can get also the connectivity and screen size info.",
   "homepage": "https://github.com/andrealufino/Deviice",
   "license": "MIT",
   "authors": {
-    "Andrea Mario Lufino": "andrea.lufino@21ilab.com"
+    "Andrea Mario Lufino": "andrea.lufino@me.com"
   },
   "source": {
     "git": "https://github.com/andrealufino/Deviice.git",
-    "tag": "0.10.00"
+    "tag": "1.12"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "Deviice": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "Pod/Classes/**/*"
 }

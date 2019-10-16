@@ -1,12 +1,16 @@
 source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+xcodeproj 'Deviice'
 use_frameworks!
 
-target 'Deviice_Example', :exclusive => true do
+target 'Deviice_Example' do
   pod 'Deviice', :path => '../'
 end
 
-target 'Deviice_Tests', :exclusive => true do
-  pod 'Deviice', :path => '../'
 
-  
+target 'Deviice_Tests' do
+  pod 'Deviice', :path => '../'
 end
