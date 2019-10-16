@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Deviice"
-  s.version          = "1.1"
+  s.version          = "1.11"
   s.summary          = "This library helps you to identify the current device on which your app is running"
 
 # This description is used to generate tags and improve search results.
