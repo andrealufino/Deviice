@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Deviice"
-  s.version          = "1.13"
+  s.version          = "1.20"
   s.summary          = "This library helps you to identify the current device on which your app is running"
 
 # This description is used to generate tags and improve search results.
@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
+  s.swift_version = ["5.0"]
 
   s.source_files = 'Pod/Classes/**/*'
 #s.resource_bundles = {
