@@ -11,7 +11,7 @@ import Foundation
 
 // MARK: - Types
 
-// This enum explains itself
+/// This enumeration represents the device.
 public enum DeviiceType: String {
     case unknown            = "Unknown"
     case iPodTouch1         = "iPod Touch 1"
@@ -62,7 +62,7 @@ public enum DeviiceType: String {
     case simulator          = "Simulator"
 }
 
-// The device screen size
+// The device screen size.
 public enum DeviiceSize: String {
     case screenUnknown          = "Unknown"
     case screen4Inches          = "4 inches"
@@ -77,9 +77,42 @@ public enum DeviiceSize: String {
     case screen10Dot5Inches     = "10,5 inches"
     case screen11Inches         = "11 inches"
     case screen12Dot9Inches     = "12,9 inches"
+    
+    /// This is the value as `Double` of the screen size.
+    /// Could be useful to make comparison.
+    var value: Double {
+        switch self {
+        case .screenUnknown:
+            return -1
+        case .screen4Inches:
+            return 4
+        case .screen4Dot7Inches:
+            return 4.7
+        case .screen5Dot5Inches:
+            return 5.5
+        case .screen5Dot8Inches:
+            return 5.8
+        case .screen6Dot1Inches:
+            return 6.1
+        case .screen6Dot5Inches:
+            return 6.5
+        case .screen7Dot9Inches:
+            return 7.9
+        case .screen9Dot7Inches:
+            return 9.7
+        case .screen10Dot2Inches:
+            return 10.2
+        case .screen10Dot5Inches:
+            return 10.5
+        case .screen11Inches:
+            return 11
+        case .screen12Dot9Inches:
+            return 12.9
+        }
+    }
 }
 
-// The connectivity of the device
+// The connectivity of the device.
 public enum DeviiceConnectivity: String {
     case unknown        = "Unknown"
     case wiFi           = "WiFi"
@@ -90,40 +123,39 @@ public enum DeviiceConnectivity: String {
 
 // MARK: - Deviice
 
-/// A Deviice struct
+/// This structure represents a device.
 public struct Deviice {
     
     // MARK: Vars
     
-    /// The identifier of the device (for example: "iPod5,1")
-    public fileprivate (set) var identifier: String
-    /// The device type (DeviiceType enum)
-    public fileprivate (set) var type: DeviiceType
-    /// The name of the device in human language (ex.: "iPod Touch 5")
-    public fileprivate (set) var model: String
-    /// The size of the screen (DeviiceSize)
-    public fileprivate (set) var size: DeviiceSize
-    /// The connectivity of the device (DeviiceConnectivity)
-    public fileprivate (set) var connectivity: DeviiceConnectivity
-    /// The complete device name (ex.: "iPhone 6 Plus - WiFi + 4G - 5,5 inches")
-    public fileprivate (set) var completeName: String
+    /// The identifier of the device (for example: "iPod5,1").
+    public private (set) var identifier: String
+    /// The device type (`DeviiceType` enum).
+    public private (set) var type: DeviiceType
+    /// The name of the device in human language (ex.: "iPod Touch 5").
+    public private (set) var model: String
+    /// The size of the screen (`DeviiceSize`).
+    public private (set) var size: DeviiceSize
+    /// The connectivity of the device (`DeviiceConnectivity`).
+    public private (set) var connectivity: DeviiceConnectivity
+    /// The complete device name (ex.: "iPhone 6 Plus - WiFi + 4G - 5,5 inches").
+    public private (set) var completeName: String
     
     
     // MARK: Essentials
     
-    /// Private init
+    /// Private init.
     ///
-    /// - Parameter identifier: The identifier of the device
+    /// - Parameter identifier: The identifier of the device.
     // Identifiers and model information at: https://www.theiphonewiki.com/wiki/Models
-    fileprivate init(identifier: String) {
+    private init(identifier: String) {
         
         self.identifier = identifier
         
         switch identifier {
 
-        //
-        // MARK: iPods
-        //
+        
+        // MARK: iPod
 
         case "iPod1,1":
             self.type = .iPodTouch1
@@ -160,9 +192,8 @@ public struct Deviice {
             self.size = .screen4Inches
             self.connectivity = .wiFi
 
-        //
-        // MARK: iPhones
-        //
+        
+        // MARK: iPhone
 
         case "iPhone3,1", "iPhone3,2", "iPhone3,3":
             self.type = .iPhone4
@@ -269,9 +300,8 @@ public struct Deviice {
             self.size = .screen6Dot5Inches
             self.connectivity = .wiFi4G
 
-        //
-        // MARK: iPads
-        //
+            
+        // MARK: iPad
 
         case "iPad2,1":
             self.type = .iPad2
@@ -443,9 +473,8 @@ public struct Deviice {
             self.size = .screen10Dot5Inches
             self.connectivity = .wiFi4G
 
-        //
+            
         // MARK: iPad mini
-        //
             
         case "iPad2,5":
             self.type = .iPadMini
@@ -497,9 +526,8 @@ public struct Deviice {
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi4G
 
-        //
+            
         // MARK: Other
-        //
 
         case "i386", "x86_64":
             self.type = .simulator
