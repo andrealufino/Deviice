@@ -48,9 +48,11 @@ public enum DeviiceType: String {
     case iPadAir            = "iPad Air"
     case iPadAir2           = "iPad Air 2"
     case iPadAir3           = "iPad Air 3"
+    case iPadAir4           = "iPad Air 4"
     case iPad5              = "iPad 5"
     case iPad6              = "iPad 6"
     case iPad7              = "iPad 7"
+    case iPad8              = "iPad 8"
     case iPadMini           = "iPad mini"
     case iPadMini2          = "iPad mini 2"
     case iPadMini3          = "iPad mini 3"
@@ -59,6 +61,7 @@ public enum DeviiceType: String {
     case iPadPro            = "iPad Pro"
     case iPadPro2           = "iPad Pro (2nd generation)"
     case iPadPro3           = "iPad Pro (3rd generation)"
+    case iPadPro4           = "iPad Pro (4th generation)"
     case simulator          = "Simulator"
 }
 
@@ -75,6 +78,7 @@ public enum DeviiceSize: String {
     case screen9Dot7Inches      = "9,7 inches"
     case screen10Dot2Inches     = "10,2 inches"
     case screen10Dot5Inches     = "10,5 inches"
+    case screen10Dot9Inches     = "10,9 inches"
     case screen11Inches         = "11 inches"
     case screen12Dot9Inches     = "12,9 inches"
     
@@ -104,6 +108,8 @@ public enum DeviiceSize: String {
             return 10.2
         case .screen10Dot5Inches:
             return 10.5
+        case .screen10Dot9Inches:
+            return 10.9
         case .screen11Inches:
             return 11
         case .screen12Dot9Inches:
@@ -353,26 +359,6 @@ public struct Deviice {
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi4G
 
-        case "iPad6,3":
-            self.type = .iPadPro
-            self.size = .screen9Dot7Inches
-            self.connectivity = .wiFi
-
-        case "iPad6,4":
-            self.type = .iPadPro
-            self.size = .screen9Dot7Inches
-            self.connectivity = .wiFi4G
-
-        case "iPad6,7":
-            self.type = .iPadPro
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi
-
-        case "iPad6,8":
-            self.type = .iPadPro
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi4G
-
         case "iPad6,11":
             self.type = .iPad5
             self.size = .screen9Dot7Inches
@@ -381,26 +367,6 @@ public struct Deviice {
         case "iPad6,12":
             self.type = .iPad5
             self.size = .screen9Dot7Inches
-            self.connectivity = .wiFi4G
-
-        case "iPad7,1":
-            self.type = .iPadPro2
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi
-
-        case "iPad7,2":
-            self.type = .iPadPro2
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi4G
-
-        case "iPad7,3":
-            self.type = .iPadPro2
-            self.size = .screen10Dot5Inches
-            self.connectivity = .wiFi
-
-        case "iPad7,4":
-            self.type = .iPadPro2
-            self.size = .screen10Dot5Inches
             self.connectivity = .wiFi4G
 
         case "iPad7,5":
@@ -421,6 +387,78 @@ public struct Deviice {
         case "iPad7,12":
             self.type = .iPad7
             self.size = .screen10Dot2Inches
+            self.connectivity = .wiFi4G
+
+        case "iPad11,3":
+            self.type = .iPadAir3
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi
+
+        case "iPad11,4":
+            self.type = .iPadAir3
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi4G
+
+        case "iPad11,6":
+            self.type = .iPad8
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi
+
+        case "iPad11,7":
+            self.type = .iPad8
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi4G
+
+        case "iPad13,1":
+            self.type = .iPadAir4
+            self.size = .screen10Dot9Inches
+            self.connectivity = .wiFi
+
+        case "iPad13,2":
+            self.type = .iPadAir4
+            self.size = .screen10Dot9Inches
+            self.connectivity = .wiFi4G
+
+        // MARK: iPad Pro
+
+        case "iPad6,3":
+            self.type = .iPadPro
+            self.size = .screen9Dot7Inches
+            self.connectivity = .wiFi
+
+        case "iPad6,4":
+            self.type = .iPadPro
+            self.size = .screen9Dot7Inches
+            self.connectivity = .wiFi4G
+
+        case "iPad6,7":
+            self.type = .iPadPro
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi
+
+        case "iPad6,8":
+            self.type = .iPadPro
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi4G
+
+        case "iPad7,1":
+            self.type = .iPadPro2
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi
+
+        case "iPad7,2":
+            self.type = .iPadPro2
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi4G
+
+        case "iPad7,3":
+            self.type = .iPadPro2
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi
+
+        case "iPad7,4":
+            self.type = .iPadPro2
+            self.size = .screen10Dot5Inches
             self.connectivity = .wiFi4G
 
         case "iPad8,1":
@@ -463,19 +501,28 @@ public struct Deviice {
             self.size = .screen12Dot9Inches
             self.connectivity = .wiFi4G
 
-        case "iPad11,3":
-            self.type = .iPadAir3
-            self.size = .screen10Dot5Inches
+        case "iPad8,9":
+            self.type = .iPadPro4
+            self.size = .screen11Inches
             self.connectivity = .wiFi
 
-        case "iPad11,4":
-            self.type = .iPadAir3
-            self.size = .screen10Dot5Inches
+        case "iPad8,10":
+            self.type = .iPadPro4
+            self.size = .screen11Inches
             self.connectivity = .wiFi4G
 
-            
+        case "iPad8,11":
+            self.type = .iPadPro4
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi
+
+        case "iPad8,12":
+            self.type = .iPadPro4
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi4G
+
         // MARK: iPad mini
-            
+
         case "iPad2,5":
             self.type = .iPadMini
             self.size = .screen7Dot9Inches
