@@ -43,6 +43,10 @@ public enum DeviiceType: String {
     case iPhone11Pro        = "iPhone 11 Pro"
     case iPhone11ProMax     = "iPhone 11 Pro Max"
     case iPhoneSE2          = "iPhone SE (2nd generation)"
+    case iPhone12Mini       = "iPhone 12 Mini"
+    case iPhone12           = "iPhone 12"
+    case iPhone12Pro        = "iPhone 12 Pro"
+    case iPhone12ProMax     = "iPhone 12 Pro Max"
     case iPad2              = "iPad 2"
     case iPad3              = "iPad 3"
     case iPad4              = "iPad 4"
@@ -71,10 +75,12 @@ public enum DeviiceSize: String {
     case screenUnknown          = "Unknown"
     case screen4Inches          = "4 inches"
     case screen4Dot7Inches      = "4,7 inches"
+    case screen5Dot4Inches      = "5,4 inches"
     case screen5Dot5Inches      = "5,5 inches"
     case screen5Dot8Inches      = "5,8 inches"
     case screen6Dot1Inches      = "6,1 inches"
     case screen6Dot5Inches      = "6,5 inches"
+    case screen6Dot7Inches      = "6,7 inches"
     case screen7Dot9Inches      = "7,9 inches"
     case screen9Dot7Inches      = "9,7 inches"
     case screen10Dot2Inches     = "10,2 inches"
@@ -93,6 +99,8 @@ public enum DeviiceSize: String {
             return 4
         case .screen4Dot7Inches:
             return 4.7
+        case .screen5Dot4Inches:
+            return 5.4
         case .screen5Dot5Inches:
             return 5.5
         case .screen5Dot8Inches:
@@ -101,6 +109,8 @@ public enum DeviiceSize: String {
             return 6.1
         case .screen6Dot5Inches:
             return 6.5
+        case .screen6Dot7Inches:
+            return 6.7
         case .screen7Dot9Inches:
             return 7.9
         case .screen9Dot7Inches:
@@ -125,6 +135,7 @@ public enum DeviiceConnectivity: String {
     case wiFi           = "WiFi"
     case wiFi3G         = "WiFi + 3G"
     case wiFi4G         = "WiFi + 4G"
+    case wiFi5G         = "WiFi + 5G"
 }
 
 
@@ -311,6 +322,21 @@ public struct Deviice {
             self.type = .iPhoneSE2
             self.size = .screen4Dot7Inches
             self.connectivity = .wiFi4G
+            
+        case "iPhone13,1":
+            self.type = .iPhone12Mini
+            self.size = .screen5Dot4Inches
+            self.connectivity = .wiFi5G
+            
+        case "iPhone13,2":
+            self.type = .iPhone12
+            self.size = .screen6Dot1Inches
+            self.connectivity = .wiFi5G
+            
+        case "iPhone13,3":
+            self.type = .iPhone12ProMax
+            self.size = .screen6Dot7Inches
+            self.connectivity = .wiFi5G
 
             
         // MARK: iPad
