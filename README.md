@@ -18,6 +18,7 @@ device.type
 device.modelName
 device.size
 device.connectivity
+device.year
 device.completeDeviceName
 </code></pre>
 
@@ -36,7 +37,7 @@ pod "Deviice"
 
 ## Author
 
-Andrea Mario Lufino, [andrealufino.me](https://andrealufino.me).
+Andrea Mario Lufino, [andrealufino.me](https://andrealufino.com).
 
 ## License
 

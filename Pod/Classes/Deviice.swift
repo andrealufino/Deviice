@@ -42,15 +42,22 @@ public enum DeviiceType: String {
     case iPhone11           = "iPhone 11"
     case iPhone11Pro        = "iPhone 11 Pro"
     case iPhone11ProMax     = "iPhone 11 Pro Max"
+    case iPhoneSE2          = "iPhone SE (2nd generation)"
+    case iPhone12Mini       = "iPhone 12 Mini"
+    case iPhone12           = "iPhone 12"
+    case iPhone12Pro        = "iPhone 12 Pro"
+    case iPhone12ProMax     = "iPhone 12 Pro Max"
     case iPad2              = "iPad 2"
     case iPad3              = "iPad 3"
     case iPad4              = "iPad 4"
     case iPadAir            = "iPad Air"
     case iPadAir2           = "iPad Air 2"
     case iPadAir3           = "iPad Air 3"
+    case iPadAir4           = "iPad Air 4"
     case iPad5              = "iPad 5"
     case iPad6              = "iPad 6"
     case iPad7              = "iPad 7"
+    case iPad8              = "iPad 8"
     case iPadMini           = "iPad mini"
     case iPadMini2          = "iPad mini 2"
     case iPadMini3          = "iPad mini 3"
@@ -59,6 +66,7 @@ public enum DeviiceType: String {
     case iPadPro            = "iPad Pro"
     case iPadPro2           = "iPad Pro (2nd generation)"
     case iPadPro3           = "iPad Pro (3rd generation)"
+    case iPadPro4           = "iPad Pro (4th generation)"
     case simulator          = "Simulator"
 }
 
@@ -67,14 +75,17 @@ public enum DeviiceSize: String {
     case screenUnknown          = "Unknown"
     case screen4Inches          = "4 inches"
     case screen4Dot7Inches      = "4,7 inches"
+    case screen5Dot4Inches      = "5,4 inches"
     case screen5Dot5Inches      = "5,5 inches"
     case screen5Dot8Inches      = "5,8 inches"
     case screen6Dot1Inches      = "6,1 inches"
     case screen6Dot5Inches      = "6,5 inches"
+    case screen6Dot7Inches      = "6,7 inches"
     case screen7Dot9Inches      = "7,9 inches"
     case screen9Dot7Inches      = "9,7 inches"
     case screen10Dot2Inches     = "10,2 inches"
     case screen10Dot5Inches     = "10,5 inches"
+    case screen10Dot9Inches     = "10,9 inches"
     case screen11Inches         = "11 inches"
     case screen12Dot9Inches     = "12,9 inches"
     
@@ -88,6 +99,8 @@ public enum DeviiceSize: String {
             return 4
         case .screen4Dot7Inches:
             return 4.7
+        case .screen5Dot4Inches:
+            return 5.4
         case .screen5Dot5Inches:
             return 5.5
         case .screen5Dot8Inches:
@@ -96,6 +109,8 @@ public enum DeviiceSize: String {
             return 6.1
         case .screen6Dot5Inches:
             return 6.5
+        case .screen6Dot7Inches:
+            return 6.7
         case .screen7Dot9Inches:
             return 7.9
         case .screen9Dot7Inches:
@@ -104,6 +119,8 @@ public enum DeviiceSize: String {
             return 10.2
         case .screen10Dot5Inches:
             return 10.5
+        case .screen10Dot9Inches:
+            return 10.9
         case .screen11Inches:
             return 11
         case .screen12Dot9Inches:
@@ -118,6 +135,7 @@ public enum DeviiceConnectivity: String {
     case wiFi           = "WiFi"
     case wiFi3G         = "WiFi + 3G"
     case wiFi4G         = "WiFi + 4G"
+    case wiFi5G         = "WiFi + 5G"
 }
 
 
@@ -140,6 +158,8 @@ public struct Deviice {
     public private (set) var connectivity: DeviiceConnectivity
     /// The complete device name (ex.: "iPhone 6 Plus - WiFi + 4G - 5,5 inches").
     public private (set) var completeName: String
+    /// The release year of the device. It's an int because it could be useful to do quick comparison.
+    public private (set) var year: Int
     
     
     // MARK: Essentials
@@ -161,36 +181,43 @@ public struct Deviice {
             self.type = .iPodTouch1
             self.size = .screen4Inches
             self.connectivity = .wiFi
+            self.year = 2007
             
         case "iPod2,1":
             self.type = .iPodTouch2
             self.size = .screen4Inches
             self.connectivity = .wiFi
+            self.year = 2008
             
         case "iPod3,1":
             self.type = .iPodTouch3
             self.size = .screen4Inches
             self.connectivity = .wiFi
+            self.year = 2009
             
         case "iPod4,1":
             self.type = .iPodTouch4
             self.size = .screen4Inches
             self.connectivity = .wiFi
+            self.year = 2010
             
         case "iPod5,1":
             self.type = .iPodTouch5
             self.size = .screen4Inches
             self.connectivity = .wiFi
+            self.year = 2012
             
         case "iPod7,1":
             self.type = .iPodTouch6
             self.size = .screen4Inches
             self.connectivity = .wiFi
+            self.year = 2015
             
         case "iPod9,1":
             self.type = .iPodTouch7
             self.size = .screen4Inches
             self.connectivity = .wiFi
+            self.year = 2019
 
         
         // MARK: iPhone
@@ -199,106 +226,151 @@ public struct Deviice {
             self.type = .iPhone4
             self.size = .screen4Inches
             self.connectivity = .wiFi3G
+            self.year = 2010
             
         case "iPhone4,1":
             self.type = .iPhone4s
             self.size = .screen4Inches
             self.connectivity = .wiFi3G
+            self.year = 2011
             
         case "iPhone5,1", "iPhone5,2":
             self.type = .iPhone5
             self.size = .screen4Inches
             self.connectivity = .wiFi4G
+            self.year = 2012
             
         case "iPhone5,3", "iPhone5,4":
             self.type = .iPhone5c
             self.size = .screen4Inches
             self.connectivity = .wiFi4G
+            self.year = 2013
             
         case "iPhone6,1", "iPhone6,2":
             self.type = .iPhone5s
             self.size = .screen4Inches
             self.connectivity = .wiFi4G
+            self.year = 2013
             
         case "iPhone7,1":
             self.type = .iPhone6Plus
             self.size = .screen5Dot5Inches
             self.connectivity = .wiFi4G
+            self.year = 2014
             
         case "iPhone7,2":
             self.type = .iPhone6
             self.size = .screen4Dot7Inches
             self.connectivity = .wiFi4G
+            self.year = 2014
             
         case "iPhone8,1":
             self.type = .iPhone6s
             self.size = .screen4Dot7Inches
             self.connectivity = .wiFi4G
+            self.year = 2015
             
         case "iPhone8,2":
             self.type = .iPhone6sPlus
             self.size = .screen5Dot5Inches
             self.connectivity = .wiFi4G
+            self.year = 2015
             
         case "iPhone8,4":
             self.type = .iPhoneSE
             self.size = .screen4Inches
             self.connectivity = .wiFi4G
+            self.year = 2016
             
         case "iPhone9,1", "iPhone9,3":
             self.type = .iPhone7
             self.size = .screen4Dot7Inches
             self.connectivity = .wiFi4G
+            self.year = 2016
             
         case "iPhone9,2", "iPhone9,4":
             self.type = .iPhone7Plus
             self.size = .screen5Dot5Inches
             self.connectivity = .wiFi4G
+            self.year = 2016
             
         case "iPhone10,1", "iPhone10,4":
             self.type = .iPhone8
             self.size = .screen4Dot7Inches
             self.connectivity = .wiFi4G
+            self.year = 2017
             
         case "iPhone10,2", "iPhone10,5":
             self.type = .iPhone8Plus
             self.size = .screen5Dot5Inches
             self.connectivity = .wiFi4G
+            self.year = 2017
             
         case "iPhone10,3", "iPhone10,6":
             self.type = .iPhoneX
             self.size = .screen5Dot8Inches
             self.connectivity = .wiFi4G
+            self.year = 2017
             
         case "iPhone11,2":
             self.type = .iPhoneXs
             self.size = .screen5Dot8Inches
             self.connectivity = .wiFi4G
+            self.year = 2018
             
         case "iPhone11,4", "iPhone11,6":
             self.type = .iPhoneXsMax
             self.size = .screen6Dot5Inches
             self.connectivity = .wiFi4G
+            self.year = 2018
             
         case "iPhone11,8":
             self.type = .iPhoneXr
             self.size = .screen6Dot1Inches
             self.connectivity = .wiFi4G
+            self.year = 2018
 
         case "iPhone12,1":
             self.type = .iPhone11
             self.size = .screen6Dot1Inches
             self.connectivity = .wiFi4G
+            self.year = 2019
 
         case "iPhone12,3":
             self.type = .iPhone11Pro
             self.size = .screen5Dot8Inches
             self.connectivity = .wiFi4G
+            self.year = 2019
 
         case "iPhone12,5":
             self.type = .iPhone11ProMax
             self.size = .screen6Dot5Inches
             self.connectivity = .wiFi4G
+            self.year = 2019
+
+        case "iPhone12,8":
+            self.type = .iPhoneSE2
+            self.size = .screen4Dot7Inches
+            self.connectivity = .wiFi4G
+            self.year = 2020
+            
+        case "iPhone13,1":
+            self.type = .iPhone12Mini
+            self.size = .screen5Dot4Inches
+            self.connectivity = .wiFi5G
+            self.year = 2020
+            
+        case "iPhone13,2":
+            self.type = .iPhone12
+            self.size = .screen6Dot1Inches
+            self.connectivity = .wiFi5G
+            self.year = 2020
+            
+        case "iPhone13,3":
+            self.type = .iPhone12ProMax
+            self.size = .screen6Dot7Inches
+            self.connectivity = .wiFi5G
+            self.year = 2020
 
             
         // MARK: iPad
@@ -307,224 +379,317 @@ public struct Deviice {
             self.type = .iPad2
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi
+            self.year = 2011
             
         case "iPad2,2", "iPad2,3", "iPad2,4":
             self.type = .iPad2
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi3G
+            self.year = 2011
             
         case "iPad3,1":
             self.type = .iPad3
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi
+            self.year = 2012
             
         case "iPad3,2", "iPad3,3":
             self.type = .iPad3
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi4G
+            self.year = 2012
             
         case "iPad3,4":
             self.type = .iPad4
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi
+            self.year = 2012
             
         case "iPad3,5", "iPad3,6":
             self.type = .iPad4
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi4G
+            self.year = 2012
             
         case "iPad4,1":
             self.type = .iPadAir
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi
+            self.year = 2013
             
         case "iPad4,2", "iPad4,3":
             self.type = .iPadAir
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi4G
+            self.year = 2013
             
         case "iPad5,3":
             self.type = .iPadAir2
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi
+            self.year = 2014
             
         case "iPad5,4":
             self.type = .iPadAir2
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi4G
-
-        case "iPad6,3":
-            self.type = .iPadPro
-            self.size = .screen9Dot7Inches
-            self.connectivity = .wiFi
-
-        case "iPad6,4":
-            self.type = .iPadPro
-            self.size = .screen9Dot7Inches
-            self.connectivity = .wiFi4G
-
-        case "iPad6,7":
-            self.type = .iPadPro
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi
-
-        case "iPad6,8":
-            self.type = .iPadPro
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi4G
+            self.year = 2014
 
         case "iPad6,11":
             self.type = .iPad5
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi
+            self.year = 2017
             
         case "iPad6,12":
             self.type = .iPad5
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi4G
-
-        case "iPad7,1":
-            self.type = .iPadPro2
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi
-
-        case "iPad7,2":
-            self.type = .iPadPro2
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi4G
-
-        case "iPad7,3":
-            self.type = .iPadPro2
-            self.size = .screen10Dot5Inches
-            self.connectivity = .wiFi
-
-        case "iPad7,4":
-            self.type = .iPadPro2
-            self.size = .screen10Dot5Inches
-            self.connectivity = .wiFi4G
+            self.year = 2017
 
         case "iPad7,5":
             self.type = .iPad6
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi
+            self.year = 2018
             
         case "iPad7,6":
             self.type = .iPad6
             self.size = .screen9Dot7Inches
             self.connectivity = .wiFi4G
+            self.year = 2018
 
         case "iPad7,11":
             self.type = .iPad7
             self.size = .screen10Dot2Inches
             self.connectivity = .wiFi
+            self.year = 2019
 
         case "iPad7,12":
             self.type = .iPad7
             self.size = .screen10Dot2Inches
             self.connectivity = .wiFi4G
-
-        case "iPad8,1":
-            self.type = .iPadPro3
-            self.size = .screen11Inches
-            self.connectivity = .wiFi
-
-        case "iPad8,2":
-            self.type = .iPadPro3
-            self.size = .screen11Inches
-            self.connectivity = .wiFi
-
-        case "iPad8,3":
-            self.type = .iPadPro3
-            self.size = .screen11Inches
-            self.connectivity = .wiFi4G
-
-        case "iPad8,4":
-            self.type = .iPadPro3
-            self.size = .screen11Inches
-            self.connectivity = .wiFi4G
-
-        case "iPad8,5":
-            self.type = .iPadPro3
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi
-
-        case "iPad8,6":
-            self.type = .iPadPro3
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi
-
-        case "iPad8,7":
-            self.type = .iPadPro3
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi4G
-
-        case "iPad8,8":
-            self.type = .iPadPro3
-            self.size = .screen12Dot9Inches
-            self.connectivity = .wiFi4G
+            self.year = 2019
 
         case "iPad11,3":
             self.type = .iPadAir3
             self.size = .screen10Dot5Inches
             self.connectivity = .wiFi
+            self.year = 2019
 
         case "iPad11,4":
             self.type = .iPadAir3
             self.size = .screen10Dot5Inches
             self.connectivity = .wiFi4G
+            self.year = 2019
 
-            
+        case "iPad11,6":
+            self.type = .iPad8
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi
+            self.year = 2020
+
+        case "iPad11,7":
+            self.type = .iPad8
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi4G
+            self.year = 2020
+
+        case "iPad13,1":
+            self.type = .iPadAir4
+            self.size = .screen10Dot9Inches
+            self.connectivity = .wiFi
+            self.year = 2020
+
+        case "iPad13,2":
+            self.type = .iPadAir4
+            self.size = .screen10Dot9Inches
+            self.connectivity = .wiFi4G
+            self.year = 2020
+
+        // MARK: iPad Pro
+
+        case "iPad6,3":
+            self.type = .iPadPro
+            self.size = .screen9Dot7Inches
+            self.connectivity = .wiFi
+            self.year = 2016
+
+        case "iPad6,4":
+            self.type = .iPadPro
+            self.size = .screen9Dot7Inches
+            self.connectivity = .wiFi4G
+            self.year = 2016
+
+        case "iPad6,7":
+            self.type = .iPadPro
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi
+            self.year = 2015
+
+        case "iPad6,8":
+            self.type = .iPadPro
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi4G
+            self.year = 2015
+
+        case "iPad7,1":
+            self.type = .iPadPro2
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi
+            self.year = 2017
+
+        case "iPad7,2":
+            self.type = .iPadPro2
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi4G
+            self.year = 2017
+
+        case "iPad7,3":
+            self.type = .iPadPro2
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi
+            self.year = 2017
+
+        case "iPad7,4":
+            self.type = .iPadPro2
+            self.size = .screen10Dot5Inches
+            self.connectivity = .wiFi4G
+            self.year = 2017
+
+        case "iPad8,1":
+            self.type = .iPadPro3
+            self.size = .screen11Inches
+            self.connectivity = .wiFi
+            self.year = 2018
+
+        case "iPad8,2":
+            self.type = .iPadPro3
+            self.size = .screen11Inches
+            self.connectivity = .wiFi
+            self.year = 2018
+
+        case "iPad8,3":
+            self.type = .iPadPro3
+            self.size = .screen11Inches
+            self.connectivity = .wiFi4G
+            self.year = 2018
+
+        case "iPad8,4":
+            self.type = .iPadPro3
+            self.size = .screen11Inches
+            self.connectivity = .wiFi4G
+            self.year = 2018
+
+        case "iPad8,5":
+            self.type = .iPadPro3
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi
+            self.year = 2018
+
+        case "iPad8,6":
+            self.type = .iPadPro3
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi
+            self.year = 2018
+
+        case "iPad8,7":
+            self.type = .iPadPro3
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi4G
+            self.year = 2018
+
+        case "iPad8,8":
+            self.type = .iPadPro3
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi4G
+            self.year = 2018
+
+        case "iPad8,9":
+            self.type = .iPadPro4
+            self.size = .screen11Inches
+            self.connectivity = .wiFi
+            self.year = 2020
+
+        case "iPad8,10":
+            self.type = .iPadPro4
+            self.size = .screen11Inches
+            self.connectivity = .wiFi4G
+            self.year = 2020
+
+        case "iPad8,11":
+            self.type = .iPadPro4
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi
+            self.year = 2020
+
+        case "iPad8,12":
+            self.type = .iPadPro4
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi4G
+            self.year = 2020
+
         // MARK: iPad mini
-            
+
         case "iPad2,5":
             self.type = .iPadMini
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi
+            self.year = 2012
             
         case "iPad2,6", "iPad2,7":
             self.type = .iPadMini
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi3G
+            self.year = 2012
             
         case "iPad4,4":
             self.type = .iPadMini2
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi
+            self.year = 2013
             
         case "iPad4,5", "iPad4,6":
             self.type = .iPadMini2
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi4G
+            self.year = 2013
             
         case "iPad4,7":
             self.type = .iPadMini3
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi
+            self.year = 2014
             
         case "iPad4,8", "iPad4,9":
             self.type = .iPadMini3
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi4G
+            self.year = 2014
             
         case "iPad5,1":
             self.type = .iPadMini4
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi
+            self.year = 2015
             
         case "iPad5,2":
             self.type = .iPadMini4
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi4G
+            self.year = 2015
 
         case "iPad11,1":
             self.type = .iPadMini5
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi
+            self.year = 2019
 
         case "iPad11,2":
             self.type = .iPadMini5
             self.size = .screen7Dot9Inches
             self.connectivity = .wiFi4G
+            self.year = 2019
 
             
         // MARK: Other
@@ -533,11 +698,13 @@ public struct Deviice {
             self.type = .simulator
             self.size = .screenUnknown
             self.connectivity = .wiFi
+            self.year = -1
             
         default:
             self.type = .unknown
             self.size = .screenUnknown
             self.connectivity = .unknown
+            self.year = -1
         }
         
         self.model = self.type.rawValue
