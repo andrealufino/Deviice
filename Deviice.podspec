@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "Deviice"
-  s.version          = "1.30.2"
+  s.version          = "1.30.21"
   s.summary          = "This library helps you to identify the current device on which your app is running"
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/andrealufino/Deviice"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Andrea Mario Lufino" => "andrea.lufino@me.com" }
+  s.author           = { "Andrea Mario Lufino" => "andrea@andrealufino.com" }
   s.source           = { :git => "https://github.com/andrealufino/Deviice.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.swift_version = ["5.0"]
 
-  s.source_files = 'Pod/Sources/**/*'
+  s.source_files = 'Sources/*.swift'
 #s.resource_bundles = {
 #'Deviice' => ['Pod/Assets/*.png']
 # }
