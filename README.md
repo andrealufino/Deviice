@@ -28,16 +28,24 @@ This library works on iOS 8 or higher.
 
 ## Installation
 
-Deviice is available through [CocoaPods](http://cocoapods.org). To install
+Deviice is available through [CocoaPods](http://cocoapods.org) and Swift Package Manager.
+
+### CocoaPods
+
+To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "Deviice"
 ```
 
+### Swift Package Manager
+
+To add Deviice to your Xcode project, select File -> Swift Packages -> Add Package Depedancy. Enter `https://github.com/andrealufino/Deviice` for the URL. Check the use branch option and enter `main`.
+
 ## Author
 
-Andrea Mario Lufino, [andrealufino.me](https://andrealufino.com).
+Andrea Mario Lufino, [andrealufino.com](https://andrealufino.com).
 
 ## License
 
