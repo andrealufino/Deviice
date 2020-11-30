@@ -41,7 +41,7 @@ pod "Deviice"
 
 ### Swift Package Manager
 
-To add Deviice to your Xcode project, select File -> Swift Packages -> Add Package Depedancy. Enter `https://github.com/andrealufino/Deviice` for the URL. Check the use branch option and enter `main`.
+To add Deviice to your Xcode project, select File -> Swift Packages -> Add Package Depedancy. Enter `https://github.com/andrealufino/Deviice` for the URL. Check the use branch option and enter `master`.
 
 ## Author
 
