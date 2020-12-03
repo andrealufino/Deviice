@@ -367,6 +367,12 @@ public struct Deviice {
             self.year = 2020
             
         case "iPhone13,3":
+            self.type = .iPhone12Pro
+            self.size = .screen6Dot1Inches
+            self.connectivity = .wiFi5G
+            self.year = 2020
+            
+        case "iPhone13,4":
             self.type = .iPhone12ProMax
             self.size = .screen6Dot7Inches
             self.connectivity = .wiFi5G
