@@ -769,7 +769,7 @@ public struct Deviice {
         case "iPad11,2":
             self.type = .iPadMini6
             self.size = .screen7Dot9Inches
-            self.connectivity = .wiFi4G
+            self.connectivity = .wiFi5G
             self.year = 2021
 
         // MARK: Other
