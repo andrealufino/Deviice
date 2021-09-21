@@ -62,6 +62,7 @@ public enum DeviiceType: String {
     case iPad6              = "iPad 6"
     case iPad7              = "iPad 7"
     case iPad8              = "iPad 8"
+    case iPad9              = "iPad 9"
     case iPadMini           = "iPad mini"
     case iPadMini2          = "iPad mini 2"
     case iPadMini3          = "iPad mini 3"
