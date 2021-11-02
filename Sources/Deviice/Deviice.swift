@@ -775,7 +775,7 @@ public struct Deviice {
 
         // MARK: Other
 
-        case "i386", "x86_64":
+        case "i386", "x86_64", "arm64":
             self.type = .simulator
             self.size = .screenUnknown
             self.connectivity = .wiFi
