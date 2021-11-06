@@ -94,56 +94,56 @@ internal enum Identifier: String {
     case iPad13_2           = "iPad13,2"
     
     // MARK: iPad Mini
-    case iPad2_5
-    case iPad2_6
-    case iPad2_7
-    case iPad4_4
-    case iPad4_5
-    case iPad4_6
-    case iPad4_7
-    case iPad4_8
-    case iPad4_9
-    case iPad5_1
-    case iPad5_2
-    case iPad11_1
-    case iPad11_2
-    case iPad14_1
-    case iPad14_2
+    case iPad2_5            = "iPad2,5"
+    case iPad2_6            = "iPad2,6"
+    case iPad2_7            = "iPad2,7"
+    case iPad4_4            = "iPad4,4"
+    case iPad4_5            = "iPad4,5"
+    case iPad4_6            = "iPad4,6"
+    case iPad4_7            = "iPad4,7"
+    case iPad4_8            = "iPad4,8"
+    case iPad4_9            = "iPad4,9"
+    case iPad5_1            = "iPad5,1"
+    case iPad5_2            = "iPad5,2"
+    case iPad11_1           = "iPad11,1"
+    case iPad11_2           = "iPad11,2"
+    case iPad14_1           = "iPad14,1"
+    case iPad14_2           = "iPad14,2"
     
     // MARK: iPad Pro
-    case iPad6_3
-    case iPad6_4
-    case iPad6_7
-    case iPad6_8
-    case iPad7_1
-    case iPad7_2
-    case iPad7_3
-    case iPad7_4
-    case iPad8_1
-    case iPad8_2
-    case iPad8_3
-    case iPad8_4
-    case iPad8_5
-    case iPad8_6
-    case iPad8_7
-    case iPad8_8
-    case iPad8_9
-    case iPad8_10
-    case iPad8_11
-    case iPad8_12
-    case iPad13_4
-    case iPad13_5
-    case iPad13_6
-    case iPad13_7
-    case iPad13_8
-    case iPad13_9
-    case iPad13_10
-    case iPad13_11
+    case iPad6_3            = "iPad6,3"
+    case iPad6_4            = "iPad6,4"
+    case iPad6_7            = "iPad6,7"
+    case iPad6_8            = "iPad6,8"
+    case iPad7_1            = "iPad7,1"
+    case iPad7_2            = "iPad7,2"
+    case iPad7_3            = "iPad7,3"
+    case iPad7_4            = "iPad7,4"
+    case iPad8_1            = "iPad8,1"
+    case iPad8_2            = "iPad8,2"
+    case iPad8_3            = "iPad8,3"
+    case iPad8_4            = "iPad8,4"
+    case iPad8_5            = "iPad8,5"
+    case iPad8_6            = "iPad8,6"
+    case iPad8_7            = "iPad8,7"
+    case iPad8_8            = "iPad8,8"
+    case iPad8_9            = "iPad8,9"
+    case iPad8_10           = "iPad8,10"
+    case iPad8_11           = "iPad8,11"
+    case iPad8_12           = "iPad8,12"
+    case iPad13_4           = "iPad13,4"
+    case iPad13_5           = "iPad13,5"
+    case iPad13_6           = "iPad13,6"
+    case iPad13_7           = "iPad13,7"
+    case iPad13_8           = "iPad13,8"
+    case iPad13_9           = "iPad13,9"
+    case iPad13_10          = "iPad13,10"
+    case iPad13_11          = "iPad13,11"
     
     // MARK: Simulator
-    case i386
-    case x86_64
-    case arm64
+    case i386               = "i386"
+    case x86_64             = "x86_64"
+    case arm64              = "arm64"
     
     // MARK: Unknown
     case unknown
