@@ -1,5 +1,5 @@
 //
-//  Version.swift
+//  Model.swift
 //  Deviice
 //
 //  Created by Andrea Mario Lufino on 05/11/21.
@@ -8,7 +8,7 @@
 import Foundation
 
 
-public enum Version: String {
+public enum Model: String {
     case unknown            = "Unknown"
     
     // MARK: iPod
