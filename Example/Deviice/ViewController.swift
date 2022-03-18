@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         lblHumanRedableName.text = device.model
         
         print(device.completeName)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

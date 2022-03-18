@@ -8,7 +8,7 @@
 import Foundation
 
 
-internal enum Identifier: String {
+internal enum Identifier: String, CaseIterable {
     
     // MARK: iPod
     case iPod1_1            = "iPod1,1"
@@ -20,6 +20,9 @@ internal enum Identifier: String {
     case iPod9_1            = "iPod9,1"
     
     // MARK: iPhone
+    case iPhone1_1          = "iPhone1,1"
+    case iPhone1_2          = "iPhone1,2"
+    case iPhone2_1          = "iPhone2,1"
     case iPhone3_1          = "iPhone3,1"
     case iPhone3_2          = "iPhone3,2"
     case iPhone3_3          = "iPhone3,3"
@@ -147,4 +150,35 @@ internal enum Identifier: String {
     
     // MARK: Unknown
     case unknown
+}
+
+
+// MARK: - Public
+
+extension Identifier {
+    
+    static var current: Identifier {
+        return Identifier.init(rawValue: rawIdentifier) ?? .unknown
+    }
+}
+
+
+// MARK: - Private
+
+private extension Identifier {
+    
+    static var rawIdentifier: String = {
+        // Credits to Dennis Weissmann for this snippet
+        // https://github.com/dennisweissmann
+        // Here his snippet : https://github.com/dennisweissmann/DeviceKit/blob/master/Source/Device.swift#L177-L185
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let machineMirror = Mirror(reflecting: systemInfo.machine)
+        let identifier = machineMirror.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8 , value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+        
+        return identifier
+    }()
 }

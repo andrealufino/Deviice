@@ -8,6 +8,16 @@
 import Foundation
 
 
+public enum ScreenSize {
+    
+    case xs
+    case s
+    case m
+    case l
+    case xl
+}
+
+
 public enum Size: String, Comparable {
     
     case unknown                = "Unknown"
