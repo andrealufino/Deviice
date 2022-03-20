@@ -166,7 +166,7 @@ public struct Group {
         ]
     }()
     
-    static var wiFiDevices: [Identifier] = {
+    static var wiFiOnlyDevices: [Identifier] = {
         return [
             // MARK: iPods
             .iPod1_1, .iPod2_1, .iPod3_1, .iPod4_1,

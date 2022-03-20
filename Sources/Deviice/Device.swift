@@ -52,8 +52,8 @@ public extension Device {
         return UIScreen.main.scale > 1.0
     }
     
-    static var isOnlyWiFi: Bool {
-        return Group.wiFiDevices.contains(Identifier.current)
+    static var isWiFiOnly: Bool {
+        return Group.wiFiOnlyDevices.contains(Identifier.current)
     }
     
     static var isCellular: Bool {
@@ -82,7 +82,7 @@ public extension Device {
         let current = Identifier.current
         
         switch current {
-        case _ where Group.wiFiDevices.contains(current):
+        case _ where Group.wiFiOnlyDevices.contains(current):
             return .wiFi
         case _ where Group.cellularDevices.contains(current):
             return .cellular
