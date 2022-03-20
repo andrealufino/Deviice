@@ -140,6 +140,7 @@ public extension Device {
         case .iPhone14_3:                                   return .iPhone13ProMax
         case .iPhone14_4:                                   return .iPhone13Mini
         case .iPhone14_5:                                   return .iPhone13
+        case .iPhone14_6:                                   return .iPhoneSE3
         // MARK: iPads
         case .iPad2_1, .iPad2_2, .iPad2_3, .iPad2_4:        return .iPad2
         case .iPad3_1, .iPad3_2, .iPad3_3:                  return .iPad3
@@ -153,7 +154,7 @@ public extension Device {
         case .iPad11_6, .iPad11_7:                          return .iPad8
         case .iPad12_1, .iPad12_2:                          return .iPad9
         case .iPad13_1, .iPad13_2:                          return .iPadAir4
-        case .iPad13_6, .iPad13_7:                          return .iPadAir5
+        case .iPad13_16, .iPad13_17:                        return .iPadAir5
         // MARK: iPad minis
         case .iPad2_5, .iPad2_6, .iPad2_7:                  return .iPadMini
         case .iPad4_4, .iPad4_5, .iPad4_6:                  return .iPadMini2

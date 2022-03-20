@@ -54,6 +54,7 @@ public enum Model: String {
     case iPhone13           = "iPhone 13"
     case iPhone13Pro        = "iPhone 13 Pro"
     case iPhone13ProMax     = "iPhone 13 Pro Max"
+    case iPhoneSE3          = "iPhone SE (3rd generation)"
     
     // MARK: iPad
     case iPad2              = "iPad 2"
@@ -63,6 +64,7 @@ public enum Model: String {
     case iPadAir2           = "iPad Air 2"
     case iPadAir3           = "iPad Air 3"
     case iPadAir4           = "iPad Air 4"
+    case iPadAir5           = "iPad Air 5"
     case iPad5              = "iPad 5"
     case iPad6              = "iPad 6"
     case iPad7              = "iPad 7"

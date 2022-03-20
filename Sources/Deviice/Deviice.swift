@@ -152,6 +152,7 @@ public enum DeviiceConnectivity: String {
 // MARK: - Deviice
 
 /// This structure represents a device.
+@available(*, deprecated, message: "Use Device class instead.")
 public struct Deviice {
     
     // MARK: Vars

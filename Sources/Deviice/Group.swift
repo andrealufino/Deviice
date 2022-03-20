@@ -79,7 +79,8 @@ public struct Group {
             .iPhone14_2,
             .iPhone14_3,
             .iPhone14_4,
-            .iPhone14_5
+            .iPhone14_5,
+            .iPhone14_6
         ]
     }()
     
@@ -115,6 +116,8 @@ public struct Group {
             .iPad12_2,
             .iPad13_1,
             .iPad13_2,
+            .iPad13_16,
+            .iPad13_17,
             // MARK: iPad mini
             .iPad2_5,
             .iPad2_6,
@@ -172,6 +175,7 @@ public struct Group {
             .iPad2_1, .iPad3_1, .iPad3_4, .iPad4_1,
             .iPad5_3, .iPad6_11, .iPad7_5, .iPad7_11,
             .iPad11_3, .iPad11_6, .iPad13_1, .iPad12_1,
+            .iPad13_16,
             // MARK: iPad Pros
             .iPad6_3, .iPad6_7, .iPad7_1, .iPad7_3,
             .iPad8_1, .iPad8_2, .iPad8_5, .iPad8_6,
@@ -234,6 +238,7 @@ public struct Group {
             .iPhone14_3,
             .iPhone14_4,
             .iPhone14_5,
+            .iPhone14_6,
             // MARK: iPads
             .iPad2_2,
             .iPad2_3,
@@ -252,6 +257,7 @@ public struct Group {
             .iPad11_7,
             .iPad13_2,
             .iPad12_2,
+            .iPad13_17,
             // MARK: iPad Pros
             .iPad6_4,
             .iPad6_8,
