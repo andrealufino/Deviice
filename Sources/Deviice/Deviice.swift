@@ -564,13 +564,13 @@ public struct Deviice {
             self.connectivity = .wiFi4G
             self.year = 2021
             
-        case "iPad13,6":
+        case "iPad13,16":
             self.type = .iPadAir5
             self.size = .screen10Dot2Inches
             self.connectivity = .wiFi
             self.year = 2022
             
-        case "iPad13,7":
+        case "iPad13,17":
             self.type = .iPadAir5
             self.size = .screen10Dot2Inches
             self.connectivity = .wiFi5G
