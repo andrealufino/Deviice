@@ -153,6 +153,7 @@ public extension Device {
         case .iPad11_6, .iPad11_7:                          return .iPad8
         case .iPad12_1, .iPad12_2:                          return .iPad9
         case .iPad13_1, .iPad13_2:                          return .iPadAir4
+        case .iPad13_6, .iPad13_7:                          return .iPadAir5
         // MARK: iPad minis
         case .iPad2_5, .iPad2_6, .iPad2_7:                  return .iPadMini
         case .iPad4_4, .iPad4_5, .iPad4_6:                  return .iPadMini2
