@@ -10,6 +10,9 @@ import CoreVideo
 import UIKit
 
 
+// MARK: - Device
+
+/// This class represents the current device.
 public struct Device {
     
     private static var rawIdentifier: String = {
@@ -218,8 +221,8 @@ public extension Device {
         case .iPad7, .iPad8, .iPad9:                                    return .screen10Dot2Inch
         // MARK: 7.9
         case .iPadMini, .iPadMini2, .iPadMini3, .iPadMini4, .iPadMini5: return .screen7Dot9Inch
-        // MARK: 5.8
-        case .iPadMini6:                                                return .screen5Dot8Inch
+        // MARK: 8.3
+        case .iPadMini6:                                                return .screen8Dot3Inch
         // MARK: 11
         case .iPadPro11_1, .iPadPro11_2, .iPadPro11_3:                  return .screen11Inch
         // MARK: 12.9
