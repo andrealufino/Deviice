@@ -12,8 +12,6 @@ import UIKit
 
 public struct Device {
     
-    var screenSize: ScreenSize
-    
     private static var rawIdentifier: String = {
         // Credits to Dennis Weissmann for this snippet
         // https://github.com/dennisweissmann
@@ -163,16 +161,72 @@ public extension Device {
         case .iPad11_1, .iPad11_2:                          return .iPadMini5
         case .iPad14_1, .iPad14_2:                          return .iPadMini6
         // MARK: iPad Pros
-        case .iPad6_3, .iPad6_4, .iPad6_7, .iPad6_8:        return .iPadPro
-        case .iPad7_1, .iPad7_2, .iPad7_3, .iPad7_4:        return .iPadPro2
-        case .iPad8_1, .iPad8_2, .iPad8_3, .iPad8_4,
-             .iPad8_5, .iPad8_6, .iPad8_7, .iPad8_8:        return .iPadPro3
-        case .iPad8_9, .iPad8_10, .iPad8_11, .iPad8_12:     return .iPadPro4
-        case .iPad13_4, .iPad13_5, .iPad13_6, .iPad13_7,
-             .iPad13_8, .iPad13_9, .iPad13_10, .iPad13_11:  return .iPadPro5
+        case .iPad6_3, .iPad6_4:                            return .iPadPro
+        case .iPad6_7, .iPad6_8:                            return .iPadPro12_9_1
+        case .iPad7_1, .iPad7_2:                            return .iPadPro12_9_2
+        case .iPad7_3, .iPad7_4:                            return .iPadPro2
+        case .iPad8_1, .iPad8_2, .iPad8_3, .iPad8_4:        return .iPadPro11_1
+        case .iPad8_5, .iPad8_6, .iPad8_7, .iPad8_8:        return .iPadPro12_9_3
+        case .iPad8_9, .iPad8_10:                           return .iPadPro11_2
+        case .iPad8_11, .iPad8_12:                          return .iPadPro12_9_4
+        case .iPad13_4, .iPad13_5, .iPad13_6, .iPad13_7:    return .iPadPro11_3
+        case .iPad13_8, .iPad13_9, .iPad13_10, .iPad13_11:  return .iPadPro12_9_5
         // MARK: Simulators
         case .i386, .x86_64, .arm64:                        return .simulator
         default:                                            return .unknown
         }
     }()
+}
+
+
+public extension Device {
+    
+    static var screenSize: ScreenSize {
+        switch model {
+            
+        case .unknown:                                                  return .unknown
+        // MARK: 3.5
+        case .iPodTouch1, .iPodTouch2, .iPodTouch3, .iPodTouch4,
+                .iPhone2G, .iPhone3G, .iPhone3GS:                       return .screen3Dot5Inch
+        // MARK: 4
+        case .iPodTouch5, .iPodTouch6, .iPodTouch7, .iPhone4,
+                .iPhone4S, .iPhone5, .iPhone5C, .iPhone5S:              return .screen4Inch
+        // MARK: 4.7
+        case .iPhone6, .iPhone6S, .iPhoneSE, .iPhone7, .iPhone8,
+                .iPhoneSE2, .iPhoneSE3:                                 return .screen4Dot7Inch
+        // MARK: 5.5
+        case .iPhone6Plus, .iPhone6sPlus, .iPhone7Plus, .iPhone8Plus:   return .screen5Dot5Inch
+        // MARK: 5.8
+        case .iPhoneX, .iPhoneXS, .iPhone11Pro:                         return .screen5Dot8Inch
+        // MARK: 6.5
+        case .iPhoneXsMax, .iPhone11ProMax:                             return .screen6Dot5Inch
+        // MARK: 6.1
+        case .iPhoneXr, .iPhone11, .iPhone12, .iPhone13, .iPhone12Pro,
+                .iPhone13Pro:                                           return .screen6Dot1Inch
+        // MARK: 5.4
+        case .iPhone12Mini, .iPhone13Mini:                              return .screen5Dot4Inch
+        // MARK: 6.7
+        case .iPhone12ProMax, .iPhone13ProMax:                          return .screen6Dot7Inch
+        // MARK: 9.7
+        case .iPad2, .iPad3, .iPad4, .iPad5, .iPad6, .iPadAir,
+                .iPadAir2, .iPadPro:                                    return .screen9Dot7Inch
+        // MARK: 10.5
+        case .iPadAir3, .iPadPro2:                                      return .screen10Dot5Inch
+        // MARK: 10.9
+        case .iPadAir4, .iPadAir5:                                      return .screen10Dot9Inch
+        // MARK: 10.2
+        case .iPad7, .iPad8, .iPad9:                                    return .screen10Dot2Inch
+        // MARK: 7.9
+        case .iPadMini, .iPadMini2, .iPadMini3, .iPadMini4, .iPadMini5: return .screen7Dot9Inch
+        // MARK: 5.8
+        case .iPadMini6:                                                return .screen5Dot8Inch
+        // MARK: 11
+        case .iPadPro11_1, .iPadPro11_2, .iPadPro11_3:                  return .screen11Inch
+        // MARK: 12.9
+        case .iPadPro12_9_1, .iPadPro12_9_2, .iPadPro12_9_3,
+                .iPadPro12_9_4, .iPadPro12_9_5:                         return .screen12Dot9Inch
+        // MARK: Simulator
+        case .simulator:                                                return .unknown
+        }
+    }
 }

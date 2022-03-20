@@ -78,9 +78,14 @@ public enum Model: String {
     case iPadMini6          = "iPad mini 6"
     case iPadPro            = "iPad Pro"
     case iPadPro2           = "iPad Pro (2nd generation)"
-    case iPadPro3           = "iPad Pro (3rd generation)"
-    case iPadPro4           = "iPad Pro (4th generation)"
-    case iPadPro5           = "iPad Pro (5th generation)"
+    case iPadPro11_1        = "iPad Pro 11'"
+    case iPadPro11_2        = "iPad Pro 11' (2nd generation)"
+    case iPadPro11_3        = "iPad Pro 11' (3rd generation)"
+    case iPadPro12_9_1      = "iPad Pro 12.9"
+    case iPadPro12_9_2      = "iPad Pro 12.9 (2nd generation)"
+    case iPadPro12_9_3      = "iPad Pro 12.9 (3rd generation)"
+    case iPadPro12_9_4      = "iPad Pro 12.9 (4th generation)"
+    case iPadPro12_9_5      = "iPad Pro 12.9 (5th generation)"
     
     // MARK: Simulator
     case simulator          = "Simulator"
