@@ -51,11 +51,11 @@ public extension Device {
     }
     
     static var isWiFiOnly: Bool {
-        return Group.wiFiOnlyDevices.contains(Identifier.current)
+        return Groups.wiFiOnlyDevices.contains(Identifier.current)
     }
     
     static var isCellular: Bool {
-        return Group.cellularDevices.contains(Identifier.current)
+        return Groups.cellularDevices.contains(Identifier.current)
     }
 }
 
@@ -80,9 +80,9 @@ public extension Device {
         let current = Identifier.current
         
         switch current {
-        case _ where Group.wiFiOnlyDevices.contains(current):
+        case _ where Groups.wiFiOnlyDevices.contains(current):
             return .wiFi
-        case _ where Group.cellularDevices.contains(current):
+        case _ where Groups.cellularDevices.contains(current):
             return .cellular
         default:
             return .unknown
@@ -173,7 +173,7 @@ public extension Device {
         case .iPad13_8, .iPad13_9, .iPad13_10, .iPad13_11:  return .iPadPro12_9_5
         // MARK: Simulators
         case .i386, .x86_64, .arm64:                        return .simulator
-        default:                                            return .unknown
+        case .unknown:                                      return .unknown
         }
     }()
 }

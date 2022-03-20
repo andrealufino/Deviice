@@ -8,7 +8,7 @@
 import Foundation
 
 
-public struct Group {
+public struct Groups {
     
     static var all: [Identifier] = {
         return Identifier.allCases
