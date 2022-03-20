@@ -12,7 +12,7 @@ import UIKit
 
 public struct Device {
     
-    var screenSize: Size
+    var screenSize: ScreenSize
     
     private static var rawIdentifier: String = {
         // Credits to Dennis Weissmann for this snippet

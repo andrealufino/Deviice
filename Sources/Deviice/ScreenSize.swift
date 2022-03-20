@@ -1,5 +1,5 @@
 //
-//  Size.swift
+//  ScreenSize.swift
 //  Deviice
 //
 //  Created by Andrea Mario Lufino on 05/11/21.
@@ -8,17 +8,7 @@
 import Foundation
 
 
-public enum ScreenSize {
-    
-    case xs
-    case s
-    case m
-    case l
-    case xl
-}
-
-
-public enum Size: String, Comparable {
+public enum ScreenSize: String, Comparable {
     
     case unknown                = "Unknown"
     case screen4Inch            = "4 inch"
@@ -64,11 +54,11 @@ public enum Size: String, Comparable {
     
     // MARK: Comparable
     
-    public static func < (lhs: Size, rhs: Size) -> Bool {
+    public static func < (lhs: ScreenSize, rhs: ScreenSize) -> Bool {
         return lhs.value < rhs.value
     }
     
-    public static func ==(lhs: Size, rhs: Size) -> Bool {
+    public static func ==(lhs: ScreenSize, rhs: ScreenSize) -> Bool {
         return lhs.value == rhs.value
     }
 }

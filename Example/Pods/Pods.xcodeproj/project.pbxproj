@@ -18,7 +18,7 @@
 		5CEBF09270989E38EEFEDF56970393FE /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F53FA4E6AC21ADAB5A965028B909800 /* Device.swift */; };
 		62025A7BB27C5370AC98E83999F7CCEA /* Pods-Deviice_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 322A12D74A2E790ACF2F9A14EAA2BB57 /* Pods-Deviice_Example-dummy.m */; };
 		816F6AFF73D83E53BD6B43FE14D6D5B5 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076E96C47FBBE2873AB55F8F5C92A97C /* Family.swift */; };
-		8D9D61D3FE691888A2BC09FF4ADFD593 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438CC7A4071E59ADA21FFFA1276B2AF /* Size.swift */; };
+		8D9D61D3FE691888A2BC09FF4ADFD593 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5438CC7A4071E59ADA21FFFA1276B2AF /* ScreenSize.swift */; };
 		A1CA91BF115DACF428546D16B9365E86 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B3CB9EB021CA2D6D83EBD421AD6DD2 /* Identifier.swift */; };
 		AE3FF3D5D486C7C8441E62F60CC07DBE /* Pods-Deviice_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 290D9B588ACDE676F4843A81F70EA834 /* Pods-Deviice_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBE7862661D7B56C6BEBA191A6DE8A3D /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F534328C6B8B42D1B7786BADF5717C /* Connectivity.swift */; };
@@ -60,7 +60,7 @@
 		322A12D74A2E790ACF2F9A14EAA2BB57 /* Pods-Deviice_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Deviice_Example-dummy.m"; sourceTree = "<group>"; };
 		4388B3CFC886F4BDB3063634F453FBAC /* Deviice-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Deviice-umbrella.h"; sourceTree = "<group>"; };
 		4B7F7F2046B47B8717BFCA95F6CA780B /* Deviice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Deviice.debug.xcconfig; sourceTree = "<group>"; };
-		5438CC7A4071E59ADA21FFFA1276B2AF /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Sources/Deviice/Size.swift; sourceTree = "<group>"; };
+		5438CC7A4071E59ADA21FFFA1276B2AF /* ScreenSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenSize.swift; path = Sources/Deviice/ScreenSize.swift; sourceTree = "<group>"; };
 		54C41E16C5B7D1AA7F519A3ED6B12C5B /* Deviice-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Deviice-prefix.pch"; sourceTree = "<group>"; };
 		566CEBA31FC50377042971AF0E8A4792 /* Pods-Deviice_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Deviice_Tests-Info.plist"; sourceTree = "<group>"; };
 		5F53FA4E6AC21ADAB5A965028B909800 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Sources/Deviice/Device.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 				1EDB9833769516ABACE9A40674948FC3 /* Group.swift */,
 				30B3CB9EB021CA2D6D83EBD421AD6DD2 /* Identifier.swift */,
 				E61780B1175E4389F126B2C642C3EEFE /* Model.swift */,
-				5438CC7A4071E59ADA21FFFA1276B2AF /* Size.swift */,
+				5438CC7A4071E59ADA21FFFA1276B2AF /* ScreenSize.swift */,
 				5EE5C562676A09B50D53913435115579 /* Pod */,
 				BD50CAE2D0C5641A459B1739B36E396E /* Support Files */,
 			);
@@ -398,7 +398,7 @@
 				D5D922CC37FCDDA743969E9FD22F279E /* Group.swift in Sources */,
 				A1CA91BF115DACF428546D16B9365E86 /* Identifier.swift in Sources */,
 				4AEA4CF36E5F178B21847D9382F978AE /* Model.swift in Sources */,
-				8D9D61D3FE691888A2BC09FF4ADFD593 /* Size.swift in Sources */,
+				8D9D61D3FE691888A2BC09FF4ADFD593 /* ScreenSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
