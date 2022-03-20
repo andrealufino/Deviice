@@ -64,6 +64,7 @@ internal enum Identifier: String, CaseIterable {
     case iPhone14_3         = "iPhone14,3"
     case iPhone14_4         = "iPhone14,4"
     case iPhone14_5         = "iPhone14,5"
+    case iPhone14_6         = "iPhone14,6"
     
     // MARK: iPad
     case iPad2_1            = "iPad2,1"
@@ -95,8 +96,8 @@ internal enum Identifier: String, CaseIterable {
     case iPad12_2           = "iPad12,2"
     case iPad13_1           = "iPad13,1"
     case iPad13_2           = "iPad13,2"
-    case iPad13_16          = "iPad13,6"
-    case iPad13_17          = "iPad13,7"
+    case iPad13_16          = "iPad13,16"
+    case iPad13_17          = "iPad13,17"
     
     // MARK: iPad Mini
     case iPad2_5            = "iPad2,5"
