@@ -8,7 +8,7 @@
 import Foundation
 
 
-public enum ScreenSize: String, Comparable {
+public enum ScreenSize: String {
     
     case unknown                = "Unknown"
     case screen3Dot5Inch        = "3,5 inch"
@@ -54,9 +54,12 @@ public enum ScreenSize: String, Comparable {
         default:                        return 0
         }
     }
-    
-    
-    // MARK: Comparable
+}
+
+
+// MARK: - Comparable
+
+extension ScreenSize: Comparable {
     
     public static func < (lhs: ScreenSize, rhs: ScreenSize) -> Bool {
         return lhs.value < rhs.value

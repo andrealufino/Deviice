@@ -8,7 +8,7 @@
 import Foundation
 
 
-public enum Model: String {
+public enum Model: String, CaseIterable {
     case unknown            = "Unknown"
     
     // MARK: iPod
