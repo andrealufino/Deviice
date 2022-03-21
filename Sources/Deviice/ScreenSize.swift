@@ -8,6 +8,8 @@
 import Foundation
 
 
+// MARK: - Screen Size
+
 public enum ScreenSize: String {
     
     case unknown                = "Unknown"

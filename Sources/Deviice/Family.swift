@@ -8,6 +8,8 @@
 import Foundation
 
 
+// MARK: - Family
+
 public enum Family: String {
     case iPodTouch
     case iPhone

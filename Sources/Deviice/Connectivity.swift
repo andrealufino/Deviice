@@ -8,11 +8,16 @@
 import Foundation
 
 
+// MARK: - Connectivity
+
 public enum Connectivity: String {
     case unknown
     case wiFi
     case cellular
 }
+
+
+// MARK: - Connectivity Details
 
 public enum ConnectivityDetails: String {
     case unknown        = "Unknown"

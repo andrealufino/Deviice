@@ -8,6 +8,8 @@
 import Foundation
 
 
+// MARK: - Model
+
 public enum Model: String, CaseIterable {
     case unknown            = "Unknown"
     
