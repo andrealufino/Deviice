@@ -12,6 +12,6 @@ public enum Family: String {
     case iPodTouch
     case iPhone
     case iPad
-    case simulator
-    case unknown
+    case simulator  = "Simulator"
+    case unknown    = "Unknown"
 }
