@@ -8,7 +8,7 @@
 import Foundation
 
 
-internal enum Identifier: String, CaseIterable {
+public enum Identifier: String, CaseIterable {
     
     // MARK: iPod
     case iPod1_1            = "iPod1,1"

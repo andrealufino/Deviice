@@ -15,20 +15,15 @@ import UIKit
 /// This class represents the current device.
 public struct Device {
     
-    private static var rawIdentifier: String = {
-        // Credits to Dennis Weissmann for this snippet
-        // https://github.com/dennisweissmann
-        // Here his snippet : https://github.com/dennisweissmann/DeviceKit/blob/master/Source/Device.swift#L177-L185
-        var systemInfo = utsname()
-        uname(&systemInfo)
-        let machineMirror = Mirror(reflecting: systemInfo.machine)
-        let identifier = machineMirror.children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8 , value != 0 else { return identifier }
-            return identifier + String(UnicodeScalar(UInt8(value)))
-        }
-        
-        return identifier
-    }()
+    let identifier: Identifier
+    
+    public init() {
+        identifier = Identifier.current
+    }
+    
+    public init(withIdentifier identifier: Identifier) {
+        self.identifier = identifier
+    }
 }
 
 public extension Device {
@@ -99,6 +94,7 @@ public extension Device {
         let current = Identifier.current
         
         switch current {
+            
         // MARK: iPods
         case .iPod1_1:                                      return .iPodTouch1
         case .iPod2_1:                                      return .iPodTouch2
@@ -107,6 +103,7 @@ public extension Device {
         case .iPod5_1:                                      return .iPodTouch5
         case .iPod7_1:                                      return .iPodTouch6
         case .iPod9_1:                                      return .iPodTouch7
+            
         // MARK: iPhones
         case .iPhone1_1:                                    return .iPhone2G
         case .iPhone1_2:                                    return .iPhone3G
@@ -142,6 +139,7 @@ public extension Device {
         case .iPhone14_4:                                   return .iPhone13Mini
         case .iPhone14_5:                                   return .iPhone13
         case .iPhone14_6:                                   return .iPhoneSE3
+            
         // MARK: iPads
         case .iPad2_1, .iPad2_2, .iPad2_3, .iPad2_4:        return .iPad2
         case .iPad3_1, .iPad3_2, .iPad3_3:                  return .iPad3
@@ -156,6 +154,7 @@ public extension Device {
         case .iPad12_1, .iPad12_2:                          return .iPad9
         case .iPad13_1, .iPad13_2:                          return .iPadAir4
         case .iPad13_16, .iPad13_17:                        return .iPadAir5
+            
         // MARK: iPad minis
         case .iPad2_5, .iPad2_6, .iPad2_7:                  return .iPadMini
         case .iPad4_4, .iPad4_5, .iPad4_6:                  return .iPadMini2
@@ -163,19 +162,23 @@ public extension Device {
         case .iPad5_1, .iPad5_2:                            return .iPadMini4
         case .iPad11_1, .iPad11_2:                          return .iPadMini5
         case .iPad14_1, .iPad14_2:                          return .iPadMini6
+            
         // MARK: iPad Pros
         case .iPad6_3, .iPad6_4:                            return .iPadPro
-        case .iPad6_7, .iPad6_8:                            return .iPadPro12_9_1
-        case .iPad7_1, .iPad7_2:                            return .iPadPro12_9_2
+        case .iPad6_7, .iPad6_8:                            return .iPadPro12Inch1
+        case .iPad7_1, .iPad7_2:                            return .iPadPro12Inch2
         case .iPad7_3, .iPad7_4:                            return .iPadPro2
-        case .iPad8_1, .iPad8_2, .iPad8_3, .iPad8_4:        return .iPadPro11_1
-        case .iPad8_5, .iPad8_6, .iPad8_7, .iPad8_8:        return .iPadPro12_9_3
-        case .iPad8_9, .iPad8_10:                           return .iPadPro11_2
-        case .iPad8_11, .iPad8_12:                          return .iPadPro12_9_4
-        case .iPad13_4, .iPad13_5, .iPad13_6, .iPad13_7:    return .iPadPro11_3
-        case .iPad13_8, .iPad13_9, .iPad13_10, .iPad13_11:  return .iPadPro12_9_5
+        case .iPad8_1, .iPad8_2, .iPad8_3, .iPad8_4:        return .iPadPro11Inch1
+        case .iPad8_5, .iPad8_6, .iPad8_7, .iPad8_8:        return .iPadPro12Inch3
+        case .iPad8_9, .iPad8_10:                           return .iPadPro11Inch2
+        case .iPad8_11, .iPad8_12:                          return .iPadPro12Inch4
+        case .iPad13_4, .iPad13_5, .iPad13_6, .iPad13_7:    return .iPadPro11Inch3
+        case .iPad13_8, .iPad13_9, .iPad13_10, .iPad13_11:  return .iPadPro12Inch5
+            
         // MARK: Simulators
         case .i386, .x86_64, .arm64:                        return .simulator
+            
+        // MARK: Unknown
         case .unknown:                                      return .unknown
         }
     }()
@@ -224,10 +227,10 @@ public extension Device {
         // MARK: 8.3
         case .iPadMini6:                                                return .screen8Dot3Inch
         // MARK: 11
-        case .iPadPro11_1, .iPadPro11_2, .iPadPro11_3:                  return .screen11Inch
+        case .iPadPro11Inch1, .iPadPro11Inch2, .iPadPro11Inch3:         return .screen11Inch
         // MARK: 12.9
-        case .iPadPro12_9_1, .iPadPro12_9_2, .iPadPro12_9_3,
-                .iPadPro12_9_4, .iPadPro12_9_5:                         return .screen12Dot9Inch
+        case .iPadPro12Inch1, .iPadPro12Inch2, .iPadPro12Inch3,
+                .iPadPro12Inch4, .iPadPro12Inch5:                       return .screen12Dot9Inch
         // MARK: Simulator
         case .simulator:                                                return .unknown
         }
