@@ -7,7 +7,11 @@
 
 import Foundation
 import CoreVideo
+#if os(watchOS)
+import WatchKit
+#else
 import UIKit
+#endif
 
 
 // MARK: - Device
@@ -59,11 +63,39 @@ public extension Device {
     }
     
     var actualModel: Model {
+        
         switch model {
         case .simulator(let model):
             return model
         default:
             return model
         }
+    }
+    
+    var name: String {
+        
+        #if os(watchOS)
+        return WKInterfaceDevice.current().name
+        #else
+        return UIDevice.current.name
+        #endif
+    }
+    
+    public var osName: String {
+        
+      #if os(watchOS)
+      return WKInterfaceDevice.current().systemName
+      #else
+      return UIDevice.current.systemName
+      #endif
+    }
+    
+    public var osVersion: String? {
+      
+      #if os(watchOS)
+      return WKInterfaceDevice.current().systemVersion
+      #else
+      return UIDevice.current.systemVersion
+      #endif
     }
 }
