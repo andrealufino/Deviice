@@ -15,11 +15,11 @@ import UIKit
 /// This class represents the current device.
 public class Device {
     
-    let identifier: Identifier
-    private(set) var family: Family
-    private(set) var connectivity: Connectivity
-    private(set) var model: Model
-    private(set) var screenSize: ScreenSize
+    public let identifier: Identifier
+    public private(set) var family: Family
+//    private(set) var connectivity: Connectivity
+    public private(set) var model: Model
+    public private(set) var screenSize: ScreenSize
     
     public init(identifier: Identifier? = nil) {
         
@@ -27,7 +27,6 @@ public class Device {
         
         let id = self.identifier
         
-        connectivity = Mapper.connectivity(from: id)
         family = Mapper.family(from: id)
         model = Mapper.model(from: id)
         screenSize = Mapper.screenSize(from: model)
@@ -57,5 +56,14 @@ public extension Device {
     
     var isRetina: Bool {
         return UIScreen.main.scale > 1.0
+    }
+    
+    var actualModel: Model {
+        switch model {
+        case .simulator(let model):
+            return model
+        default:
+            return model
+        }
     }
 }

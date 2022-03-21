@@ -10,24 +10,12 @@ import Foundation
 
 public struct Groups {
     
-    static var all: [Model] {
-        return Model.allCases
-    }
-    
-    static var simulators: [Model] = {
-        return [
-            .simulator
-        ]
-    }()
-    
     static var iPods: [Model] {
         return [
             .iPodTouch1, .iPodTouch2, .iPodTouch3, .iPodTouch4,
             .iPodTouch5, .iPodTouch6, .iPodTouch7
         ]
     }
-    
-    
     
     static var iPhones: [Model] {
         return [

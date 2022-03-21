@@ -99,7 +99,9 @@ public struct Mapper {
         case .iPad13_8, .iPad13_9, .iPad13_10, .iPad13_11:  return .iPadPro12Inch5
             
         // MARK: Simulators
-        case .i386, .x86_64, .arm64:                        return .simulator
+        case .i386, .x86_64, .arm64:
+            let id = Identifier.init(rawValue: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "iOS")!
+            return .simulator(Mapper.model(from: id))
             
         // MARK: Unknown
         case .unknown:                                      return .unknown
@@ -119,6 +121,11 @@ public struct Mapper {
             return .iPhone
         case _ where rawId.contains("ipad"):
             return .iPad
+        case _ where (
+            rawId.contains("arm64") ||
+            rawId.contains("i386") ||
+            rawId.contains("x86_64")):
+            return .simulator
         default:
             return .unknown
         }
@@ -173,22 +180,6 @@ public struct Mapper {
                 .iPadPro12Inch4, .iPadPro12Inch5:                       return .screen12Dot9Inch
         // MARK: Simulator
         case .simulator:                                                return .unknown
-        }
-    }
-    
-    // MARK: Connectivity
-    
-    static func connectivity(from identifier: Identifier) -> Connectivity {
-        
-        let id = identifier
-        
-        switch id {
-        case _ where Groups.wiFiOnlyDevices.contains(id):
-            return .wiFi
-        case _ where Groups.cellularDevices.contains(id):
-            return .cellular
-        default:
-            return .unknown
         }
     }
 }
