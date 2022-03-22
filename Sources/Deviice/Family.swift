@@ -10,6 +10,7 @@ import Foundation
 
 // MARK: - Family
 
+/// This is the family of the device.
 public enum Family: String {
     case iPodTouch
     case iPhone

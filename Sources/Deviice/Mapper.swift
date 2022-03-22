@@ -10,11 +10,14 @@ import Foundation
 
 // MARK: - Mapper
 
+/// This structure allows to get specific information based on the passed parameter.
+/// The idea is to offer something that can easily relate a `model` to some of its specific
+/// properties.
 public struct Mapper {
     
     // MARK: Model
     
-    static func model(from identifier: Identifier) -> Model {
+    public static func model(from identifier: Identifier) -> Model {
         
         switch identifier {
             
@@ -110,7 +113,7 @@ public struct Mapper {
     
     // MARK: Family
     
-    static func family(from identifier: Identifier) -> Family {
+    public static func family(from identifier: Identifier) -> Family {
         
         let rawId = identifier.rawValue.lowercased()
         
@@ -133,7 +136,7 @@ public struct Mapper {
     
     // MARK: Screen Size
     
-    static func screenSize(from model: Model) -> ScreenSize {
+    public static func screenSize(from model: Model) -> ScreenSize {
         
         switch model {
             

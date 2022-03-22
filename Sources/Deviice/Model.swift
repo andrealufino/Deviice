@@ -10,6 +10,7 @@ import Foundation
 
 // MARK: - Model
 
+/// This is the model of the device.
 public enum Model {
     
     case unknown
@@ -99,6 +100,7 @@ public enum Model {
 
 public extension Model {
     
+    /// This is the marketing name of the device, such as "iPhone 12 Pro".
     var marketingName: String {
         switch self {
         case .unknown:                          return "Unknown"
@@ -181,12 +183,5 @@ public extension Model {
             
         case .simulator:                        return "Simulator"
         }
-    }
-}
-
-class Test {
-    
-    func aaa() {
-        
     }
 }

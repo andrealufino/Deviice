@@ -10,6 +10,7 @@ import Foundation
 
 // MARK: - Screen Size
 
+/// This is the screen size of the device.
 public enum ScreenSize: String {
     
     case unknown                = "Unknown"
@@ -32,7 +33,6 @@ public enum ScreenSize: String {
     case screen12Dot9Inch       = "12,9 inch"
     
     /// This is the value as `Double` of the screen size.
-    /// Could be useful to make comparison.
     var value: Double {
         switch self {
         case .screen3Dot5Inch:          return 3.5

@@ -1,5 +1,5 @@
 //
-//  Group.swift
+//  Groups.swift
 //  Deviice
 //
 //  Created by Andrea Mario Lufino on 07/11/21.
@@ -8,8 +8,12 @@
 import Foundation
 
 
+// MARK: - Groups
+
+/// This structure is intended to offer groups of devices as static vars.
 public struct Groups {
     
+    /// All the iPods.
     static var iPods: [Model] {
         return [
             .iPodTouch1, .iPodTouch2, .iPodTouch3, .iPodTouch4,
@@ -17,6 +21,7 @@ public struct Groups {
         ]
     }
     
+    /// All the iPhones.
     static var iPhones: [Model] {
         return [
             .iPhone2G,
@@ -56,6 +61,7 @@ public struct Groups {
         ]
     }
     
+    /// All the iPads.
     static var iPads: [Model] {
         return [
             // iPad
@@ -75,6 +81,7 @@ public struct Groups {
         ]
     }
     
+    /// All the plus sized devices.
     static var plusDevices: [Model] {
         return [
             .iPhone6Plus, .iPhone6sPlus, .iPhone7Plus, .iPhone8Plus,
@@ -82,6 +89,7 @@ public struct Groups {
         ]
     }
     
+    /// All the pro devices.
     static var proDevices: [Model] {
         return [
             // iPhone
@@ -97,6 +105,7 @@ public struct Groups {
         ]
     }
     
+    /// All the mini devices.
     static var miniDevices: [Model] {
         return [
             // iPhone

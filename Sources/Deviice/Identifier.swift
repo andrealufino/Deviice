@@ -10,6 +10,7 @@ import Foundation
 
 // MARK: - Identifier
 
+/// This enumeration represents an identifier.
 public enum Identifier: String, CaseIterable {
     
     // MARK: iPod
@@ -162,6 +163,7 @@ public enum Identifier: String, CaseIterable {
 
 extension Identifier {
     
+    /// This is the identifier of the current device.
     static var current: Identifier {
         return Identifier.init(rawValue: rawIdentifier) ?? .unknown
     }
@@ -172,6 +174,7 @@ extension Identifier {
 
 private extension Identifier {
     
+    /// This is the raw identifier, as `String`.
     static var rawIdentifier: String = {
         // Credits to Dennis Weissmann for this snippet
         // https://github.com/dennisweissmann
