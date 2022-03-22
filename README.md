@@ -7,7 +7,7 @@
 
 ## Version 2
 
-The library has been completely rewritten from scratch. This version still offers the `Deviice` structure, but it has been marked as deprecated. Now, the whole magic is done via the `Device` class. 
+The library has been completely rewritten from scratch. This version still offers the `Deviice` structure, but it has been marked as deprecated and will be removed in future versions. Now, the whole magic is done via the `Device` class. 
 
 ## Usage
 
