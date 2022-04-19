@@ -34,7 +34,7 @@ With the first release, there's no chance to get the type of connectivity of a s
 
 ## Requirements
  
-This library works on iOS 8 or higher.
+This library works on iOS 12 or higher.
 
 ## Installation
 
