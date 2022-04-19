@@ -30,7 +30,7 @@ print(device.model.marketingName)           // This will print "Simulator"
 print(device.actualModel.marketingName)     // This will print "iPhone 12 Pro" in case you're simulating an iPhone 12 Pro
 ```
 
-With the first release, there's no chance to get the type of connectivity of a specific device. This will probably added later. 
+With the first release, there's no chance to get the type of connectivity of a specific device. This will be probably added later. 
 
 ## Requirements
  
