@@ -82,22 +82,23 @@ public enum DeviiceType: String {
 // The device screen size.
 public enum DeviiceSize: String {
     case screenUnknown          = "Unknown"
+    case screen3Dot5Inches      = "3.5 inches"
     case screen4Inches          = "4 inches"
-    case screen4Dot7Inches      = "4,7 inches"
-    case screen5Dot4Inches      = "5,4 inches"
-    case screen5Dot5Inches      = "5,5 inches"
-    case screen5Dot8Inches      = "5,8 inches"
-    case screen6Dot1Inches      = "6,1 inches"
-    case screen6Dot5Inches      = "6,5 inches"
-    case screen6Dot7Inches      = "6,7 inches"
-    case screen7Dot9Inches      = "7,9 inches"
-    case screen8Dot3Inches      = "8,3 inches"
-    case screen9Dot7Inches      = "9,7 inches"
-    case screen10Dot2Inches     = "10,2 inches"
-    case screen10Dot5Inches     = "10,5 inches"
-    case screen10Dot9Inches     = "10,9 inches"
+    case screen4Dot7Inches      = "4.7 inches"
+    case screen5Dot4Inches      = "5.4 inches"
+    case screen5Dot5Inches      = "5.5 inches"
+    case screen5Dot8Inches      = "5.8 inches"
+    case screen6Dot1Inches      = "6.1 inches"
+    case screen6Dot5Inches      = "6.5 inches"
+    case screen6Dot7Inches      = "6.7 inches"
+    case screen7Dot9Inches      = "7.9 inches"
+    case screen8Dot3Inches      = "8.3 inches"
+    case screen9Dot7Inches      = "9.7 inches"
+    case screen10Dot2Inches     = "10.2 inches"
+    case screen10Dot5Inches     = "10.5 inches"
+    case screen10Dot9Inches     = "10.9 inches"
     case screen11Inches         = "11 inches"
-    case screen12Dot9Inches     = "12,9 inches"
+    case screen12Dot9Inches     = "12.9 inches"
     
     /// This is the value as `Double` of the screen size.
     /// Could be useful to make comparison.
@@ -105,6 +106,8 @@ public enum DeviiceSize: String {
         switch self {
         case .screenUnknown:
             return -1
+        case .screen3Dot5Inches:
+            return 3.5
         case .screen4Inches:
             return 4
         case .screen4Dot7Inches:
@@ -154,6 +157,7 @@ public enum DeviiceConnectivity: String {
 // MARK: - Deviice
 
 /// This structure represents a device.
+@available(*, deprecated, message: "Use Device class instead.")
 public struct Deviice {
     
     // MARK: Vars
@@ -190,25 +194,25 @@ public struct Deviice {
 
         case "iPod1,1":
             self.type = .iPodTouch1
-            self.size = .screen4Inches
+            self.size = .screen3Dot5Inches
             self.connectivity = .wiFi
             self.year = 2007
             
         case "iPod2,1":
             self.type = .iPodTouch2
-            self.size = .screen4Inches
+            self.size = .screen3Dot5Inches
             self.connectivity = .wiFi
             self.year = 2008
             
         case "iPod3,1":
             self.type = .iPodTouch3
-            self.size = .screen4Inches
+            self.size = .screen3Dot5Inches
             self.connectivity = .wiFi
             self.year = 2009
             
         case "iPod4,1":
             self.type = .iPodTouch4
-            self.size = .screen4Inches
+            self.size = .screen3Dot5Inches
             self.connectivity = .wiFi
             self.year = 2010
             
@@ -566,13 +570,13 @@ public struct Deviice {
             
         case "iPad13,16":
             self.type = .iPadAir5
-            self.size = .screen10Dot2Inches
+            self.size = .screen10Dot9Inches
             self.connectivity = .wiFi
             self.year = 2022
             
         case "iPad13,17":
             self.type = .iPadAir5
-            self.size = .screen10Dot2Inches
+            self.size = .screen10Dot9Inches
             self.connectivity = .wiFi5G
             self.year = 2022
 
