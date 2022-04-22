@@ -40,7 +40,7 @@ public enum Identifier: String, CaseIterable {
     case iPhone7_2          = "iPhone7,2"
     case iPhone8_1          = "iPhone8,1"
     case iPhone8_2          = "iPhone8,2"
-    case iPhone8_4          = "iPhone 8,4"
+    case iPhone8_4          = "iPhone8,4"
     case iPhone9_1          = "iPhone9,1"
     case iPhone9_2          = "iPhone9,2"
     case iPhone9_3          = "iPhone9,3"
