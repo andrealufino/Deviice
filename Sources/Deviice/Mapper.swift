@@ -182,7 +182,9 @@ public struct Mapper {
         case .iPadPro12Inch1, .iPadPro12Inch2, .iPadPro12Inch3,
                 .iPadPro12Inch4, .iPadPro12Inch5:                       return .screen12Dot9Inch
         // MARK: Simulator
-        case .simulator:                                                return .unknown
+        // Thanks to SubParDev (https://github.com/SubParDev) for this idea.
+        // See https://github.com/andrealufino/Deviice/issues/17 for details.
+        case .simulator(let actualModel):                               return screenSize(from: actualModel)
         }
     }
 }
