@@ -65,6 +65,10 @@ public struct Mapper {
         case .iPhone14_4:                                   return .iPhone13Mini
         case .iPhone14_5:                                   return .iPhone13
         case .iPhone14_6:                                   return .iPhoneSE3
+        case .iPhone14_7:                                   return .iPhone14
+        case .iPhone14_8:                                   return .iPhone14Plus
+        case .iPhone15_2:                                   return .iPhone14Pro
+        case .iPhone15_3:                                   return .iPhone14ProMax
             
         // MARK: iPads
         case .iPad2_1, .iPad2_2, .iPad2_3, .iPad2_4:        return .iPad2
@@ -140,51 +144,159 @@ public struct Mapper {
         
         switch model {
             
-        case .unknown:                                                  return .unknown
+        case
+                .unknown:
+            
+            return .unknown
         // MARK: 3.5
-        case .iPodTouch1, .iPodTouch2, .iPodTouch3, .iPodTouch4,
-                .iPhone2G, .iPhone3G, .iPhone3GS:                       return .screen3Dot5Inch
+        case
+                .iPodTouch1,
+                .iPodTouch2,
+                .iPodTouch3,
+                .iPodTouch4,
+                .iPhone2G,
+                .iPhone3G,
+                .iPhone3GS:
+            
+            return .screen3Dot5Inch
         // MARK: 4
-        case .iPodTouch5, .iPodTouch6, .iPodTouch7, .iPhone4,
-                .iPhone4S, .iPhone5, .iPhone5C, .iPhone5S:              return .screen4Inch
+        case
+                .iPodTouch5,
+                .iPodTouch6,
+                .iPodTouch7,
+                .iPhone4,
+                .iPhone4S,
+                .iPhone5,
+                .iPhone5C,
+                .iPhone5S:
+            
+            return .screen4Inch
         // MARK: 4.7
-        case .iPhone6, .iPhone6S, .iPhoneSE, .iPhone7, .iPhone8,
-                .iPhoneSE2, .iPhoneSE3:                                 return .screen4Dot7Inch
+        case
+                .iPhone6,
+                .iPhone6S,
+                .iPhoneSE,
+                .iPhone7,
+                .iPhone8,
+                .iPhoneSE2,
+                .iPhoneSE3:
+            
+            return .screen4Dot7Inch
         // MARK: 5.5
-        case .iPhone6Plus, .iPhone6sPlus, .iPhone7Plus, .iPhone8Plus:   return .screen5Dot5Inch
+        case
+                .iPhone6Plus,
+                .iPhone6sPlus,
+                .iPhone7Plus,
+                .iPhone8Plus:
+            
+            return .screen5Dot5Inch
         // MARK: 5.8
-        case .iPhoneX, .iPhoneXS, .iPhone11Pro:                         return .screen5Dot8Inch
+        case
+                .iPhoneX,
+                .iPhoneXS,
+                .iPhone11Pro:
+            
+            return .screen5Dot8Inch
         // MARK: 6.5
-        case .iPhoneXsMax, .iPhone11ProMax:                             return .screen6Dot5Inch
+        case
+                .iPhoneXsMax,
+                .iPhone11ProMax:
+            
+            return .screen6Dot5Inch
         // MARK: 6.1
-        case .iPhoneXr, .iPhone11, .iPhone12, .iPhone13, .iPhone12Pro,
-                .iPhone13Pro:                                           return .screen6Dot1Inch
+        case
+                .iPhoneXr,
+                .iPhone11,
+                .iPhone12,
+                .iPhone13,
+                .iPhone12Pro,
+                .iPhone13Pro,
+                .iPhone14,
+                .iPhone14Pro:
+            
+            return .screen6Dot1Inch
         // MARK: 5.4
-        case .iPhone12Mini, .iPhone13Mini:                              return .screen5Dot4Inch
+        case
+                .iPhone12Mini,
+                .iPhone13Mini:
+            
+            return .screen5Dot4Inch
         // MARK: 6.7
-        case .iPhone12ProMax, .iPhone13ProMax:                          return .screen6Dot7Inch
+        case
+                .iPhone12ProMax,
+                .iPhone13ProMax,
+                .iPhone14Plus,
+                .iPhone14ProMax:
+            
+            return .screen6Dot7Inch
         // MARK: 9.7
-        case .iPad2, .iPad3, .iPad4, .iPad5, .iPad6, .iPadAir,
-                .iPadAir2, .iPadPro:                                    return .screen9Dot7Inch
+        case
+                .iPad2,
+                .iPad3,
+                .iPad4,
+                .iPad5,
+                .iPad6,
+                .iPadAir,
+                .iPadAir2,
+                .iPadPro:
+            
+            return .screen9Dot7Inch
         // MARK: 10.5
-        case .iPadAir3, .iPadPro2:                                      return .screen10Dot5Inch
+        case
+                .iPadAir3,
+                .iPadPro2:
+            
+            return .screen10Dot5Inch
         // MARK: 10.9
-        case .iPadAir4, .iPadAir5:                                      return .screen10Dot9Inch
+        case
+                .iPadAir4,
+                .iPadAir5:
+            
+            return .screen10Dot9Inch
         // MARK: 10.2
-        case .iPad7, .iPad8, .iPad9:                                    return .screen10Dot2Inch
+        case
+                .iPad7,
+                .iPad8,
+                .iPad9:
+            
+            return .screen10Dot2Inch
         // MARK: 7.9
-        case .iPadMini, .iPadMini2, .iPadMini3, .iPadMini4, .iPadMini5: return .screen7Dot9Inch
+        case
+                .iPadMini,
+                .iPadMini2,
+                .iPadMini3,
+                .iPadMini4,
+                .iPadMini5:
+            
+            return .screen7Dot9Inch
         // MARK: 8.3
-        case .iPadMini6:                                                return .screen8Dot3Inch
+        case
+                .iPadMini6:
+            
+            return .screen8Dot3Inch
         // MARK: 11
-        case .iPadPro11Inch1, .iPadPro11Inch2, .iPadPro11Inch3:         return .screen11Inch
+        case
+                .iPadPro11Inch1,
+                .iPadPro11Inch2,
+                .iPadPro11Inch3:
+            
+            return .screen11Inch
         // MARK: 12.9
-        case .iPadPro12Inch1, .iPadPro12Inch2, .iPadPro12Inch3,
-                .iPadPro12Inch4, .iPadPro12Inch5:                       return .screen12Dot9Inch
+        case
+                .iPadPro12Inch1,
+                .iPadPro12Inch2,
+                .iPadPro12Inch3,
+                .iPadPro12Inch4,
+                .iPadPro12Inch5:
+            
+            return .screen12Dot9Inch
         // MARK: Simulator
         // Thanks to SubParDev (https://github.com/SubParDev) for this idea.
         // See https://github.com/andrealufino/Deviice/issues/17 for details.
-        case .simulator(let actualModel):                               return screenSize(from: actualModel)
+        case
+                .simulator(let actualModel):
+            
+            return screenSize(from: actualModel)
         }
     }
 }

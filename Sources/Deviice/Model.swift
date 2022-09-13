@@ -59,6 +59,10 @@ public enum Model {
     case iPhone13Pro
     case iPhone13ProMax
     case iPhoneSE3
+    case iPhone14
+    case iPhone14Plus
+    case iPhone14Pro
+    case iPhone14ProMax
             
     // MARK: iPad
     case iPad2
@@ -149,6 +153,10 @@ public extension Model {
         case .iPhone13Pro:                      return "iPhone 13 Pro"
         case .iPhone13ProMax:                   return "iPhone 13 Pro Max"
         case .iPhoneSE3:                        return "iPhone SE (3rd generation)"
+        case .iPhone14:                         return "iPhone 14"
+        case .iPhone14Plus:                     return "iPhone 14 Plus"
+        case .iPhone14Pro:                      return "iPhone 14 Pro"
+        case .iPhone14ProMax:                   return "iPhone 14 Pro Max"
                 
         // MARK: iPad
         case .iPad2:                            return "iPad 2"
