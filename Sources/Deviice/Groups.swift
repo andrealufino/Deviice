@@ -65,7 +65,7 @@ public struct Groups {
     static var iPads: [Model] {
         return [
             // iPad
-            .iPad2, .iPad3, .iPad4, .iPad5, .iPad6, .iPad7, .iPad8, .iPad9,
+            .iPad2, .iPad3, .iPad4, .iPad5, .iPad6, .iPad7, .iPad8, .iPad9, .iPad10,
             // iPad Air
             .iPadAir, .iPadAir2, .iPadAir3, .iPadAir4, .iPadAir5,
             // iPad Mini
@@ -75,9 +75,9 @@ public struct Groups {
             .iPadPro, .iPadPro2,
             // iPad Pro 12.9
             .iPadPro12Inch1, .iPadPro12Inch2, .iPadPro12Inch3,
-            .iPadPro12Inch4, .iPadPro12Inch5,
+            .iPadPro12Inch4, .iPadPro12Inch5, .iPadPro12Inch6,
             // iPad Pro 11
-            .iPadPro11Inch1, .iPadPro11Inch2, .iPadPro11Inch3
+            .iPadPro11Inch1, .iPadPro11Inch2, .iPadPro11Inch3, .iPadPro11Inch4,
         ]
     }
     
