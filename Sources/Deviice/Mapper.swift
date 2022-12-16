@@ -84,6 +84,7 @@ public struct Mapper {
         case .iPad12_1, .iPad12_2:                          return .iPad9
         case .iPad13_1, .iPad13_2:                          return .iPadAir4
         case .iPad13_16, .iPad13_17:                        return .iPadAir5
+        case .iPad13_18, .iPad13_19:                        return .iPad10
             
         // MARK: iPad minis
         case .iPad2_5, .iPad2_6, .iPad2_7:                  return .iPadMini
@@ -103,7 +104,9 @@ public struct Mapper {
         case .iPad8_9, .iPad8_10:                           return .iPadPro11Inch2
         case .iPad8_11, .iPad8_12:                          return .iPadPro12Inch4
         case .iPad13_4, .iPad13_5, .iPad13_6, .iPad13_7:    return .iPadPro11Inch3
+        case .iPad14_3, .iPad14_4:                          return .iPadPro11Inch4
         case .iPad13_8, .iPad13_9, .iPad13_10, .iPad13_11:  return .iPadPro12Inch5
+        case .iPad14_5, .iPad14_6:                          return .iPadPro12Inch6
             
         // MARK: Simulators
         case .i386, .x86_64, .arm64:
@@ -250,7 +253,8 @@ public struct Mapper {
         // MARK: 10.9
         case
                 .iPadAir4,
-                .iPadAir5:
+                .iPadAir5,
+                .iPad10:
             
             return .screen10Dot9Inch
         // MARK: 10.2
@@ -278,7 +282,8 @@ public struct Mapper {
         case
                 .iPadPro11Inch1,
                 .iPadPro11Inch2,
-                .iPadPro11Inch3:
+                .iPadPro11Inch3,
+                .iPadPro11Inch4:
             
             return .screen11Inch
         // MARK: 12.9
@@ -287,7 +292,8 @@ public struct Mapper {
                 .iPadPro12Inch2,
                 .iPadPro12Inch3,
                 .iPadPro12Inch4,
-                .iPadPro12Inch5:
+                .iPadPro12Inch5,
+                .iPadPro12Inch6:
             
             return .screen12Dot9Inch
         // MARK: Simulator

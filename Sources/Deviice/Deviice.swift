@@ -65,6 +65,7 @@ public enum DeviiceType: String {
     case iPad7              = "iPad 7"
     case iPad8              = "iPad 8"
     case iPad9              = "iPad 9"
+    case iPad10             = "iPad 10"
     case iPadMini           = "iPad mini"
     case iPadMini2          = "iPad mini 2"
     case iPadMini3          = "iPad mini 3"
@@ -76,6 +77,7 @@ public enum DeviiceType: String {
     case iPadPro3           = "iPad Pro (3rd generation)"
     case iPadPro4           = "iPad Pro (4th generation)"
     case iPadPro5           = "iPad Pro (5th generation)"
+    case iPadPro6           = "iPad Pro (6th generation)"
     case simulator          = "Simulator"
 }
 
@@ -580,6 +582,18 @@ public struct Deviice {
             self.connectivity = .wiFi5G
             self.year = 2022
 
+        case "iPad13,18":
+            self.type = .iPad10
+            self.size = .screen10Dot9Inches
+            self.connectivity = .wiFi
+            self.year = 2022
+
+        case "iPad13,19":
+            self.type = .iPad10
+            self.size = .screen10Dot9Inches
+            self.connectivity = .wiFi4G
+            self.year = 2022
+
         // MARK: iPad Pro
 
         case "iPad6,3":
@@ -725,6 +739,30 @@ public struct Deviice {
             self.size = .screen12Dot9Inches
             self.connectivity = .wiFi5G
             self.year = 2021
+
+        case "iPad14,3":
+            self.type = .iPadPro6
+            self.size = .screen11Inches
+            self.connectivity = .wiFi
+            self.year = 2022
+
+        case "iPad14,4":
+            self.type = .iPadPro6
+            self.size = .screen11Inches
+            self.connectivity = .wiFi5G
+            self.year = 2022
+
+        case "iPad14,5":
+            self.type = .iPadPro6
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi
+            self.year = 2022
+
+        case "iPad14,6":
+            self.type = .iPadPro6
+            self.size = .screen12Dot9Inches
+            self.connectivity = .wiFi5G
+            self.year = 2022
 
         // MARK: iPad mini
 
