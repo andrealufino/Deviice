@@ -102,6 +102,29 @@ public enum Model {
     indirect case simulator(Model)
 }
 
+public extension Model {
+    
+    public static var allCases: [Model] {
+        return [
+            // iPods
+            .iPodTouch1, .iPodTouch2, .iPodTouch3, .iPodTouch4, .iPodTouch5, .iPodTouch6, .iPodTouch7,
+            // iPhones
+            .iPhone2G, .iPhone3G, .iPhone3GS, .iPhone4, .iPhone4S, .iPhone5, .iPhone5C, .iPhone5S, .iPhone6, .iPhone6Plus,
+            .iPhone6S, .iPhone6sPlus, .iPhoneSE, .iPhone7, .iPhone7Plus, .iPhone8, .iPhone8Plus, .iPhoneX, .iPhoneXS,
+            .iPhoneXsMax, .iPhoneXr, .iPhone11, .iPhone11Pro, .iPhone11ProMax, .iPhoneSE2, .iPhone12Mini, .iPhone12,
+            .iPhone12Pro, .iPhone12ProMax, .iPhone13Mini, .iPhone13, .iPhone13Pro, .iPhone13ProMax, .iPhoneSE3,
+            // iPads
+            .iPad2, .iPad3, .iPad4, .iPad5, .iPad6, .iPad7, .iPad8, .iPad9, .iPad10,
+            .iPadAir, .iPadAir2, .iPadAir3, .iPadAir4, .iPadAir5,
+            .iPadMini, .iPadMini2, .iPadMini3, .iPadMini4, .iPadMini5, .iPadMini6,
+            .iPadPro, .iPadPro2,
+            .iPadPro12Inch1, .iPadPro12Inch2, .iPadPro12Inch3,
+            .iPadPro12Inch4, .iPadPro12Inch5, .iPadPro12Inch6,
+            .iPadPro11Inch1, .iPadPro11Inch2, .iPadPro11Inch3, .iPadPro11Inch4,
+        ]
+    }
+}
+
 
 // MARK: - Marketing name
 

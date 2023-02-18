@@ -1,6 +1,6 @@
 {
   "name": "Deviice",
-  "version": "2.0.2",
+  "version": "2.1.1",
   "summary": "This library helps you to identify the current device on which your app is running.",
   "description": "This library helps you to identify the current device on which your app is running. You can get also the connectivity and screen size info.",
   "homepage": "https://github.com/andrealufino/Deviice",
@@ -10,10 +10,10 @@
   },
   "source": {
     "git": "https://github.com/andrealufino/Deviice.git",
-    "tag": "2.0.2"
+    "tag": "2.1.1"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "9.0"
   },
   "requires_arc": true,
   "swift_versions": [

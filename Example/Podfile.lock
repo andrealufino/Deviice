@@ -1,5 +1,5 @@
 PODS:
-  - Deviice (2.0.2)
+  - Deviice (2.1.1)
 
 DEPENDENCIES:
   - Deviice (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Deviice: beabd25ce68e4dfba3fccdfc0694f01ce1de4d5f
+  Deviice: 1c168656d3c350e22ae45383b1169df130ecf928
 
-PODFILE CHECKSUM: 79560502ef6442064a66e6f423ba6f2acbf02871
+PODFILE CHECKSUM: c020f94f58ec3343f6b589d42596913ce6c355d1
 
 COCOAPODS: 1.11.3
