@@ -102,8 +102,12 @@ public enum Model {
     indirect case simulator(Model)
 }
 
+
+// MARK: All Cases
+
 public extension Model {
     
+    /// All cases of the `Model` enumeration. 
     public static var allCases: [Model] {
         return [
             // iPods

@@ -146,7 +146,7 @@ public enum DeviiceSize: String {
     }
 }
 
-// The connectivity of the device.
+/// The connectivity of the device.
 public enum DeviiceConnectivity: String {
     case unknown        = "Unknown"
     case wiFi           = "WiFi"

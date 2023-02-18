@@ -12,7 +12,6 @@
 		175AFC604AA131E67B7EDBC32F2DB7EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		211135F148B97D88B8CDD1A5A1524114 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF285C87319C629466C4E129CCA3514 /* Model.swift */; };
 		2AC3E28910014D233D7223673640A191 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0364E20D6D93823EE1329C5AD961E4 /* Mapper.swift */; };
-		313B7D786A77B85DDA44CFF693546B48 /* Deviice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608BA98011D6A036B2410A14CCEB7AE3 /* Deviice.swift */; };
 		395B65ED4FC9A73FB15C4DFE41235D1D /* Pods-Deviice_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D86B1C3EBE11C15F6B70A8741DB56FA /* Pods-Deviice_Tests-dummy.m */; };
 		4E1365DA6DC36912115C86EBD3F8F172 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		5387FB0AA89B6C27DE29D307B1FC0E75 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EE904B6AC22146CB6CD9376809F6BF /* Connectivity.swift */; };
@@ -45,12 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F8FF470B73DA6B745090BE2BB84FE19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0F8FF470B73DA6B745090BE2BB84FE19 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		10E8CBD03C03A819852CED0B0B557828 /* Deviice */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Deviice; path = Deviice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12EE904B6AC22146CB6CD9376809F6BF /* Connectivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connectivity.swift; path = Sources/Deviice/Connectivity.swift; sourceTree = "<group>"; };
 		19C20EDD525ED5BB425D646B7FAAB840 /* Pods-Deviice_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Deviice_Example.modulemap"; sourceTree = "<group>"; };
 		19D4CEE8BE6102E63A935AB31C911C35 /* Pods-Deviice_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Deviice_Example-Info.plist"; sourceTree = "<group>"; };
-		1FEC6B3391D4CC2CD60061B00FC02F5C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1FEC6B3391D4CC2CD60061B00FC02F5C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		22469EFE8A384B70F89FFF08345F6CFD /* Pods-Deviice_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Deviice_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2546FCFD50E3DBC2611EF7978F0A9FB9 /* Pods-Deviice_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Deviice_Example"; path = Pods_Deviice_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		290D9B588ACDE676F4843A81F70EA834 /* Pods-Deviice_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Deviice_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -61,7 +60,6 @@
 		44775B40ACC8624D636D72355B95ACA5 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Sources/Deviice/Device.swift; sourceTree = "<group>"; };
 		4921FA9079FCFF91518C795E96188D99 /* ScreenSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScreenSize.swift; path = Sources/Deviice/ScreenSize.swift; sourceTree = "<group>"; };
 		566CEBA31FC50377042971AF0E8A4792 /* Pods-Deviice_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Deviice_Tests-Info.plist"; sourceTree = "<group>"; };
-		608BA98011D6A036B2410A14CCEB7AE3 /* Deviice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deviice.swift; path = Sources/Deviice/Deviice.swift; sourceTree = "<group>"; };
 		66F525587A414ED889BB9A6FAFB9BA2B /* Pods-Deviice_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Deviice_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		67B821917A14EE51EBA157FCA37E3AF0 /* Pods-Deviice_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Deviice_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		703B93E8E8A1B1B4E6C001FBB933457A /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Sources/Deviice/Identifier.swift; sourceTree = "<group>"; };
@@ -73,7 +71,7 @@
 		8FC3B016C58B4DE8029EFA812F0C1E7A /* Deviice-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Deviice-dummy.m"; sourceTree = "<group>"; };
 		970947E2244C1811EBE2DA9D29AEC101 /* Deviice-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Deviice-Info.plist"; sourceTree = "<group>"; };
 		9D86B1C3EBE11C15F6B70A8741DB56FA /* Pods-Deviice_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Deviice_Tests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1B6145A35244306D32FF567B5772DE0 /* Groups.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Groups.swift; path = Sources/Deviice/Groups.swift; sourceTree = "<group>"; };
 		AB7DEC902AA6D790C37FDC55345CAF91 /* Pods-Deviice_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Deviice_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ABEA5AB8468B4C20541F975F1CF5BD21 /* Pods-Deviice_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Deviice_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -86,7 +84,7 @@
 		DCB1136BC9FC880C7312D70C54E364F6 /* Pods-Deviice_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Deviice_Tests-umbrella.h"; sourceTree = "<group>"; };
 		E9BE436BA59B886F19E3075FE7D78F5F /* Pods-Deviice_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Deviice_Tests.modulemap"; sourceTree = "<group>"; };
 		E9E859F0757D515A21C226237417B34C /* Pods-Deviice_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Deviice_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F3CB065C1B8AD985662DE9D568060A86 /* Deviice.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Deviice.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F3CB065C1B8AD985662DE9D568060A86 /* Deviice.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Deviice.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +137,6 @@
 			children = (
 				12EE904B6AC22146CB6CD9376809F6BF /* Connectivity.swift */,
 				44775B40ACC8624D636D72355B95ACA5 /* Device.swift */,
-				608BA98011D6A036B2410A14CCEB7AE3 /* Deviice.swift */,
 				29E21B3A688CD54333E85A83289A5E1D /* Family.swift */,
 				A1B6145A35244306D32FF567B5772DE0 /* Groups.swift */,
 				703B93E8E8A1B1B4E6C001FBB933457A /* Identifier.swift */,
@@ -395,7 +392,6 @@
 			files = (
 				5387FB0AA89B6C27DE29D307B1FC0E75 /* Connectivity.swift in Sources */,
 				992BFA14C7E63C9CCDDB6ACF274A4073 /* Device.swift in Sources */,
-				313B7D786A77B85DDA44CFF693546B48 /* Deviice.swift in Sources */,
 				C0001F74037EB8795526453E777CEC39 /* Deviice-dummy.m in Sources */,
 				BA9DE0C2C3EFA6DDE71824A3E7FC55C6 /* Family.swift in Sources */,
 				FC8EB894757699837E5E3B737229B52B /* Groups.swift in Sources */,
@@ -689,8 +685,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
