@@ -63,6 +63,10 @@ public enum Model {
     case iPhone14Plus
     case iPhone14Pro
     case iPhone14ProMax
+    case iPhone15
+    case iPhone15Plus
+    case iPhone15Pro
+    case iPhone15ProMax
             
     // MARK: iPad
     case iPad2
@@ -160,6 +164,10 @@ public extension Model {
         case .iPhone14Plus:                     return "iPhone 14 Plus"
         case .iPhone14Pro:                      return "iPhone 14 Pro"
         case .iPhone14ProMax:                   return "iPhone 14 Pro Max"
+        case .iPhone15:                         return "iPhone 15"
+        case .iPhone15Plus:                     return "iPhone 15 Plus"
+        case .iPhone15Pro:                      return "iPhone 15 Pro"
+        case .iPhone15ProMax:                   return "iPhone 15 Pro Max"
                 
         // MARK: iPad
         case .iPad2:                            return "iPad 2"
