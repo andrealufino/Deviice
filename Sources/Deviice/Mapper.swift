@@ -69,6 +69,10 @@ public struct Mapper {
         case .iPhone14_8:                                   return .iPhone14Plus
         case .iPhone15_2:                                   return .iPhone14Pro
         case .iPhone15_3:                                   return .iPhone14ProMax
+        case .iPhone15_4:                                   return .iPhone15
+        case .iPhone15_5:                                   return .iPhone15Plus
+        case .iPhone16_1:                                   return .iPhone15Pro
+        case .iPhone16_2:                                   return .iPhone15ProMax
             
         // MARK: iPads
         case .iPad2_1, .iPad2_2, .iPad2_3, .iPad2_4:        return .iPad2
@@ -151,7 +155,7 @@ public struct Mapper {
                 .unknown:
             
             return .unknown
-        // MARK: 3.5
+            // MARK: 3.5
         case
                 .iPodTouch1,
                 .iPodTouch2,
@@ -162,7 +166,7 @@ public struct Mapper {
                 .iPhone3GS:
             
             return .screen3Dot5Inch
-        // MARK: 4
+            // MARK: 4
         case
                 .iPodTouch5,
                 .iPodTouch6,
@@ -174,7 +178,7 @@ public struct Mapper {
                 .iPhone5S:
             
             return .screen4Inch
-        // MARK: 4.7
+            // MARK: 4.7
         case
                 .iPhone6,
                 .iPhone6S,
@@ -185,7 +189,7 @@ public struct Mapper {
                 .iPhoneSE3:
             
             return .screen4Dot7Inch
-        // MARK: 5.5
+            // MARK: 5.5
         case
                 .iPhone6Plus,
                 .iPhone6sPlus,
@@ -193,20 +197,20 @@ public struct Mapper {
                 .iPhone8Plus:
             
             return .screen5Dot5Inch
-        // MARK: 5.8
+            // MARK: 5.8
         case
                 .iPhoneX,
                 .iPhoneXS,
                 .iPhone11Pro:
             
             return .screen5Dot8Inch
-        // MARK: 6.5
+            // MARK: 6.5
         case
                 .iPhoneXsMax,
                 .iPhone11ProMax:
             
             return .screen6Dot5Inch
-        // MARK: 6.1
+            // MARK: 6.1
         case
                 .iPhoneXr,
                 .iPhone11,
@@ -215,24 +219,28 @@ public struct Mapper {
                 .iPhone12Pro,
                 .iPhone13Pro,
                 .iPhone14,
-                .iPhone14Pro:
+                .iPhone14Pro,
+                .iPhone15,
+                .iPhone15Pro:
             
             return .screen6Dot1Inch
-        // MARK: 5.4
+            // MARK: 5.4
         case
                 .iPhone12Mini,
                 .iPhone13Mini:
             
             return .screen5Dot4Inch
-        // MARK: 6.7
+            // MARK: 6.7
         case
                 .iPhone12ProMax,
                 .iPhone13ProMax,
                 .iPhone14Plus,
-                .iPhone14ProMax:
+                .iPhone14ProMax,
+                .iPhone15Plus,
+                .iPhone15ProMax:
             
             return .screen6Dot7Inch
-        // MARK: 9.7
+            // MARK: 9.7
         case
                 .iPad2,
                 .iPad3,
@@ -244,27 +252,27 @@ public struct Mapper {
                 .iPadPro:
             
             return .screen9Dot7Inch
-        // MARK: 10.5
+            // MARK: 10.5
         case
                 .iPadAir3,
                 .iPadPro2:
             
             return .screen10Dot5Inch
-        // MARK: 10.9
+            // MARK: 10.9
         case
                 .iPadAir4,
                 .iPadAir5,
                 .iPad10:
             
             return .screen10Dot9Inch
-        // MARK: 10.2
+            // MARK: 10.2
         case
                 .iPad7,
                 .iPad8,
                 .iPad9:
             
             return .screen10Dot2Inch
-        // MARK: 7.9
+            // MARK: 7.9
         case
                 .iPadMini,
                 .iPadMini2,
@@ -273,12 +281,12 @@ public struct Mapper {
                 .iPadMini5:
             
             return .screen7Dot9Inch
-        // MARK: 8.3
+            // MARK: 8.3
         case
                 .iPadMini6:
             
             return .screen8Dot3Inch
-        // MARK: 11
+            // MARK: 11
         case
                 .iPadPro11Inch1,
                 .iPadPro11Inch2,
@@ -286,7 +294,7 @@ public struct Mapper {
                 .iPadPro11Inch4:
             
             return .screen11Inch
-        // MARK: 12.9
+            // MARK: 12.9
         case
                 .iPadPro12Inch1,
                 .iPadPro12Inch2,
@@ -296,9 +304,9 @@ public struct Mapper {
                 .iPadPro12Inch6:
             
             return .screen12Dot9Inch
-        // MARK: Simulator
-        // Thanks to SubParDev (https://github.com/SubParDev) for this idea.
-        // See https://github.com/andrealufino/Deviice/issues/17 for details.
+            // MARK: Simulator
+            // Thanks to SubParDev (https://github.com/SubParDev) for this idea.
+            // See https://github.com/andrealufino/Deviice/issues/17 for details.
         case
                 .simulator(let actualModel):
             
