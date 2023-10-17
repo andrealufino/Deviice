@@ -52,6 +52,14 @@ public enum DeviiceType: String {
     case iPhone13Pro        = "iPhone 13 Pro"
     case iPhone13ProMax     = "iPhone 13 Pro Max"
     case iPhoneSE3          = "iPhone SE (3rd generation)"
+    case iPhone14           = "iPhone 14"
+    case iPhone14Plus       = "iPhone 14 Plus"
+    case iPhone14Pro        = "iPhone 14 Pro"
+    case iPhone14ProMax     = "iPhone 14 Pro Max"
+    case iPhone15           = "iPhone 15"
+    case iPhone15Plus       = "iPhone 15 Plus"
+    case iPhone15Pro        = "iPhone 15 Pro"
+    case iPhone15ProMax     = "iPhone 15 Pro Max"
     case iPad2              = "iPad 2"
     case iPad3              = "iPad 3"
     case iPad4              = "iPad 4"
@@ -423,6 +431,54 @@ public struct Deviice {
             self.size = .screen4Dot7Inches
             self.connectivity = .wiFi5G
             self.year = 2022
+            
+        case "iPhone14,7":
+            self.type = .iPhone14
+            self.size = .screen6Dot1Inches
+            self.connectivity = .wiFi5G
+            self.year = 2022
+            
+        case "iPhone14,8":
+            self.type = .iPhone14Plus
+            self.size = .screen6Dot7Inches
+            self.connectivity = .wiFi5G
+            self.year = 2022
+            
+        case "iPhone15,2":
+            self.type = .iPhone14Pro
+            self.size = .screen6Dot1Inches
+            self.connectivity = .wiFi5G
+            self.year = 2022
+            
+        case "iPhone15,3":
+            self.type = .iPhone14ProMax
+            self.size = .screen6Dot7Inches
+            self.connectivity = .wiFi5G
+            self.year = 2022
+            
+        case "iPhone15,4":
+            self.type = .iPhone15
+            self.size = .screen6Dot1Inches
+            self.connectivity = .wiFi5G
+            self.year = 2023
+            
+        case "iPhone15,5":
+            self.type = .iPhone15Plus
+            self.size = .screen6Dot7Inches
+            self.connectivity = .wiFi5G
+            self.year = 2023
+            
+        case "iPhone15,1":
+            self.type = .iPhone15Pro
+            self.size = .screen6Dot1Inches
+            self.connectivity = .wiFi5G
+            self.year = 2023
+            
+        case "iPhone16,2":
+            self.type = .iPhone15ProMax
+            self.size = .screen6Dot7Inches
+            self.connectivity = .wiFi5G
+            self.year = 2023
 
         // MARK: iPad
 
