@@ -68,6 +68,7 @@ public enum DeviiceType: String {
     case iPadAir3           = "iPad Air 3"
     case iPadAir4           = "iPad Air 4"
     case iPadAir5           = "iPad Air 5"
+    case iPadAir6           = "iPad Air 6"
     case iPad5              = "iPad 5"
     case iPad6              = "iPad 6"
     case iPad7              = "iPad 7"
@@ -86,6 +87,7 @@ public enum DeviiceType: String {
     case iPadPro4           = "iPad Pro (4th generation)"
     case iPadPro5           = "iPad Pro (5th generation)"
     case iPadPro6           = "iPad Pro (6th generation)"
+    case iPadPro7           = "iPad Pro (7th generation)"
     case simulator          = "Simulator"
 }
 
@@ -109,6 +111,7 @@ public enum DeviiceSize: String {
     case screen10Dot9Inches     = "10.9 inches"
     case screen11Inches         = "11 inches"
     case screen12Dot9Inches     = "12.9 inches"
+    case screen13Inches         = "13 inches"
     
     /// This is the value as `Double` of the screen size.
     /// Could be useful to make comparison.
@@ -150,6 +153,8 @@ public enum DeviiceSize: String {
             return 11
         case .screen12Dot9Inches:
             return 12.9
+        case .screen13Inches:
+            return 13
         }
     }
 }
@@ -649,6 +654,30 @@ public struct Deviice {
             self.size = .screen10Dot9Inches
             self.connectivity = .wiFi4G
             self.year = 2022
+            
+        case "iPad14,8":
+            self.type = .iPadAir6
+            self.size = .screen11Inches
+            self.connectivity = .wiFi
+            self.year = 2024
+            
+        case "iPad14,9":
+            self.type = .iPadAir6
+            self.size = .screen11Inches
+            self.connectivity = .wiFi5G
+            self.year = 2024
+            
+        case "iPad14,10":
+            self.type = .iPadAir6
+            self.size = .screen13Inches
+            self.connectivity = .wiFi
+            self.year = 2024
+            
+        case "iPad14,11":
+            self.type = .iPadAir6
+            self.size = .screen13Inches
+            self.connectivity = .wiFi5G
+            self.year = 2024
 
         // MARK: iPad Pro
 
@@ -819,6 +848,30 @@ public struct Deviice {
             self.size = .screen12Dot9Inches
             self.connectivity = .wiFi5G
             self.year = 2022
+
+        case "iPad16,3":
+            self.type = .iPadPro7
+            self.size = .screen11Inches
+            self.connectivity = .wiFi
+            self.year = 2022
+
+        case "iPad16,4":
+            self.type = .iPadPro7
+            self.size = .screen11Inches
+            self.connectivity = .wiFi5G
+            self.year = 2022
+
+        case "iPad16,5":
+            self.type = .iPadPro7
+            self.size = .screen13Inches
+            self.connectivity = .wiFi
+            self.year = 2024
+
+        case "iPad16,6":
+            self.type = .iPadPro7
+            self.size = .screen13Inches
+            self.connectivity = .wiFi5G
+            self.year = 2024
 
         // MARK: iPad mini
 
