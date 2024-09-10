@@ -73,6 +73,10 @@ public struct Mapper {
         case .iPhone15_5:                                   return .iPhone15Plus
         case .iPhone16_1:                                   return .iPhone15Pro
         case .iPhone16_2:                                   return .iPhone15ProMax
+        case .iPhone17_1:                                   return .iPhone16
+        case .iPhone17_2:                                   return .iPhone16Plus
+        case .iPhone17_3:                                   return .iPhone16Pro
+        case .iPhone17_4:                                   return .iPhone16ProMax
             
         // MARK: iPads
         case .iPad2_1, .iPad2_2, .iPad2_3, .iPad2_4:        return .iPad2
@@ -221,7 +225,8 @@ public struct Mapper {
                 .iPhone14,
                 .iPhone14Pro,
                 .iPhone15,
-                .iPhone15Pro:
+                .iPhone15Pro,
+                .iPhone16:
             
             return .screen6Dot1Inch
             // MARK: 5.4
@@ -237,7 +242,8 @@ public struct Mapper {
                 .iPhone14Plus,
                 .iPhone14ProMax,
                 .iPhone15Plus,
-                .iPhone15ProMax:
+                .iPhone15ProMax,
+                .iPhone16Plus:
             
             return .screen6Dot7Inch
             // MARK: 9.7
@@ -304,6 +310,14 @@ public struct Mapper {
                 .iPadPro12Inch6:
             
             return .screen12Dot9Inch
+            
+        case .iPhone16Pro:
+            return .screen6Dot3Inch
+            
+        case .iPhone16ProMax:
+            return .screen6Dot9Inch
+            
+            
             // MARK: Simulator
             // Thanks to SubParDev (https://github.com/SubParDev) for this idea.
             // See https://github.com/andrealufino/Deviice/issues/17 for details.
