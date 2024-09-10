@@ -60,6 +60,10 @@ public enum DeviiceType: String {
     case iPhone15Plus       = "iPhone 15 Plus"
     case iPhone15Pro        = "iPhone 15 Pro"
     case iPhone15ProMax     = "iPhone 15 Pro Max"
+    case iPhone16           = "iPhone 16"
+    case iPhone16Plus       = "iPhone 16 Plus"
+    case iPhone16Pro        = "iPhone 16 Pro"
+    case iPhone16ProMax     = "iPhone 16 Pro Max"
     case iPad2              = "iPad 2"
     case iPad3              = "iPad 3"
     case iPad4              = "iPad 4"
@@ -101,8 +105,10 @@ public enum DeviiceSize: String {
     case screen5Dot5Inches      = "5.5 inches"
     case screen5Dot8Inches      = "5.8 inches"
     case screen6Dot1Inches      = "6.1 inches"
+    case screen6Dot3Inches      = "6.3 inches"
     case screen6Dot5Inches      = "6.5 inches"
     case screen6Dot7Inches      = "6.7 inches"
+    case screen6Dot9Inches      = "6.9 inches"
     case screen7Dot9Inches      = "7.9 inches"
     case screen8Dot3Inches      = "8.3 inches"
     case screen9Dot7Inches      = "9.7 inches"
@@ -117,44 +123,27 @@ public enum DeviiceSize: String {
     /// Could be useful to make comparison.
     var value: Double {
         switch self {
-        case .screenUnknown:
-            return -1
-        case .screen3Dot5Inches:
-            return 3.5
-        case .screen4Inches:
-            return 4
-        case .screen4Dot7Inches:
-            return 4.7
-        case .screen5Dot4Inches:
-            return 5.4
-        case .screen5Dot5Inches:
-            return 5.5
-        case .screen5Dot8Inches:
-            return 5.8
-        case .screen6Dot1Inches:
-            return 6.1
-        case .screen6Dot5Inches:
-            return 6.5
-        case .screen6Dot7Inches:
-            return 6.7
-        case .screen7Dot9Inches:
-            return 7.9
-        case .screen8Dot3Inches:
-            return 8.3
-        case .screen9Dot7Inches:
-            return 9.7
-        case .screen10Dot2Inches:
-            return 10.2
-        case .screen10Dot5Inches:
-            return 10.5
-        case .screen10Dot9Inches:
-            return 10.9
-        case .screen11Inches:
-            return 11
-        case .screen12Dot9Inches:
-            return 12.9
-        case .screen13Inches:
-            return 13
+        case .screenUnknown:        return -1
+        case .screen3Dot5Inches:    return 3.5
+        case .screen4Inches:        return 4
+        case .screen4Dot7Inches:    return 4.7
+        case .screen5Dot4Inches:    return 5.4
+        case .screen5Dot5Inches:    return 5.5
+        case .screen5Dot8Inches:    return 5.8
+        case .screen6Dot1Inches:    return 6.1
+        case .screen6Dot3Inches:    return 6.3
+        case .screen6Dot5Inches:    return 6.5
+        case .screen6Dot7Inches:    return 6.7
+        case .screen6Dot9Inches:    return 6.9
+        case .screen7Dot9Inches:    return 7.9
+        case .screen8Dot3Inches:    return 8.3
+        case .screen9Dot7Inches:    return 9.7
+        case .screen10Dot2Inches:   return 10.2
+        case .screen10Dot5Inches:   return 10.5
+        case .screen10Dot9Inches:   return 10.9
+        case .screen11Inches:       return 11
+        case .screen12Dot9Inches:   return 12.9
+        case .screen13Inches:       return 13
         }
     }
 }
@@ -484,6 +473,30 @@ public struct Deviice {
             self.size = .screen6Dot7Inches
             self.connectivity = .wiFi5G
             self.year = 2023
+            
+        case "iPhone17,3":
+            self.type = .iPhone16
+            self.size = .screen6Dot1Inches
+            self.connectivity = .wiFi5G
+            self.year = 2024
+            
+        case "iPhone17,4":
+            self.type = .iPhone16Plus
+            self.size = .screen6Dot7Inches
+            self.connectivity = .wiFi5G
+            self.year = 2024
+            
+        case "iPhone17,1":
+            self.type = .iPhone16Pro
+            self.size = .screen6Dot3Inches
+            self.connectivity = .wiFi5G
+            self.year = 2024
+            
+        case "iPhone17,2":
+            self.type = .iPhone16ProMax
+            self.size = .screen6Dot9Inches
+            self.connectivity = .wiFi5G
+            self.year = 2024
 
         // MARK: iPad
 

@@ -21,8 +21,10 @@ public enum ScreenSize: String {
     case screen5Dot5Inch        = "5,5 inch"
     case screen5Dot8Inch        = "5,8 inch"
     case screen6Dot1Inch        = "6,1 inch"
+    case screen6Dot3Inch        = "6,3 inch"
     case screen6Dot5Inch        = "6,5 inch"
     case screen6Dot7Inch        = "6,7 inch"
+    case screen6Dot9Inch        = "6,9 inch"
     case screen7Dot9Inch        = "7,9 inch"
     case screen8Dot3Inch        = "8,3 inch"
     case screen9Dot7Inch        = "9,7 inch"
@@ -42,8 +44,10 @@ public enum ScreenSize: String {
         case .screen5Dot5Inch:          return 5.5
         case .screen5Dot8Inch:          return 5.8
         case .screen6Dot1Inch:          return 6.1
+        case .screen6Dot3Inch:          return 6.3
         case .screen6Dot5Inch:          return 6.5
         case .screen6Dot7Inch:          return 6.7
+        case .screen6Dot9Inch:          return 6.9
         case .screen7Dot9Inch:          return 7.9
         case .screen8Dot3Inch:          return 8.3
         case .screen9Dot7Inch:          return 9.7

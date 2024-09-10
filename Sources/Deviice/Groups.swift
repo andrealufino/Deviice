@@ -32,32 +32,22 @@ public struct Groups {
             .iPhone5,
             .iPhone5C,
             .iPhone5S,
-            .iPhone6,
-            .iPhone6Plus,
-            .iPhone6S,
-            .iPhone6sPlus,
+            .iPhone6, .iPhone6Plus,
+            .iPhone6S, .iPhone6sPlus,
             .iPhoneSE,
-            .iPhone7,
-            .iPhone7Plus,
-            .iPhone8,
-            .iPhone8Plus,
+            .iPhone7, .iPhone7Plus,
+            .iPhone8, .iPhone8Plus,
             .iPhoneX,
-            .iPhoneXS,
-            .iPhoneXsMax,
+            .iPhoneXS, .iPhoneXsMax,
             .iPhoneXr,
-            .iPhone11,
-            .iPhone11Pro,
-            .iPhone11ProMax,
+            .iPhone11, .iPhone11Pro, .iPhone11ProMax,
             .iPhoneSE2,
-            .iPhone12Mini,
-            .iPhone12,
-            .iPhone12Pro,
-            .iPhone12ProMax,
-            .iPhone13Mini,
-            .iPhone13,
-            .iPhone13Pro,
-            .iPhone13ProMax,
-            .iPhoneSE3
+            .iPhone12Mini, .iPhone12, .iPhone12Pro, .iPhone12ProMax,
+            .iPhone13Mini, .iPhone13, .iPhone13Pro, .iPhone13ProMax,
+            .iPhoneSE3,
+            .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
+            .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
+            .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax
         ]
     }
     
@@ -94,14 +84,15 @@ public struct Groups {
         return [
             // iPhone
             .iPhone11Pro, .iPhone11ProMax, .iPhone12Pro, .iPhone12ProMax,
-            .iPhone13Pro, .iPhone13ProMax,
+            .iPhone13Pro, .iPhone13ProMax, .iPhone14Pro, .iPhone14ProMax,
+            .iPhone15Pro, .iPhone15ProMax, .iPhone16Pro, .iPhone16ProMax,
             // iPad Pro
             .iPadPro, .iPadPro2,
             // iPad Pro 12.9
             .iPadPro12Inch1, .iPadPro12Inch2, .iPadPro12Inch3, .iPadPro12Inch4,
-            .iPadPro12Inch5,
+            .iPadPro12Inch5, .iPadPro12Inch6,
             // iPad Pro 11
-            .iPadPro11Inch1, .iPadPro11Inch2, .iPadPro11Inch3
+            .iPadPro11Inch1, .iPadPro11Inch2, .iPadPro11Inch3, .iPadPro11Inch4
         ]
     }
     
