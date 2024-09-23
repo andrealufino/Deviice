@@ -115,6 +115,10 @@ public enum Identifier: String, CaseIterable {
     case iPad13_17          = "iPad13,17"
     case iPad13_18          = "iPad13,18"
     case iPad13_19          = "iPad13,19"
+    case iPad14_8           = "iPad14,8"
+    case iPad14_9           = "iPad14,9"
+    case ipad14_10          = "iPad14,10"
+    case iPad14_11          = "iPad14,11"
     
     // MARK: iPad Mini
     case iPad2_5            = "iPad2,5"
@@ -166,6 +170,10 @@ public enum Identifier: String, CaseIterable {
     case iPad14_4           = "iPad14,4"
     case iPad14_5           = "iPad14,5"
     case iPad14_6           = "iPad14,6"
+    case iPad16_3           = "iPad16,3"
+    case iPad16_4           = "iPad16,4"
+    case iPad16_5           = "iPad16,5"
+    case iPad16_6           = "iPad16,6"
     
     // MARK: Simulator
     case i386               = "i386"

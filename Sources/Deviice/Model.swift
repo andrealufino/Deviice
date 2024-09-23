@@ -81,6 +81,8 @@ public enum Model {
     case iPadAir3
     case iPadAir4
     case iPadAir5
+    case iPadAir11Inch6
+    case iPadAir13Inch6
     case iPad5
     case iPad6
     case iPad7
@@ -99,12 +101,16 @@ public enum Model {
     case iPadPro11Inch2
     case iPadPro11Inch3
     case iPadPro11Inch4
+    case iPadPro11Inch5
+    case iPadPro11Inch6
+    case iPadPro11Inch7
     case iPadPro12Inch1
     case iPadPro12Inch2
     case iPadPro12Inch3
     case iPadPro12Inch4
     case iPadPro12Inch5
     case iPadPro12Inch6
+    case iPadPro12Inch7
             
     // MARK: Simulator
     indirect case simulator(Model)
@@ -186,6 +192,8 @@ public extension Model {
         case .iPadAir3:                         return "iPad Air 3"
         case .iPadAir4:                         return "iPad Air 4"
         case .iPadAir5:                         return "iPad Air 5"
+        case .iPadAir11Inch6:                   return "iPad Air 11' (6th generation)"
+        case .iPadAir13Inch6:                   return "iPad Air 13' (6th generation)"
         case .iPad5:                            return "iPad 5"
         case .iPad6:                            return "iPad 6"
         case .iPad7:                            return "iPad 7"
@@ -204,12 +212,16 @@ public extension Model {
         case .iPadPro11Inch2:                   return "iPad Pro 11' (2nd generation)"
         case .iPadPro11Inch3:                   return "iPad Pro 11' (3rd generation)"
         case .iPadPro11Inch4:                   return "iPad Pro 11' (4th generation)"
-        case .iPadPro12Inch1:                   return "iPad Pro 12.9"
-        case .iPadPro12Inch2:                   return "iPad Pro 12.9 (2nd generation)"
-        case .iPadPro12Inch3:                   return "iPad Pro 12.9 (3rd generation)"
-        case .iPadPro12Inch4:                   return "iPad Pro 12.9 (4th generation)"
-        case .iPadPro12Inch5:                   return "iPad Pro 12.9 (5th generation)"
-        case .iPadPro12Inch6:                   return "iPad Pro 12.9 (6th generation)"
+        case .iPadPro11Inch5:                   return "iPad Pro 11' (5th generation)"
+        case .iPadPro11Inch6:                   return "iPad Pro 11' (6th generation)"
+        case .iPadPro11Inch7:                   return "iPad Pro 11' (7th generation)"
+        case .iPadPro12Inch1:                   return "iPad Pro 12.9'"
+        case .iPadPro12Inch2:                   return "iPad Pro 12.9' (2nd generation)"
+        case .iPadPro12Inch3:                   return "iPad Pro 12.9' (3rd generation)"
+        case .iPadPro12Inch4:                   return "iPad Pro 12.9' (4th generation)"
+        case .iPadPro12Inch5:                   return "iPad Pro 12.9' (5th generation)"
+        case .iPadPro12Inch6:                   return "iPad Pro 12.9' (6th generation)"
+        case .iPadPro12Inch7:                   return "iPad Pro 12.9' (7th generation)"
             
         case .simulator:                        return "Simulator"
         }
