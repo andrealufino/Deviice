@@ -25,16 +25,15 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Andrea Mario Lufino" => "andrea@andrealufino.com" }
   s.source           = { :git => "https://github.com/andrealufino/Deviice.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '9.0'
   s.requires_arc = true
   s.swift_version = ["5.0"]
 
   s.source_files = 'Sources/Deviice/*.swift'
-#s.resource_bundles = {
-#'Deviice' => ['Pod/Assets/*.png']
-# }
+  s.resource_bundles = {
+      'Deviice' => ['Sources/Deviice/*.json']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

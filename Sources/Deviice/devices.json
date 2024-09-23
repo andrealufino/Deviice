@@ -1,0 +1,37 @@
+[
+    {
+        "identifier": "iPhone17,3",
+        "screenSize": 6.3,
+        "year": 2024,
+        "marketingName": "iPhone 16 Pro",
+        "debugName": "iphone16pro"
+    },
+    {
+        "identifier": "iPhone17,4",
+        "screenSize": 6.9,
+        "year": 2024,
+        "marketingName": "iPhone 16 Pro Max",
+        "debugName": "iphone16promax"
+    },
+    {
+        "identifier": "i386",
+        "screenSize": 0,
+        "year": 2007,
+        "marketingName": "Simulator",
+        "debugName": "simulator"
+    },
+    {
+        "identifier": "arm64",
+        "screenSize": 0,
+        "year": 2007,
+        "marketingName": "Simulator",
+        "debugName": "simulator"
+    },
+    {
+        "identifier": "x86_64",
+        "screenSize": 0,
+        "year": 2007,
+        "marketingName": "Simulator",
+        "debugName": "simulator"
+    }
+]

@@ -19,11 +19,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let device = Device.init()
+//        let device = Device.init()
+//        
+//        lblIdentifier.text = device.identifier.rawValue
+//        lblType.text = device.family.rawValue
+//        lblHumanRedableName.text = device.actualModel.marketingName
         
-        lblIdentifier.text = device.identifier.rawValue
-        lblType.text = device.family.rawValue
-        lblHumanRedableName.text = device.actualModel.marketingName
+        let newDevice = NewDevice.current
+        
+        lblIdentifier.text = newDevice?.identifier
+        lblType.text = newDevice?.debugName
+        lblHumanRedableName.text = newDevice?.marketingName
     }
 
     override func didReceiveMemoryWarning() {

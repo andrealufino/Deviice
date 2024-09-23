@@ -24,5 +24,8 @@ let package = Package(
         .testTarget(
             name: "DeviiceTests",
             dependencies: ["Deviice"]),
-    ]
+    ],
+    resources: [
+        .copy("Sources/Deviice/config.json")
+    ])
 )
