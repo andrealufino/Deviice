@@ -9,6 +9,17 @@ import Foundation
 import UIKit
 
 
+public enum NewModel: String, Codable {
+    
+    case unknown
+    case simulator
+    
+    case iPhone16Pro
+    
+//    indirect case simulator(Model)
+}
+
+
 public struct NewDevice: Codable {
     
     public let identifier: String
@@ -22,9 +33,9 @@ public struct NewDevice: Codable {
         if let fileURL = Bundle(identifier: "org.cocoapods.Deviice")?.url(forResource: "devices", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileURL)
-                let newDevice = try JSONDecoder().decode([NewDevice].self, from: data)
+                let newDevice = try JSONDecoder().decode([String: NewDevice].self, from: data)
                 
-                return newDevice.first(where: { $0.identifier == identifier })
+                return newDevice.first(where: { $0.key == identifier })?.value
             } catch {
                 print("error \(error)")
             }
