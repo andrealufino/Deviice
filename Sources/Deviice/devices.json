@@ -4,37 +4,164 @@
         "screenSize": 0,
         "year": 2007,
         "marketingName": "Simulator",
-        "debugName": "simulator"
+        "model": "simulator"
     },
     "arm64": {
         "identifier": "arm64",
         "screenSize": 0,
         "year": 2007,
         "marketingName": "Simulator",
-        "debugName": "simulator"
+        "model": "simulator"
     },
     "x86_64": {
         "identifier": "x86_64",
         "screenSize": 0,
         "year": 2007,
         "marketingName": "Simulator",
-        "debugName": "simulator"
+        "model": "simulator"
     },
     
     
     
-    "iPhone17,3": {
+    "iPod1,1": {
+        "identifier": "iPod1,1",
+        "screenSize": 3.5,
+        "year": 2007,
+        "marketingName": "iPod Touch (1st generation)",
+        "model": "iPodTouch1"
+    },
+    "iPod2,1": {
+        "identifier": "iPod2,1",
+        "screenSize": 3.5,
+        "year": 2008,
+        "marketingName": "iPod Touch (2nd generation)",
+        "model": "iPodTouch2"
+    },
+    "iPod3,1": {
+        "identifier": "iPod3,1",
+        "screenSize": 3.5,
+        "year": 2009,
+        "marketingName": "iPod Touch (3rd generation)",
+        "model": "iPodTouch3"
+    },
+    "iPod4,1": {
+        "identifier": "iPod4,1",
+        "screenSize": 3.5,
+        "year": 2010,
+        "marketingName": "iPod Touch (4th generation)",
+        "model": "iPodTouch4"
+    },
+    "iPod5,1": {
+        "identifier": "iPod5,1",
+        "screenSize": 4,
+        "year": 2012,
+        "marketingName": "iPod Touch (5th generation)",
+        "model": "iPodTouch5"
+    },
+    "iPod7,1": {
+        "identifier": "iPod7,1",
+        "screenSize": 4,
+        "year": 2015,
+        "marketingName": "iPod Touch (6th generation)",
+        "model": "iPodTouch6"
+    },
+    "iPod9,1": {
+        "identifier": "iPod9,1",
+        "screenSize": 4,
+        "year": 2019,
+        "marketingName": "iPod Touch (7th generation)",
+        "model": "iPodTouch7"
+    },
+    
+    
+    
+    "iPhone3,1": {
+        "identifier": "iPhone3,1",
+        "screenSize": 4,
+        "year": 2010,
+        "marketingName": "iPhone 4",
+        "model": "iPhone4"
+    },
+    "iPhone3,2": {
+        "identifier": "iPhone3,2",
+        "screenSize": 4,
+        "year": 2010,
+        "marketingName": "iPhone 4",
+        "model": "iPhone4"
+    },
+    "iPhone3,3": {
+        "identifier": "iPhone3,3",
+        "screenSize": 4,
+        "year": 2010,
+        "marketingName": "iPhone 4",
+        "model": "iPhone4"
+    },
+    
+    "iPhone4,1": {
+        "identifier": "iPhone4,1",
+        "screenSize": 4,
+        "year": 2011,
+        "marketingName": "iPhone 4s",
+        "model": "iPhone4"
+    },
+    
+    "iPhone5,1": {
+        "identifier": "iPhone5,1",
+        "screenSize": 4,
+        "year": 2012,
+        "marketingName": "iPhone 5",
+        "model": "iPhone5"
+    },
+    "iPhone5,2": {
+        "identifier": "iPhone5,2",
+        "screenSize": 4,
+        "year": 2012,
+        "marketingName": "iPhone 5",
+        "model": "iPhone5"
+    },
+    
+    "iPhone5,3": {
+        "identifier": "iPhone5,3",
+        "screenSize": 4,
+        "year": 2013,
+        "marketingName": "iPhone 5c",
+        "model": "iPhone5C"
+    },
+    "iPhone5,4": {
+        "identifier": "iPhone5,4",
+        "screenSize": 4,
+        "year": 2013,
+        "marketingName": "iPhone 5c",
+        "model": "iPhone5C"
+    },
+    "iPhone6,1": {
+        "identifier": "iPhone6,1",
+        "screenSize": 4,
+        "year": 2013,
+        "marketingName": "iPhone 5s",
+        "model": "iPhone5S"
+    },
+    "iPhone6,2": {
+        "identifier": "iPhone6,2",
+        "screenSize": 4,
+        "year": 2013,
+        "marketingName": "iPhone 5s",
+        "model": "iPhone5S"
+    },
+    
+    
+    "iPhone17,1": {
         "identifier": "iPhone17,3",
         "screenSize": 6.3,
         "year": 2024,
         "marketingName": "iPhone 16 Pro",
-        "debugName": "iPhone16Pro"
+        "model": "iPhone16Pro"
     },
-    "iPhone17,4": {
+    "iPhone17,2": {
         "identifier": "iPhone17,4",
         "screenSize": 6.9,
         "year": 2024,
         "marketingName": "iPhone 16 Pro Max",
-        "debugName": "iPhone16ProMax"
+        "model": "iPhone16ProMax"
     }
 }

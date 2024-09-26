@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblIdentifier: UILabel!
     @IBOutlet weak var lblType: UILabel!
     @IBOutlet weak var lblHumanRedableName: UILabel!
+    @IBOutlet weak var lblSimulatedDevice: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,9 @@ class ViewController: UIViewController {
         let newDevice = NewDevice.current
         
         lblIdentifier.text = newDevice?.identifier
-        lblType.text = newDevice?.debugName
+        lblType.text = newDevice?.model.rawValue
         lblHumanRedableName.text = newDevice?.marketingName
+        lblSimulatedDevice.text = newDevice?.simulatedDevice?.marketingName
     }
 
     override func didReceiveMemoryWarning() {

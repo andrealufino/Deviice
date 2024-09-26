@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Deviice" translatesAutoresizingMaskIntoConstraints="NO" id="cUf-IT-7uD">
-                                <rect key="frame" x="20" y="107" width="350" height="124.33333333333331"/>
+                                <rect key="frame" x="20" y="110" width="350" height="124.33333333333331"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cUf-IT-7uD" secondAttribute="height" multiplier="45:16" id="lKZ-pt-wgF"/>
                                 </constraints>
@@ -36,38 +36,50 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSN-gn-X4U">
-                                <rect key="frame" x="165.66666666666666" y="413.33333333333331" width="59" height="28"/>
+                                <rect key="frame" x="165.66666666666666" y="416.33333333333331" width="59" height="28"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human readable name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUP-P9-BeP">
-                                <rect key="frame" x="90.666666666666686" y="541.33333333333337" width="209" height="27.333333333333371"/>
+                                <rect key="frame" x="90.666666666666686" y="544.33333333333337" width="209" height="27.333333333333371"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="identifier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8Y-0B-O7a">
-                                <rect key="frame" x="158.66666666666666" y="321.66666666666669" width="72.666666666666657" height="24.666666666666686"/>
+                                <rect key="frame" x="158.66666666666666" y="324.66666666666669" width="72.666666666666657" height="24.666666666666686"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="family" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldO-AG-jPU">
-                                <rect key="frame" x="170.66666666666666" y="449.33333333333331" width="49" height="25"/>
+                                <rect key="frame" x="170.66666666666666" y="452.33333333333331" width="49" height="25"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="human readable name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zz-OX-aJG">
-                                <rect key="frame" x="103" y="576.66666666666663" width="184" height="24.666666666666629"/>
+                                <rect key="frame" x="103" y="579.66666666666663" width="184" height="24.666666666666629"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identifier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeA-P5-MBF">
-                                <rect key="frame" x="154" y="286.33333333333331" width="82" height="27.333333333333314"/>
+                                <rect key="frame" x="154" y="289.33333333333331" width="82" height="27.333333333333314"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simulated device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRX-n2-qQI">
+                                <rect key="frame" x="116.66666666666669" y="661" width="157" height="28"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="simulated device name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVn-fL-x3x">
+                                <rect key="frame" x="100.66666666666669" y="697" width="189" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -76,8 +88,11 @@
                         <constraints>
                             <constraint firstItem="QUP-P9-BeP" firstAttribute="centerX" secondItem="ldO-AG-jPU" secondAttribute="centerX" id="01A-aM-6zU"/>
                             <constraint firstItem="ldO-AG-jPU" firstAttribute="centerX" secondItem="XSN-gn-X4U" secondAttribute="centerX" id="2hf-Sz-93y"/>
+                            <constraint firstItem="uVn-fL-x3x" firstAttribute="top" secondItem="QRX-n2-qQI" secondAttribute="bottom" constant="8" symbolic="YES" id="8aW-8J-8NP"/>
+                            <constraint firstItem="uVn-fL-x3x" firstAttribute="centerX" secondItem="QRX-n2-qQI" secondAttribute="centerX" id="Byq-GP-ffy"/>
                             <constraint firstItem="XSN-gn-X4U" firstAttribute="top" secondItem="L8Y-0B-O7a" secondAttribute="bottom" constant="67" id="Ce1-hN-Vjh"/>
                             <constraint firstItem="ldO-AG-jPU" firstAttribute="top" secondItem="XSN-gn-X4U" secondAttribute="bottom" constant="8" id="F3N-RX-X50"/>
+                            <constraint firstItem="QRX-n2-qQI" firstAttribute="top" secondItem="8Zz-OX-aJG" secondAttribute="bottom" constant="56.666666666666742" id="Iii-Al-zZd"/>
                             <constraint firstItem="L8Y-0B-O7a" firstAttribute="top" secondItem="EeA-P5-MBF" secondAttribute="bottom" constant="8" id="IzN-ex-5jW"/>
                             <constraint firstItem="cUf-IT-7uD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Jxu-2V-pOQ"/>
                             <constraint firstItem="8Zz-OX-aJG" firstAttribute="top" secondItem="QUP-P9-BeP" secondAttribute="bottom" constant="8" id="RJJ-Y2-iTG"/>
@@ -85,6 +100,7 @@
                             <constraint firstItem="cUf-IT-7uD" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="63" id="YNL-47-efx"/>
                             <constraint firstItem="8Zz-OX-aJG" firstAttribute="centerX" secondItem="QUP-P9-BeP" secondAttribute="centerX" id="cTd-lH-5oA"/>
                             <constraint firstItem="XSN-gn-X4U" firstAttribute="centerX" secondItem="L8Y-0B-O7a" secondAttribute="centerX" id="lxz-fX-izW"/>
+                            <constraint firstItem="QRX-n2-qQI" firstAttribute="centerX" secondItem="8Zz-OX-aJG" secondAttribute="centerX" id="nHB-ws-4K0"/>
                             <constraint firstItem="EeA-P5-MBF" firstAttribute="centerX" secondItem="cUf-IT-7uD" secondAttribute="centerX" id="sXe-7R-HEU"/>
                             <constraint firstItem="L8Y-0B-O7a" firstAttribute="centerX" secondItem="EeA-P5-MBF" secondAttribute="centerX" id="sZ3-Pq-7a1"/>
                             <constraint firstAttribute="trailing" secondItem="cUf-IT-7uD" secondAttribute="trailing" constant="20" id="vcY-9H-hN8"/>
@@ -102,22 +118,22 @@
                                 <exclude reference="EeA-P5-MBF"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="RJJ-Y2-iTG"/>
-                                <exclude reference="cTd-lH-5oA"/>
-                                <exclude reference="Rxx-1M-UtN"/>
-                                <exclude reference="sXe-7R-HEU"/>
-                                <exclude reference="IzN-ex-5jW"/>
-                                <exclude reference="sZ3-Pq-7a1"/>
-                                <exclude reference="01A-aM-6zU"/>
-                                <exclude reference="zwm-eT-FyE"/>
-                                <exclude reference="Ce1-hN-Vjh"/>
-                                <exclude reference="lxz-fX-izW"/>
-                                <exclude reference="2hf-Sz-93y"/>
-                                <exclude reference="F3N-RX-X50"/>
+                                <exclude reference="weO-pq-lgr"/>
+                                <exclude reference="vcY-9H-hN8"/>
                                 <exclude reference="Jxu-2V-pOQ"/>
                                 <exclude reference="YNL-47-efx"/>
-                                <exclude reference="vcY-9H-hN8"/>
-                                <exclude reference="weO-pq-lgr"/>
+                                <exclude reference="sXe-7R-HEU"/>
+                                <exclude reference="Rxx-1M-UtN"/>
+                                <exclude reference="sZ3-Pq-7a1"/>
+                                <exclude reference="IzN-ex-5jW"/>
+                                <exclude reference="lxz-fX-izW"/>
+                                <exclude reference="Ce1-hN-Vjh"/>
+                                <exclude reference="2hf-Sz-93y"/>
+                                <exclude reference="F3N-RX-X50"/>
+                                <exclude reference="01A-aM-6zU"/>
+                                <exclude reference="zwm-eT-FyE"/>
+                                <exclude reference="cTd-lH-5oA"/>
+                                <exclude reference="RJJ-Y2-iTG"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -131,28 +147,29 @@
                                 <include reference="EeA-P5-MBF"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="RJJ-Y2-iTG"/>
-                                <include reference="cTd-lH-5oA"/>
-                                <include reference="Rxx-1M-UtN"/>
-                                <include reference="sXe-7R-HEU"/>
-                                <include reference="IzN-ex-5jW"/>
-                                <include reference="sZ3-Pq-7a1"/>
-                                <include reference="01A-aM-6zU"/>
-                                <include reference="zwm-eT-FyE"/>
-                                <include reference="Ce1-hN-Vjh"/>
-                                <include reference="lxz-fX-izW"/>
-                                <include reference="2hf-Sz-93y"/>
-                                <include reference="F3N-RX-X50"/>
+                                <include reference="weO-pq-lgr"/>
+                                <include reference="vcY-9H-hN8"/>
                                 <include reference="Jxu-2V-pOQ"/>
                                 <include reference="YNL-47-efx"/>
-                                <include reference="vcY-9H-hN8"/>
-                                <include reference="weO-pq-lgr"/>
+                                <include reference="sXe-7R-HEU"/>
+                                <include reference="Rxx-1M-UtN"/>
+                                <include reference="sZ3-Pq-7a1"/>
+                                <include reference="IzN-ex-5jW"/>
+                                <include reference="lxz-fX-izW"/>
+                                <include reference="Ce1-hN-Vjh"/>
+                                <include reference="2hf-Sz-93y"/>
+                                <include reference="F3N-RX-X50"/>
+                                <include reference="01A-aM-6zU"/>
+                                <include reference="zwm-eT-FyE"/>
+                                <include reference="cTd-lH-5oA"/>
+                                <include reference="RJJ-Y2-iTG"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="lblHumanRedableName" destination="8Zz-OX-aJG" id="1kc-Wc-JpL"/>
                         <outlet property="lblIdentifier" destination="L8Y-0B-O7a" id="9Mc-WZ-htV"/>
+                        <outlet property="lblSimulatedDevice" destination="uVn-fL-x3x" id="54E-6g-3p5"/>
                         <outlet property="lblType" destination="ldO-AG-jPU" id="72U-nL-j0e"/>
                     </connections>
                 </viewController>
