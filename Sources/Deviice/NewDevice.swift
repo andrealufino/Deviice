@@ -128,7 +128,7 @@ public struct NewDevice: Codable {
     public var isNotSimulator: Bool     { !isSimulator }
     public var isNotMapped: Bool        { model == .notMapped }
     public var simulatedDevice: NewDevice? {
-        if model == NewModel.simulator {
+        if isSimulator {
             if let actualSimulatedDeviceIdentifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] {
                 // actual simulated device here
                 return Self.device(fromIdentifier: actualSimulatedDeviceIdentifier)
