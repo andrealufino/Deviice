@@ -60,7 +60,7 @@ public struct Groups {
             .iPadAir, .iPadAir2, .iPadAir3, .iPadAir4, .iPadAir5,
             // iPad Mini
             .iPadMini, .iPadMini2, .iPadMini3, .iPadMini4, .iPadMini5,
-            .iPadMini6,
+            .iPadMini6, .iPadMini7,
             // iPad Pro
             .iPadPro, .iPadPro2,
             // iPad Pro 12.9
@@ -103,7 +103,8 @@ public struct Groups {
             .iPhone12Mini, .iPhone13Mini,
             // iPad
             .iPadMini, .iPadMini2, .iPadMini3,
-            .iPadMini4, .iPadMini5, .iPadMini6
+            .iPadMini4, .iPadMini5, .iPadMini6,
+            .iPadMini7
         ]
     }
 }
