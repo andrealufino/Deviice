@@ -95,6 +95,7 @@ public enum Model {
     case iPadMini4
     case iPadMini5
     case iPadMini6
+    case iPadMini7
     case iPadPro
     case iPadPro2
     case iPadPro11Inch1
@@ -205,7 +206,8 @@ public extension Model {
         case .iPadMini3:                        return "iPad mini 3"
         case .iPadMini4:                        return "iPad mini 4"
         case .iPadMini5:                        return "iPad mini 5"
-        case .iPadMini6:                        return "iPad mini 6"
+        case .iPadMini6:                        return "iPad mini 6";
+        case .iPadMini7:                        return "iPad mini 7"
         case .iPadPro:                          return "iPad Pro"
         case .iPadPro2:                         return "iPad Pro (2nd generation)"
         case .iPadPro11Inch1:                   return "iPad Pro 11'"
