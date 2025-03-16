@@ -104,6 +104,7 @@ public struct Mapper {
         case .iPad5_1, .iPad5_2:                            return .iPadMini4
         case .iPad11_1, .iPad11_2:                          return .iPadMini5
         case .iPad14_1, .iPad14_2:                          return .iPadMini6
+        case .iPad16_1, .iPad16_2:                          return .iPadMini7
             
         // MARK: iPad Pros
         case .iPad6_3, .iPad6_4:                            return .iPadPro
@@ -306,7 +307,8 @@ public struct Mapper {
             return .screen7Dot9Inch
             // MARK: 8.3
         case
-                .iPadMini6:
+                .iPadMini6,
+                .iPadMini7:
             
             return .screen8Dot3Inch
             // MARK: 11
