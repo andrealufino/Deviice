@@ -85,6 +85,7 @@ public enum DeviiceType: String {
     case iPadMini4          = "iPad mini 4"
     case iPadMini5          = "iPad mini 5"
     case iPadMini6          = "iPad mini 6"
+    case iPadMini7          = "iPad mini 7"
     case iPadPro            = "iPad Pro"
     case iPadPro2           = "iPad Pro (2nd generation)"
     case iPadPro3           = "iPad Pro (3rd generation)"
@@ -959,6 +960,18 @@ public struct Deviice {
             self.size = .screen8Dot3Inches
             self.connectivity = .wiFi5G
             self.year = 2021
+
+        case "iPad16,1":
+            self.type = .iPadMini7
+            self.size = .screen8Dot3Inches
+            self.connectivity = .wiFi
+            self.year = 2024
+
+        case "iPad16,2":
+            self.type = .iPadMini7
+            self.size = .screen8Dot3Inches
+            self.connectivity = .wiFi5G
+            self.year = 2024
 
         // MARK: Other
 
