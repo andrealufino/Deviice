@@ -168,19 +168,19 @@ public struct Deviice {
     // MARK: Vars
     
     /// The identifier of the device (for example: "iPod5,1").
-    public private (set) var identifier: String
+    public private(set) var identifier: String
     /// The device type (`DeviiceType` enum).
-    public private (set) var type: DeviiceType
+    public private(set) var type: DeviiceType
     /// The name of the device in human language (ex.: "iPod Touch 5").
-    public private (set) var model: String
+    public private(set) var model: String
     /// The size of the screen (`DeviiceSize`).
-    public private (set) var size: DeviiceSize
+    public private(set) var size: DeviiceSize
     /// The connectivity of the device (`DeviiceConnectivity`).
-    public private (set) var connectivity: DeviiceConnectivity
+    public private(set) var connectivity: DeviiceConnectivity
     /// The complete device name (ex.: "iPhone 6 Plus - WiFi + 4G - 5,5 inches").
-    public private (set) var completeName: String
+    public private(set) var completeName: String
     /// The release year of the device. It's an int because it could be useful to do quick comparison.
-    public private (set) var year: Int
+    public private(set) var year: Int
     
     
     // MARK: Essentials
