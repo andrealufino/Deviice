@@ -15,20 +15,19 @@ public struct Device: Codable {
     public let screenSize: Double
     public let year: Int
     public let marketingName: String
-    public let model: Model
-    public let genericModel: String?
-    public let specificModel: String?
-    public let chip: String?
-    public let biometricSupport: String?
-    public let displayType: String?
-    public let connectivity: String?
-    public let portType: String?
-    public let hasUltraWide: Bool?
-    public let appleIntelligence: Bool?
+    public let specificModel: Model
+    public let genericModel: String
+    public let chip: String
+    public let biometricSupport: String
+    public let displayType: String
+    public let connectivity: String
+    public let portType: String
+    public let hasUltraWide: Bool
+    public let appleIntelligence: Bool
     
-    public var isSimulator: Bool        { model == .simulator }
+    public var isSimulator: Bool        { specificModel == .simulator }
     public var isNotSimulator: Bool     { !isSimulator }
-    public var isNotMapped: Bool        { model == .notMapped }
+    public var isNotMapped: Bool        { specificModel == .notMapped }
     public var simulatedDevice: Device? {
         if isSimulator {
             if let actualSimulatedDeviceIdentifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] {
@@ -46,17 +45,16 @@ public struct Device: Codable {
         self.identifier = identifier
         self.screenSize = device?.screenSize ?? 0
         self.year = device?.year ?? 0
-        self.marketingName = device?.marketingName ?? ""
-        self.model = device?.model ?? .notMapped
-        self.genericModel = device?.genericModel
-        self.specificModel = device?.specificModel
-        self.chip = device?.chip
-        self.biometricSupport = device?.biometricSupport
-        self.displayType = device?.displayType
-        self.connectivity = device?.connectivity
-        self.portType = device?.portType
-        self.hasUltraWide = device?.hasUltraWide
-        self.appleIntelligence = device?.appleIntelligence
+        self.marketingName = device?.marketingName ?? "-"
+        self.genericModel = device?.genericModel ?? "-"
+        self.specificModel = device?.specificModel ?? .notMapped
+        self.chip = device?.chip ?? "-"
+        self.biometricSupport = device?.biometricSupport ?? "-"
+        self.displayType = device?.displayType ?? "-"
+        self.connectivity = device?.connectivity ?? "-"
+        self.portType = device?.portType ?? "-"
+        self.hasUltraWide = device?.hasUltraWide ?? false
+        self.appleIntelligence = device?.appleIntelligence ?? false
     }
     
     public static var current: Device? {

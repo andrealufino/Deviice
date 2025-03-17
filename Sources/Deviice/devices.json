@@ -4,27 +4,58 @@
         "screenSize": 0,
         "year": 2007,
         "marketingName": "Simulator",
-        "model": "simulator"
+        "specificModel": "simulator",
+        "genericModel": "iPodTouch",
+        "chip": "ARM11",
+        "biometricSupport": "simulator",
+        "displayType": "simulator",
+        "connectivity": "simulator",
+        "portType": "simulator",
+        "cameraMegapixels": 0,
+        "hasUltraWide": false,
+        "appleIntelligence": false
     },
     "arm64": {
         "identifier": "arm64",
         "screenSize": 0,
         "year": 2007,
         "marketingName": "Simulator",
-        "model": "simulator"
+        "specificModel": "simulator",
+        "genericModel": "iPodTouch",
+        "chip": "ARM11",
+        "biometricSupport": "simulator",
+        "displayType": "simulator",
+        "connectivity": "simulator",
+        "portType": "simulator",
+        "cameraMegapixels": 0,
+        "hasUltraWide": false,
+        "appleIntelligence": false
     },
     "x86_64": {
         "identifier": "x86_64",
         "screenSize": 0,
         "year": 2007,
         "marketingName": "Simulator",
-        "model": "simulator"
+        "specificModel": "simulator",
+        "genericModel": "iPodTouch",
+        "chip": "ARM11",
+        "biometricSupport": "simulator",
+        "displayType": "simulator",
+        "connectivity": "simulator",
+        "portType": "simulator",
+        "cameraMegapixels": 0,
+        "hasUltraWide": false,
+        "appleIntelligence": false
     },
+    
+    
+    
     
     
     
     "iPod1,1": {
         "identifier": "iPod1,1",
+        "screenSize": 3.5,
         "year": 2007,
         "marketingName": "iPod touch (1st generation)",
         "genericModel": "iPodTouch",
@@ -40,6 +71,7 @@
     },
     "iPod2,1": {
         "identifier": "iPod2,1",
+        "screenSize": 3.5,
         "year": 2008,
         "marketingName": "iPod touch (2nd generation)",
         "genericModel": "iPodTouch",
@@ -55,6 +87,7 @@
     },
     "iPod3,1": {
         "identifier": "iPod3,1",
+        "screenSize": 3.5,
         "year": 2009,
         "marketingName": "iPod touch (3rd generation)",
         "genericModel": "iPodTouch",
@@ -70,6 +103,7 @@
     },
     "iPod4,1": {
         "identifier": "iPod4,1",
+        "screenSize": 3.5,
         "year": 2010,
         "marketingName": "iPod touch (4th generation)",
         "genericModel": "iPodTouch",
@@ -85,6 +119,7 @@
     },
     "iPod5,1": {
         "identifier": "iPod5,1",
+        "screenSize": 4.0,
         "year": 2012,
         "marketingName": "iPod touch (5th generation)",
         "genericModel": "iPodTouch",
@@ -100,6 +135,7 @@
     },
     "iPod7,1": {
         "identifier": "iPod7,1",
+        "screenSize": 4.0,
         "year": 2015,
         "marketingName": "iPod touch (6th generation)",
         "genericModel": "iPodTouch",
@@ -115,6 +151,7 @@
     },
     "iPod9,1": {
         "identifier": "iPod9,1",
+        "screenSize": 4.0,
         "year": 2019,
         "marketingName": "iPod touch (7th generation)",
         "genericModel": "iPodTouch",
@@ -127,12 +164,15 @@
         "cameraMegapixels": 8,
         "hasUltraWide": false,
         "appleIntelligence": false
-    }
+    },
+    
+    
     
     
     
     "iPhone1,1": {
         "identifier": "iPhone1,1",
+        "screenSize": 3.5,
         "year": 2007,
         "marketingName": "iPhone",
         "genericModel": "iPhone",
@@ -148,6 +188,7 @@
     },
     "iPhone1,2": {
         "identifier": "iPhone1,2",
+        "screenSize": 3.5,
         "year": 2008,
         "marketingName": "iPhone 3G",
         "genericModel": "iPhone3G",
@@ -163,6 +204,7 @@
     },
     "iPhone2,1": {
         "identifier": "iPhone2,1",
+        "screenSize": 3.5,
         "year": 2009,
         "marketingName": "iPhone 3Gs",
         "genericModel": "iPhone3Gs",
@@ -178,6 +220,7 @@
     },
     "iPhone3,1": {
         "identifier": "iPhone3,1",
+        "screenSize": 3.5,
         "year": 2010,
         "marketingName": "iPhone 4",
         "genericModel": "iPhone4",
@@ -193,6 +236,7 @@
     },
     "iPhone3,2": {
         "identifier": "iPhone3,2",
+        "screenSize": 3.5,
         "year": 2010,
         "marketingName": "iPhone 4",
         "genericModel": "iPhone4",
@@ -208,6 +252,7 @@
     },
     "iPhone3,3": {
         "identifier": "iPhone3,3",
+        "screenSize": 3.5,
         "year": 2011,
         "marketingName": "iPhone 4",
         "genericModel": "iPhone4",
@@ -223,6 +268,7 @@
     },
     "iPhone4,1": {
         "identifier": "iPhone4,1",
+        "screenSize": 3.5,
         "year": 2011,
         "marketingName": "iPhone 4s",
         "genericModel": "iPhone4s",
@@ -238,6 +284,7 @@
     },
     "iPhone5,1": {
         "identifier": "iPhone5,1",
+        "screenSize": 4.0,
         "year": 2012,
         "marketingName": "iPhone 5",
         "genericModel": "iPhone5",
@@ -253,6 +300,7 @@
     },
     "iPhone5,2": {
         "identifier": "iPhone5,2",
+        "screenSize": 4.0,
         "year": 2012,
         "marketingName": "iPhone 5",
         "genericModel": "iPhone5",
@@ -268,6 +316,7 @@
     },
     "iPhone5,3": {
         "identifier": "iPhone5,3",
+        "screenSize": 4.0,
         "year": 2013,
         "marketingName": "iPhone 5c",
         "genericModel": "iPhone5c",
@@ -283,6 +332,7 @@
     },
     "iPhone5,4": {
         "identifier": "iPhone5,4",
+        "screenSize": 4.0,
         "year": 2013,
         "marketingName": "iPhone 5c",
         "genericModel": "iPhone5c",
@@ -298,6 +348,7 @@
     },
     "iPhone6,1": {
         "identifier": "iPhone6,1",
+        "screenSize": 4.0,
         "year": 2013,
         "marketingName": "iPhone 5s",
         "genericModel": "iPhone5s",
@@ -313,6 +364,7 @@
     },
     "iPhone6,2": {
         "identifier": "iPhone6,2",
+        "screenSize": 4.0,
         "year": 2013,
         "marketingName": "iPhone 5s",
         "genericModel": "iPhone5s",
@@ -328,6 +380,7 @@
     },
     "iPhone7,1": {
         "identifier": "iPhone7,1",
+        "screenSize": 5.5,
         "year": 2014,
         "marketingName": "iPhone 6 Plus",
         "genericModel": "iPhone6",
@@ -343,6 +396,7 @@
     },
     "iPhone7,2": {
         "identifier": "iPhone7,2",
+        "screenSize": 4.7,
         "year": 2014,
         "marketingName": "iPhone 6",
         "genericModel": "iPhone6",
@@ -358,6 +412,7 @@
     },
     "iPhone8,1": {
         "identifier": "iPhone8,1",
+        "screenSize": 4.7,
         "year": 2015,
         "marketingName": "iPhone 6s",
         "genericModel": "iPhone6s",
@@ -373,6 +428,7 @@
     },
     "iPhone8,2": {
         "identifier": "iPhone8,2",
+        "screenSize": 5.5,
         "year": 2015,
         "marketingName": "iPhone 6s Plus",
         "genericModel": "iPhone6s",
@@ -388,6 +444,7 @@
     },
     "iPhone8,4": {
         "identifier": "iPhone8,4",
+        "screenSize": 4.0,
         "year": 2016,
         "marketingName": "iPhone SE",
         "genericModel": "iPhoneSE",
@@ -403,6 +460,7 @@
     },
     "iPhone9,1": {
         "identifier": "iPhone9,1",
+        "screenSize": 4.7,
         "year": 2016,
         "marketingName": "iPhone 7",
         "genericModel": "iPhone7",
@@ -418,6 +476,7 @@
     },
     "iPhone9,3": {
         "identifier": "iPhone9,3",
+        "screenSize": 4.7,
         "year": 2016,
         "marketingName": "iPhone 7",
         "genericModel": "iPhone7",
@@ -433,6 +492,7 @@
     },
     "iPhone9,2": {
         "identifier": "iPhone9,2",
+        "screenSize": 5.5,
         "year": 2016,
         "marketingName": "iPhone 7 Plus",
         "genericModel": "iPhone7",
@@ -448,6 +508,7 @@
     },
     "iPhone9,4": {
         "identifier": "iPhone9,4",
+        "screenSize": 5.5,
         "year": 2016,
         "marketingName": "iPhone 7 Plus",
         "genericModel": "iPhone7",
@@ -463,6 +524,7 @@
     },
     "iPhone10,1": {
         "identifier": "iPhone10,1",
+        "screenSize": 4.7,
         "year": 2017,
         "marketingName": "iPhone 8",
         "genericModel": "iPhone8",
@@ -478,6 +540,7 @@
     },
     "iPhone10,4": {
         "identifier": "iPhone10,4",
+        "screenSize": 4.7,
         "year": 2017,
         "marketingName": "iPhone 8",
         "genericModel": "iPhone8",
@@ -493,6 +556,7 @@
     },
     "iPhone10,2": {
         "identifier": "iPhone10,2",
+        "screenSize": 5.5,
         "year": 2017,
         "marketingName": "iPhone 8 Plus",
         "genericModel": "iPhone8",
@@ -508,6 +572,7 @@
     },
     "iPhone10,5": {
         "identifier": "iPhone10,5",
+        "screenSize": 5.5,
         "year": 2017,
         "marketingName": "iPhone 8 Plus",
         "genericModel": "iPhone8",
@@ -523,6 +588,7 @@
     },
     "iPhone10,3": {
         "identifier": "iPhone10,3",
+        "screenSize": 5.8,
         "year": 2017,
         "marketingName": "iPhone X",
         "genericModel": "iPhoneX",
@@ -538,6 +604,7 @@
     },
     "iPhone10,6": {
         "identifier": "iPhone10,6",
+        "screenSize": 5.8,
         "year": 2017,
         "marketingName": "iPhone X",
         "genericModel": "iPhoneX",
@@ -553,6 +620,7 @@
     },
     "iPhone11,2": {
         "identifier": "iPhone11,2",
+        "screenSize": 5.8,
         "year": 2018,
         "marketingName": "iPhone Xs",
         "genericModel": "iPhoneXs",
@@ -568,6 +636,7 @@
     },
     "iPhone11,6": {
         "identifier": "iPhone11,6",
+        "screenSize": 6.5,
         "year": 2018,
         "marketingName": "iPhone Xs Max",
         "genericModel": "iPhoneXs",
@@ -583,6 +652,7 @@
     },
     "iPhone11,8": {
         "identifier": "iPhone11,8",
+        "screenSize": 6.1,
         "year": 2018,
         "marketingName": "iPhone Xr",
         "genericModel": "iPhoneXr",
@@ -598,6 +668,7 @@
     },
     "iPhone12,1": {
         "identifier": "iPhone12,1",
+        "screenSize": 6.1,
         "year": 2019,
         "marketingName": "iPhone 11",
         "genericModel": "iPhone11",
@@ -613,6 +684,7 @@
     },
     "iPhone12,3": {
         "identifier": "iPhone12,3",
+        "screenSize": 5.8,
         "year": 2019,
         "marketingName": "iPhone 11 Pro",
         "genericModel": "iPhone11Pro",
@@ -628,6 +700,7 @@
     },
     "iPhone12,5": {
         "identifier": "iPhone12,5",
+        "screenSize": 6.5,
         "year": 2019,
         "marketingName": "iPhone 11 Pro Max",
         "genericModel": "iPhone11Pro",
@@ -643,6 +716,7 @@
     },
     "iPhone12,8": {
         "identifier": "iPhone12,8",
+        "screenSize": 4.7,
         "year": 2020,
         "marketingName": "iPhone SE (2nd generation)",
         "genericModel": "iPhoneSE",
@@ -658,6 +732,7 @@
     },
     "iPhone13,1": {
         "identifier": "iPhone13,1",
+        "screenSize": 5.4,
         "year": 2020,
         "marketingName": "iPhone 12 mini",
         "genericModel": "iPhone12",
@@ -673,6 +748,7 @@
     },
     "iPhone13,2": {
         "identifier": "iPhone13,2",
+        "screenSize": 6.1,
         "year": 2020,
         "marketingName": "iPhone 12",
         "genericModel": "iPhone12",
@@ -688,6 +764,7 @@
     },
     "iPhone13,3": {
         "identifier": "iPhone13,3",
+        "screenSize": 6.1,
         "year": 2020,
         "marketingName": "iPhone 12 Pro",
         "genericModel": "iPhone12Pro",
@@ -703,6 +780,7 @@
     },
     "iPhone13,4": {
         "identifier": "iPhone13,4",
+        "screenSize": 6.7,
         "year": 2020,
         "marketingName": "iPhone 12 Pro Max",
         "genericModel": "iPhone12Pro",
@@ -718,6 +796,7 @@
     },
     "iPhone14,4": {
         "identifier": "iPhone14,4",
+        "screenSize": 5.4,
         "year": 2021,
         "marketingName": "iPhone 13 mini",
         "genericModel": "iPhone13",
@@ -733,6 +812,7 @@
     },
     "iPhone14,5": {
         "identifier": "iPhone14,5",
+        "screenSize": 6.1,
         "year": 2021,
         "marketingName": "iPhone 13",
         "genericModel": "iPhone13",
@@ -748,6 +828,7 @@
     },
     "iPhone14,2": {
         "identifier": "iPhone14,2",
+        "screenSize": 6.1,
         "year": 2021,
         "marketingName": "iPhone 13 Pro",
         "genericModel": "iPhone13Pro",
@@ -763,6 +844,7 @@
     },
     "iPhone14,3": {
         "identifier": "iPhone14,3",
+        "screenSize": 6.7,
         "year": 2021,
         "marketingName": "iPhone 13 Pro Max",
         "genericModel": "iPhone13Pro",
@@ -778,6 +860,7 @@
     },
     "iPhone14,6": {
         "identifier": "iPhone14,6",
+        "screenSize": 4.7,
         "year": 2022,
         "marketingName": "iPhone SE (3rd generation)",
         "genericModel": "iPhoneSE",
@@ -793,6 +876,7 @@
     },
     "iPhone14,7": {
         "identifier": "iPhone14,7",
+        "screenSize": 6.1,
         "year": 2022,
         "marketingName": "iPhone 14",
         "genericModel": "iPhone14",
@@ -808,6 +892,7 @@
     },
     "iPhone14,8": {
         "identifier": "iPhone14,8",
+        "screenSize": 6.7,
         "year": 2022,
         "marketingName": "iPhone 14 Plus",
         "genericModel": "iPhone14",
@@ -823,6 +908,7 @@
     },
     "iPhone15,2": {
         "identifier": "iPhone15,2",
+        "screenSize": 6.1,
         "year": 2022,
         "marketingName": "iPhone 14 Pro",
         "genericModel": "iPhone14Pro",
@@ -838,6 +924,7 @@
     },
     "iPhone15,3": {
         "identifier": "iPhone15,3",
+        "screenSize": 6.7,
         "year": 2022,
         "marketingName": "iPhone 14 Pro Max",
         "genericModel": "iPhone14Pro",
@@ -853,6 +940,7 @@
     },
     "iPhone15,4": {
         "identifier": "iPhone15,4",
+        "screenSize": 6.1,
         "year": 2023,
         "marketingName": "iPhone 15",
         "genericModel": "iPhone15",
@@ -868,6 +956,7 @@
     },
     "iPhone15,5": {
         "identifier": "iPhone15,5",
+        "screenSize": 6.7,
         "year": 2023,
         "marketingName": "iPhone 15 Plus",
         "genericModel": "iPhone15",
@@ -883,6 +972,7 @@
     },
     "iPhone16,1": {
         "identifier": "iPhone16,1",
+        "screenSize": 6.1,
         "year": 2023,
         "marketingName": "iPhone 15 Pro",
         "genericModel": "iPhone15Pro",
@@ -898,6 +988,7 @@
     },
     "iPhone16,2": {
         "identifier": "iPhone16,2",
+        "screenSize": 6.7,
         "year": 2023,
         "marketingName": "iPhone 15 Pro Max",
         "genericModel": "iPhone15Pro",
@@ -911,9 +1002,6 @@
         "hasUltraWide": true,
         "appleIntelligence": true
     },
-    
-    
-    
     "iPhone17,3": {
         "identifier": "iPhone17,3",
         "screenSize": 6.1,
@@ -994,6 +1082,7 @@
         "hasUltraWide": false,
         "appleIntelligence": true
     },
+    
     
     
     
@@ -1673,7 +1762,7 @@
     },
     "iPad8,1": {
         "identifier": "iPad8,1",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2018,
         "marketingName": "iPad Pro 11-inch (1st generation)",
         "genericModel": "iPadPro3",
@@ -1689,7 +1778,7 @@
     },
     "iPad8,2": {
         "identifier": "iPad8,2",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2018,
         "marketingName": "iPad Pro 11-inch (1st generation)",
         "genericModel": "iPadPro3",
@@ -1705,7 +1794,7 @@
     },
     "iPad8,3": {
         "identifier": "iPad8,3",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2018,
         "marketingName": "iPad Pro 11-inch (1st generation)",
         "genericModel": "iPadPro3",
@@ -1721,7 +1810,7 @@
     },
     "iPad8,4": {
         "identifier": "iPad8,4",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2018,
         "marketingName": "iPad Pro 11-inch (1st generation)",
         "genericModel": "iPadPro3",
@@ -1801,7 +1890,7 @@
     },
     "iPad8,9": {
         "identifier": "iPad8,9",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2020,
         "marketingName": "iPad Pro 11-inch (2nd generation)",
         "genericModel": "iPadPro4",
@@ -1817,7 +1906,7 @@
     },
     "iPad8,10": {
         "identifier": "iPad8,10",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2020,
         "marketingName": "iPad Pro 11-inch (2nd generation)",
         "genericModel": "iPadPro4",
@@ -2025,7 +2114,7 @@
     },
     "iPad13,4": {
         "identifier": "iPad13,4",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2021,
         "marketingName": "iPad Pro 11-inch (3rd generation)",
         "genericModel": "iPadPro5",
@@ -2041,7 +2130,7 @@
     },
     "iPad13,5": {
         "identifier": "iPad13,5",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2021,
         "marketingName": "iPad Pro 11-inch (3rd generation)",
         "genericModel": "iPadPro5",
@@ -2057,7 +2146,7 @@
     },
     "iPad13,6": {
         "identifier": "iPad13,6",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2021,
         "marketingName": "iPad Pro 11-inch (3rd generation)",
         "genericModel": "iPadPro5",
@@ -2073,7 +2162,7 @@
     },
     "iPad13,7": {
         "identifier": "iPad13,7",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2021,
         "marketingName": "iPad Pro 11-inch (3rd generation)",
         "genericModel": "iPadPro5",
@@ -2249,7 +2338,7 @@
     },
     "iPad14,3": {
         "identifier": "iPad14,3",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2022,
         "marketingName": "iPad Pro 11-inch (4th generation)",
         "genericModel": "iPadPro6",
@@ -2265,7 +2354,7 @@
     },
     "iPad14,4": {
         "identifier": "iPad14,4",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2022,
         "marketingName": "iPad Pro 11-inch (4th generation)",
         "genericModel": "iPadPro6",
@@ -2313,7 +2402,7 @@
     },
     "iPad14,8": {
         "identifier": "iPad14,8",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2024,
         "marketingName": "iPad Air 11-inch (6th generation)",
         "genericModel": "iPadAir6",
@@ -2329,7 +2418,7 @@
     },
     "iPad14,9": {
         "identifier": "iPad14,9",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2024,
         "marketingName": "iPad Air 11-inch (6th generation)",
         "genericModel": "iPadAir6",
@@ -2345,7 +2434,7 @@
     },
     "iPad14,10": {
         "identifier": "iPad14,10",
-        "screenSize": 13.0,
+        "screenSize": 13,
         "year": 2024,
         "marketingName": "iPad Air 13-inch (6th generation)",
         "genericModel": "iPadAir6",
@@ -2361,7 +2450,7 @@
     },
     "iPad14,11": {
         "identifier": "iPad14,11",
-        "screenSize": 13.0,
+        "screenSize": 13,
         "year": 2024,
         "marketingName": "iPad Air 13-inch (6th generation)",
         "genericModel": "iPadAir6",
@@ -2377,7 +2466,7 @@
     },
     "iPad16,1": {
         "identifier": "iPad16,1",
-        "screenSize": 13.0,
+        "screenSize": 13,
         "year": 2024,
         "marketingName": "iPad Mini (7th generation)",
         "genericModel": "iPadMini7",
@@ -2393,7 +2482,7 @@
     },
     "iPad16,2": {
         "identifier": "iPad16,2",
-        "screenSize": 13.0,
+        "screenSize": 13,
         "year": 2024,
         "marketingName": "iPad Mini 7",
         "genericModel": "iPadMini7",
@@ -2409,7 +2498,7 @@
     },
     "iPad15,3": {
         "identifier": "iPad15,3",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2025,
         "marketingName": "iPad Air 11-inch (7th generation)",
         "genericModel": "iPadAir7",
@@ -2422,10 +2511,10 @@
         "cameraMegapixels": 12,
         "hasUltraWide": true,
         "appleIntelligence": true
-    }
+    },
     "iPad15,4": {
         "identifier": "iPad15,4",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2025,
         "marketingName": "iPad Air 11-inch (7th generation)",
         "genericModel": "iPadAir7",
@@ -2441,7 +2530,7 @@
     },
     "iPad15,5": {
         "identifier": "iPad15,3",
-        "screenSize": 13.0,
+        "screenSize": 13,
         "year": 2025,
         "marketingName": "iPad Air 13-inch (7th generation)",
         "genericModel": "iPadAir7",
@@ -2457,11 +2546,11 @@
     },
     "iPad15,7": {
         "identifier": "iPad15,7",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2025,
         "marketingName": "iPad Air 13-inch (7th generation)",
-        "genericModel": "iPad11",
-        "specificModel": "iPad11",
+        "genericModel": "iPadAir7",
+        "specificModel": "iPadAir13Inch7",
         "chip": "M3",
         "biometricSupport": "Touch ID",
         "displayType": "LCD",
@@ -2470,14 +2559,14 @@
         "cameraMegapixels": 12,
         "hasUltraWide": true,
         "appleIntelligence": true
-    }
+    },
     "iPad15,8": {
         "identifier": "iPad15,8",
-        "screenSize": 11.0,
+        "screenSize": 11,
         "year": 2025,
         "marketingName": "iPad Air 11-inch (7th generation)",
-        "genericModel": "iPad11",
-        "specificModel": "iPad11",
+        "genericModel": "iPadAir7",
+        "specificModel": "iPadAir11Inch7",
         "chip": "M3",
         "biometricSupport": "Touch ID",
         "displayType": "LCD",

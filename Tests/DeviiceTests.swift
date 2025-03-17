@@ -9,21 +9,37 @@ import Testing
 import Foundation
 @testable import Deviice
 
-@Test func testJSON() async throws {
-    // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+
+struct DeviiceTests {
     
-    
-    if let fileURL = Bundle.module.url(forResource: "devices", withExtension: "json") {
+    @Test func validateJSON() async throws {
+        
+        let fileURL = Bundle.module.url(forResource: "devices", withExtension: "json")
+        try #require(fileURL != nil)
         do {
-            let data = try Data(contentsOf: fileURL)
-            let newDevices = try JSONDecoder().decode([String: Device].self, from: data)
+            let data = try Data(contentsOf: fileURL!)
+            let devices = try JSONDecoder().decode([String: Device].self, from: data)
             
-            for device in newDevices.values {
-                #expect(device.model != .notMapped)
-            }
+            #expect(devices != nil)
         } catch {
             print("error \(error)")
+            throw error
+        }
+    }
+    
+    @Test func validateModels() async throws {
+        
+        let fileURL = Bundle.module.url(forResource: "devices", withExtension: "json")
+        try #require(fileURL != nil)
+        let data = try Data(contentsOf: fileURL!)
+        let devices = try JSONDecoder().decode([String: Device].self, from: data)
+        try #require(devices != nil, "Devices is nil")
+        try #require(devices.isEmpty == false, "Devices is empty")
+        
+        for device in devices.values {
+            print("Identifier: \(device.identifier) - Model: \(device.specificModel)")
+            #expect(device.identifier.isEmpty == false)
+            #expect(device.specificModel != .notMapped)
         }
     }
 }
-
