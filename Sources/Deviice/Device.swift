@@ -2,132 +2,102 @@
 //  Device.swift
 //  Deviice
 //
-//  Created by Andrea Mario Lufino on 05/11/21.
+//  Created by Andrea Mario Lufino on 10/09/24.
 //
 
 import Foundation
-import CoreVideo
 import UIKit
 
 
-// MARK: - Device
-
-/// This class represents a device.
-///
-/// You can use the `init` method to get an instance that represents the current device,
-/// or you can create a specific device passing an `Identifier`.
-public class Device {
+public struct Device: Codable {
     
-    /// The identifier of a specific model.
-    public let identifier: Identifier
-    /// The family of the device, such as `iPhone`, `iPad`, etc...
-    public private(set) var family: Family
-//    private(set) var connectivity: Connectivity
-    /// The model of the device, such as `iPhone 12 Pro`, `iPad Pro`, etc...
-    public private(set) var model: Model
-    /// The size of the screen.
-    public private(set) var screenSize: ScreenSize
+    public let identifier: String
+    public let screenSize: Double
+    public let year: Int
+    public let marketingName: String
+    public let model: Model
+    public let genericModel: String?
+    public let specificModel: String?
+    public let chip: String?
+    public let biometricSupport: String?
+    public let displayType: String?
+    public let connectivity: String?
+    public let portType: String?
+    public let hasUltraWide: Bool?
+    public let appleIntelligence: Bool?
     
-    /// Init a `Device` object with an optional identifier.
-    /// If the `identifier` parameter is omitted, an object representing
-    /// the current device will be created.
-    /// - Parameter identifier: The identifier of the model to create.
-    public init(identifier: Identifier? = nil) {
-        
-        self.identifier = identifier ?? Identifier.current
-        
-        let id = self.identifier
-        
-        family = Mapper.family(from: id)
-        model = Mapper.model(from: id)
-        screenSize = Mapper.screenSize(from: model)
-    }
-}
-
-
-// MARK: - Device info
-
-public extension Device {
-    
-    /// Check if the current device is an iPod.
-    var isPod: Bool {
-        return family == .iPodTouch
-    }
-    
-    /// Check if the current device is an iPhone.
-    var isPhone: Bool {
-        return family == .iPhone
-    }
-    
-    /// Check if the current device is an iPad.
-    var isPad: Bool {
-        return family == .iPad
-    }
-    
-    /// Check if the current device is a simulator.
-    var isSimulator: Bool {
-        return family == .simulator
-    }
-    
-    /// Check if the current device has a retina display.
-    var isRetina: Bool {
-        return UIScreen.main.scale > 1.0
-    }
-    
-    /// The actual model of the device. This returns the same model if run of real device,
-    /// and the simulated device in case of the simulator.
-    var actualModel: Model {
-        
-        switch model {
-        case .simulator(let model):
-            return model
-        default:
-            return model
+    public var isSimulator: Bool        { model == .simulator }
+    public var isNotSimulator: Bool     { !isSimulator }
+    public var isNotMapped: Bool        { model == .notMapped }
+    public var simulatedDevice: Device? {
+        if isSimulator {
+            if let actualSimulatedDeviceIdentifier = ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] {
+                // actual simulated device here
+                return Self.device(fromIdentifier: actualSimulatedDeviceIdentifier)
+            }
         }
+        return nil
     }
     
-    /// This is the name of the device.
-    var name: String {
+    public init(identifier: String? = nil) {
+        let identifier = identifier ?? Self.identifier
+        let device = Self.device(fromIdentifier: identifier)
         
-//        #if os(watchOS)
-//        return WKInterfaceDevice.current().name
-//        #else
-        return UIDevice.current.name
-//        #endif
+        self.identifier = identifier
+        self.screenSize = device?.screenSize ?? 0
+        self.year = device?.year ?? 0
+        self.marketingName = device?.marketingName ?? ""
+        self.model = device?.model ?? .notMapped
+        self.genericModel = device?.genericModel
+        self.specificModel = device?.specificModel
+        self.chip = device?.chip
+        self.biometricSupport = device?.biometricSupport
+        self.displayType = device?.displayType
+        self.connectivity = device?.connectivity
+        self.portType = device?.portType
+        self.hasUltraWide = device?.hasUltraWide
+        self.appleIntelligence = device?.appleIntelligence
     }
     
-    /// This is the name of the operating system.
-    var osName: String {
-        
-//      #if os(watchOS)
-//      return WKInterfaceDevice.current().systemName
-//      #else
-      return UIDevice.current.systemName
-//      #endif
-    }
-    
-    /// This is the version of the operating system.
-    var osVersion: String? {
-      
-//      #if os(watchOS)
-//      return WKInterfaceDevice.current().systemVersion
-//      #else
-      return UIDevice.current.systemVersion
-//      #endif
+    public static var current: Device? {
+        return device(fromIdentifier: identifier)
     }
 }
 
 
-// MARK: - Description
+// MARK: - Private static methods
 
-extension Device: CustomStringConvertible {
+private extension Device {
     
-    public var description: String {
-        return """
-        Device
-        \(identifier.rawValue)
-        \(model.marketingName)
-        Screen size: \(screenSize.value)
-        """
+    /// This is the raw identifier, as `String`.
+    static var identifier: String {
+        // Credits to Dennis Weissmann for this snippet
+        // https://github.com/dennisweissmann
+        // Here his snippet : https://github.com/dennisweissmann/DeviceKit/blob/master/Source/Device.swift#L177-L185
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let machineMirror = Mirror(reflecting: systemInfo.machine)
+        let identifier = machineMirror.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8 , value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+        
+        return identifier
+    }
+    
+    static func device(fromIdentifier identifier: String) -> Device? {
+//        if let fileURL = Bundle(identifier: "org.cocoapods.Deviice")?.url(forResource: "devices", withExtension: "json") {
+        if let fileURL = Bundle.module.url(forResource: "devices", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: fileURL)
+                let newDevices = try JSONDecoder().decode([String: Device].self, from: data)
+                
+                return newDevices.first(where: { $0.key == identifier })?.value
+            } catch {
+                print("error \(error)")
+            }
+        }
+        
+        return nil
     }
 }
