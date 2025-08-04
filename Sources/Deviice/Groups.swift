@@ -47,7 +47,7 @@ public struct Groups {
             .iPhoneSE3,
             .iPhone14, .iPhone14Plus, .iPhone14Pro, .iPhone14ProMax,
             .iPhone15, .iPhone15Plus, .iPhone15Pro, .iPhone15ProMax,
-            .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax
+            .iPhone16, .iPhone16Plus, .iPhone16Pro, .iPhone16ProMax, .iPhone16e
         ]
     }
     

@@ -77,6 +77,7 @@ public struct Mapper {
         case .iPhone17_2:                                   return .iPhone16ProMax
         case .iPhone17_3:                                   return .iPhone16
         case .iPhone17_4:                                   return .iPhone16Plus
+        case .iPhone17_5:                                   return .iPhone16e
             
         // MARK: iPads
         case .iPad2_1, .iPad2_2, .iPad2_3, .iPad2_4:        return .iPad2
@@ -244,7 +245,8 @@ public struct Mapper {
                 .iPhone14Pro,
                 .iPhone15,
                 .iPhone15Pro,
-                .iPhone16:
+                .iPhone16,
+                .iPhone16e:
             
             return .screen6Dot1Inch
             // MARK: 5.4
