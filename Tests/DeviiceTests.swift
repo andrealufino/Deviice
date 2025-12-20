@@ -14,28 +14,15 @@ struct DeviiceTests {
     
     @Test func validateJSON() async throws {
         
-        let fileURL = Bundle.module.url(forResource: "devices", withExtension: "json")
-        try #require(fileURL != nil)
-        do {
-            let data = try Data(contentsOf: fileURL!)
-            let devices = try JSONDecoder().decode([String: Device].self, from: data)
-            
-            #expect(devices != nil)
-        } catch {
-            print("error \(error)")
-            throw error
-        }
+        let devices = try loadJSON()
+        #expect(!devices.isEmpty)
     }
     
     @Test func validateModels() async throws {
         
-        let fileURL = Bundle.module.url(forResource: "devices", withExtension: "json")
-        try #require(fileURL != nil)
-        let data = try Data(contentsOf: fileURL!)
-        let devices = try JSONDecoder().decode([String: Device].self, from: data)
-        try #require(devices != nil, "Devices is nil")
-        try #require(devices.isEmpty == false, "Devices is empty")
-        
+        let devices = try loadJSON()
+        #expect(devices.isEmpty == false, "Devices is empty")
+
         for device in devices.values {
 //            print("Identifier: \(device.identifier) - Model: \(device.specificModel)")
             #expect(device.identifier.isEmpty == false)
@@ -50,17 +37,27 @@ struct DeviiceTests {
     
     @Test func validateNotMappedDevice() async throws {
         
-        let fileURL = Bundle.module.url(forResource: "devices", withExtension: "json")
-        try #require(fileURL != nil)
-        let data = try Data(contentsOf: fileURL!)
-        let devices = try JSONDecoder().decode([String: Device].self, from: data)
-        try #require(devices != nil, "Devices is nil")
-        try #require(devices.isEmpty == false, "Devices is empty")
-        
-        let iPad8080 = devices["iPad8080,8"]!
-        try #require(iPad8080 != nil)
+        let devices = try loadJSON()
+        #expect(devices.isEmpty == false, "Devices is empty")
+
+        guard let iPad8080 = devices["iPad8080,8"] else {
+            Issue.record()
+            return
+        }
+
         print(iPad8080)
         #expect(iPad8080.specificModel == .notMapped)
         #expect(iPad8080.specificModelRaw == "iPad8080")
+    }
+
+    private func loadJSON() throws -> [String: Device] {
+
+        let fileURL = Bundle.module.url(forResource: "devices", withExtension: "json")
+        try #require(fileURL != nil)
+
+        let data = try Data(contentsOf: fileURL!)
+        let devices = try JSONDecoder().decode([String: Device].self, from: data)
+
+        return devices
     }
 }
