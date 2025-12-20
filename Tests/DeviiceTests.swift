@@ -21,7 +21,7 @@ struct DeviiceTests {
     @Test func validateModels() async throws {
         
         let devices = try loadJSON()
-        #expect(devices.isEmpty == false, "Devices is empty")
+        try #require(devices.isEmpty == false, "Devices is empty")
 
         for device in devices.values {
 //            print("Identifier: \(device.identifier) - Model: \(device.specificModel)")
@@ -38,7 +38,7 @@ struct DeviiceTests {
     @Test func validateNotMappedDevice() async throws {
         
         let devices = try loadJSON()
-        #expect(devices.isEmpty == false, "Devices is empty")
+        try #require(devices.isEmpty == false, "Devices is empty")
 
         guard let iPad8080 = devices["iPad8080,8"] else {
             Issue.record()
