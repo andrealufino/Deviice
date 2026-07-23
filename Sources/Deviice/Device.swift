@@ -3,10 +3,10 @@
 //  Deviice
 //
 //  Created by Andrea Mario Lufino on 10/09/24.
+//  Copyright © 2024 Andrea Mario Lufino. All rights reserved.
 //
 
 import Foundation
-import UIKit
 
 
 /// This struct represent a device in the physical sense.
@@ -114,18 +114,31 @@ private extension Device {
         return identifier
     }
     
-    static func device(fromIdentifier identifier: String) -> Device? {
-        if let fileURL = Bundle.module.url(forResource: "devices", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: fileURL)
-                let newDevices = try JSONDecoder().decode([String: Device].self, from: data)
-                
-                return newDevices.first(where: { $0.key == identifier })?.value
-            } catch {
-                print("error \(error)")
-            }
+    /// The full device database, keyed by hardware identifier.
+    ///
+    /// Loaded and decoded from the bundled `devices.json` exactly once, then cached
+    /// for the lifetime of the process. A failure here means the bundled resource is
+    /// missing or malformed, which is a package build error rather than a runtime
+    /// condition, so it traps.
+    static let allDevices: [String: Device] = {
+        guard let fileURL = Bundle.module.url(forResource: "devices", withExtension: "json") else {
+            fatalError("Deviice: bundled devices.json resource not found.")
         }
-        
-        return nil
+
+        do {
+            let data = try Data(contentsOf: fileURL)
+            return try JSONDecoder().decode([String: Device].self, from: data)
+        } catch {
+            fatalError("Deviice: failed to decode devices.json: \(error)")
+        }
+    }()
+
+    /// Returns the device matching the given hardware identifier, if any.
+    ///
+    /// Performs an O(1) lookup on the cached database.
+    /// - Parameter identifier: The hardware identifier to look up, such as `iPhone17,2`.
+    /// - Returns: The matching `Device`, or `nil` if the identifier is unknown.
+    static func device(fromIdentifier identifier: String) -> Device? {
+        allDevices[identifier]
     }
 }

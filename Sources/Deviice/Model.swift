@@ -3,6 +3,7 @@
 //  Deviice
 //
 //  Created by Andrea Mario Lufino on 17/03/25.
+//  Copyright © 2025 Andrea Mario Lufino. All rights reserved.
 //
 
 import Foundation
