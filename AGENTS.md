@@ -10,7 +10,7 @@ Three files do everything:
 |------|---------|
 | `Sources/Deviice/Device.swift` | Public `Device` struct. Codable. Loads JSON, exposes all properties. |
 | `Sources/Deviice/Model.swift` | `Model` enum (String-backed). One case per device model. |
-| `Sources/Deviice/devices.json` | 173-entry database keyed by hardware identifier. Source of truth. |
+| `Sources/Deviice/devices.json` | 179-entry database keyed by hardware identifier. Source of truth. |
 
 ## Adding new devices (main maintenance task)
 
