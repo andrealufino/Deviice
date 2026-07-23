@@ -63,7 +63,7 @@ Tests use Swift Testing (not XCTest). Three tests:
 - `master` — release-only, merged from develop when tagging
 - Feature branches from develop: `feature/description`
 - Release branches: `release/X.Y.Z`
-- Tags: semantic versioning (current: `3.1.1`)
+- Tags: semantic versioning (current: `3.2.0`)
 
 ## Public API rules
 
